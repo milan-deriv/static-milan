@@ -1,3 +1,3 @@
 # static-milan
-
-This is the repo
+This is the repository
+First commit
