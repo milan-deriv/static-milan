@@ -183,7 +183,7 @@
                         vertical-align: top;
                     }
                     #title-text-td, #title-img-td{ width: 100%; vertical-align: top;}
-                    #logo-img-td img{ height: 21px; max-height: 21px; margin: auto; padding: 24px 0 0 25px; }
+                    #logo-img-td img{ height: 33px; max-height: 33px; margin: auto; padding: 24px 0px 0px 0px; }
                     #title-img-td img{ width: 600px; vertical-align: top;}
                     .link-div{ background-color: rgba(65, 70, 82, 0.05); width: 90%; margin: auto; color: #ff444f; font-size: 12px; font-weight: 400; padding: 10px 0;}
                     .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td{
@@ -266,7 +266,7 @@
                     @media screen and (max-width: 620px){
                         #header-td{ max-width: 600px; }
                         #header-td, #title-img-tb, #title-img-tb td, #logo-img-td{ margin: 0; padding: 0;}
-                        #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
+                        #logo-img-td img{ height: 28px; padding: 20px 0px 0px 0px; }
                         #title-img-td img{ width: 100% !important; }
                         h1{ font-size: 22px; padding: 0px 30px 0px !important; margin-top: 10px; }
                         h3{ font-size: 16px; padding: 0px 20px 0px !important;}
@@ -278,6 +278,13 @@
                         }
                         .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, li{
                             font-size: 13px !important;
+                        }
+                        .paragraph-td-discl {
+                            padding-left: 15px !important;
+                            padding-right: 15px !important;
+                        }
+                        .paragraph-td-discl p{
+                            font-size: 9px !important;
                         }
                         .list-ul{ padding: 0px 10px 0px 15px; }
                         #footer-social-td img{ height: 20px; }
@@ -295,7 +302,7 @@
                         }
                     }
                     @media screen and (max-width: 460px){
-                        #logo-img-td img{ height: 16px; padding: 15px 0 0 15px; }
+                        #logo-img-td img{ height: 26px; padding: 15px 0px 0px 0px; }
                         #title-text-td h1{ padding: 10px 10px 10px 15px; margin-top: 5px; font-size: 18px; font-weight: 600; }
                         .link-div{ font-size: 11px; }
                     }
@@ -364,16 +371,28 @@
                                 <table id="title-img-tb">
                                     <!--[if (gte mso 9)|(IE)]>
                                         <tr>
+                                            <td id="ol-logo-img-td" align="center">
+                                                <div style="margin-left: 30px;">
+                                                        <img src="https://static.deriv.com/logos/deriv-white-2023.png" height="20" title="Deriv.com" style="padding: 25px;"/>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
                                             <td id="title-img-td" align="center">
-                                                <img src="https://static.deriv.com/email/images/header-2023/deriv-sticpay.png" width="600" alt="">
+                                                <img src="https://static.deriv.com/email/images/header-2023/partner-survey.png" width="600" alt="">
                                             </td>
                                         </tr>
                                     </table>
                                     <![endif]-->
                                     <!--[if !gte mso 9]><!-- -->
                                     <tr>
+                                        <td id="logo-img-td" align="center">
+                                                <img src="https://static.deriv.com/logos/deriv-white-2023.png" title="Deriv.com">
+                                        </td>
+                                    </tr>
+                                    <tr>
                                         <td id="title-img-td" align="center">
-                                            <img src="https://static.deriv.com/email/images/header-2023/deriv-sticpay.png" alt="">
+                                            <img src="https://static.deriv.com/email/images/header-2023/partner-survey.png" alt="">
                                         </td>
                                     </tr>
                                     <tr>
@@ -402,7 +421,7 @@
                         </tr>
                         <!--Gray table input 1-->
                         <tr>
-                            <td class="dark-black" align="left" style="padding: 0px 25px 10px 25px;">
+                            <td class="dark-black para paragraph-td" align="left" style="padding: 0px 25px 10px 25px;">
                                 <table class="dark-gray" style="width: 100%; margin: auto; background-color: #f2f3f4; border-radius: 15px;">
                                     <tr>
                                         <td class="paragraph-td" align="left" style="padding: 20px 30px 0px 30px;">
