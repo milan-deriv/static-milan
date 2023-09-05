@@ -140,10 +140,9 @@
                     }
                     a:hover{ text-decoration: underline; }
                     a.button, a.button-white{
-                        padding: 12px 20px;
-                        border: 0;
-                        border-radius: 20px;
-                        font-size: 16px;
+                        padding: 7px 15px;
+                        border-radius: 13px;
+                        font-size: 14px;
                         font-weight: 500 !important;
                         text-decoration: none;
                         text-align: center;
@@ -217,9 +216,9 @@
                     ul { list-style-type: disc; }
                     ul, ol{ padding-left: 25px; }
                     li{
-                        padding: 2px 0 0 5px;
+                        padding: 2px 0px 0px 0px;
                         font-family: inherit;
-                        font-size: 15px;
+                        font-size: 16px;
                         font-weight: 400;
                         text-align: left;
                         line-height: 24px;
@@ -254,7 +253,7 @@
                     #footer-social-td a{ text-decoration: none; }
                     #footer-links-td{
                         color: #646464;
-                        font-size: 14px;
+                        font-size: 12px;
                         font-weight: 500;
                         line-height: 16px;
                         -webkit-text-size-adjust: 100%;
@@ -323,7 +322,6 @@
                         .email-data-tb{ width: 98%; }
                         .data-property-td, .data-value-td{ padding: 15px 15px 5px; font-size: 12px; }
                         li, a.button, a.button-white, .greeting-td p, .paragraph-td p, .data-property-td, .data-value-td, .link-div, .columns-2-b-title, .columns-2-b-text, #footer-social-td, #footer-links-td{ font-size: 12px; }
-                        
                     }
                     @media screen and (max-width: 380px){ 
                         #title-text-td h1{ font-size: 16px; }
@@ -337,14 +335,14 @@
                             text-decoration: none;
                         }
                         a.button{ color: #fff !important; }
-                        li { color: #c2c2c2 !important; }
+                        li { color: #fff !important; }
                         /* Hides light mode-only content */
                         .hide-light{ display: none !important; }
                         .show-dark{ display: block !important; }
                         /* Applies dark background if dark mode is selected */
                         .dark-black{ background-color: #0e0e0e !important; }
                         /* Custom dark mode font colors */
-                        h1, h2, p, span, b, strong, em { color: #fff !important; }
+                        h1, h2, p, span, b, strong, em, li { color: #fff !important; }
                         .dark-gray{ background-color: #777 !important; }
                         .dark-subtext{ color: #c2c2c2 !important; }
                         #logo-img-td{ 
@@ -355,7 +353,7 @@
                         .email-data-tb, .link-div{ background-color: #2e2e2e !important; }
                     }
                     [data-ogsc] a, a:visited{ color: #ff444f; text-decoration: none; }
-                    [data-ogsc] li { color: #c2c2c2 !important; }
+                    [data-ogsc] li { color: #fff !important; }
                     /* Custom dark mode font colors */
                     [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b, [data-ogsc] strong, [data-ogsc] em{ color: #fff !important; }
                     [data-ogsc] #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
@@ -366,7 +364,7 @@
                     @media (prefers-color-scheme: dark ) and (max-width: 620px){
                         a, a:visited{ color: #ff444f !important; text-decoration: none; }
                         a.button{ color: #fff !important; }
-                        li { color: #c2c2c2 !important; }
+                        li { color: #fff !important; }
                         .email-data-tb, .link-div{ background-color: #2e2e2e !important;}
                     }
                 /* End of dark mode styles */
@@ -433,11 +431,11 @@
                             <td class="dark-black mb-less-padding" align="left" style="padding: 10px 30px 0px 30px;">
                                 <table class="dark-gray" style="width: 100%; margin: auto; background-color: #f2f3f4; border-radius: 15px;">
                                     <tr>
-                                        <td class="paragraph-td" align="left" style="padding: 20px 30px 20px 30px;">
+                                        <td class="paragraph-td" align="left" style="padding: 20px 30px 10px 30px;">
                                             <p><strong>Benefits of swap-free trading</strong></p>
                                                 <ul>
-                                                    <li class="dark-subtext">Keep your positions open as long as you want without incurring overnight charges and reduce overall trading costs.</li>
-                                                    <li class="dark-subtext">Trade both derived and financial assets in a single Deriv MT5 Swap-Free account.</li>
+                                                    <li>Keep your positions open as long as you want without incurring overnight charges and reduce overall trading costs.</li>
+                                                    <li>Trade both derived and financial assets in a single Deriv MT5 Swap-Free account.</li>
                                                 </ul>
                                         </td>
                                     </tr>
@@ -445,7 +443,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 30px 30px 0px 30px;" class="dark-black">
+                            <td class="paragraph-td" align="left" style="padding: 20px 30px 0px 30px;" class="dark-black">
                                 <p class="dark-subtext">Head to Trader's Hub now to create your MT5 Swap-Free account and start saving on overnight costs!</p>
                             </td>
                         </tr>
@@ -533,7 +531,8 @@
                         </tr>
                         <tr>
                             <td id="footer-links-td" align="center" class="dark-black">
-                                <p><a href="https://www.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
+                                <p><a href="https://www.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-black">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-black">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
+                                <p id="unsubscribe-p" class="dark-black dark-subtext">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details">Unsubscribe</a></p>
                             </td>
                         </tr>
                         <tr>

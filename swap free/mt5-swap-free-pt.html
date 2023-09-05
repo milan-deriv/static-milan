@@ -140,10 +140,9 @@
                     }
                     a:hover{ text-decoration: underline; }
                     a.button, a.button-white{
-                        padding: 12px 20px;
-                        border: 0;
-                        border-radius: 20px;
-                        font-size: 16px;
+                        padding: 7px 15px;
+                        border-radius: 13px;
+                        font-size: 14px;
                         font-weight: 500 !important;
                         text-decoration: none;
                         text-align: center;
@@ -219,7 +218,7 @@
                     li{
                         padding: 2px 0 0 5px;
                         font-family: inherit;
-                        font-size: 15px;
+                        font-size: 16px;
                         font-weight: 400;
                         text-align: left;
                         line-height: 24px;
@@ -254,7 +253,7 @@
                     #footer-social-td a{ text-decoration: none; }
                     #footer-links-td{
                         color: #646464;
-                        font-size: 14px;
+                        font-size: 12px;
                         font-weight: 500;
                         line-height: 16px;
                         -webkit-text-size-adjust: 100%;
@@ -337,14 +336,14 @@
                             text-decoration: none;
                         }
                         a.button{ color: #fff !important; }
-                        li { color: #c2c2c2 !important; }
+                        li { color: #fff !important; }
                         /* Hides light mode-only content */
                         .hide-light{ display: none !important; }
                         .show-dark{ display: block !important; }
                         /* Applies dark background if dark mode is selected */
                         .dark-black{ background-color: #0e0e0e !important; }
                         /* Custom dark mode font colors */
-                        h1, h2, p, span, b, strong, em { color: #fff !important; }
+                        h1, h2, p, span, b, strong, em, li { color: #fff !important; }
                         .dark-gray{ background-color: #777 !important; }
                         .dark-subtext{ color: #c2c2c2 !important; }
                         #logo-img-td{ 
@@ -355,7 +354,7 @@
                         .email-data-tb, .link-div{ background-color: #2e2e2e !important; }
                     }
                     [data-ogsc] a, a:visited{ color: #ff444f; text-decoration: none; }
-                    [data-ogsc] li { color: #c2c2c2 !important; }
+                    [data-ogsc] li { color: #fff !important; }
                     /* Custom dark mode font colors */
                     [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b, [data-ogsc] strong, [data-ogsc] em{ color: #fff !important; }
                     [data-ogsc] #logo-img-td img{ height: 18px; padding: 20px 0 0 20px; }
@@ -366,7 +365,7 @@
                     @media (prefers-color-scheme: dark ) and (max-width: 620px){
                         a, a:visited{ color: #ff444f !important; text-decoration: none; }
                         a.button{ color: #fff !important; }
-                        li { color: #c2c2c2 !important; }
+                        li { color: #fff !important; }
                         .email-data-tb, .link-div{ background-color: #2e2e2e !important;}
                     }
                 /* End of dark mode styles */
@@ -432,11 +431,11 @@
                             <td class="dark-black mb-less-padding" align="left" style="padding: 10px 30px 0px 30px;">
                                 <table class="dark-gray" style="width: 100%; margin: auto; background-color: #f2f3f4; border-radius: 15px;">
                                     <tr>
-                                        <td class="paragraph-td" align="left" style="padding: 20px 40px 20px 40px;">
+                                        <td class="paragraph-td" align="left" style="padding: 20px 30px 10px 30px;">
                                             <p><strong>Benefícios da negociação sem swap</strong></p>
                                                 <ul>
-                                                    <li class="dark-subtext">Mantenha as suas posições abertas durante o tempo que desejar sem incorrer em encargos noturnos e reduza os custos globais de negociação.</li>
-                                                    <li class="dark-subtext">Negoceie activos derivados e financeiros numa única conta Deriv MT5 Swap-Free.</li>
+                                                    <li>Mantenha as suas posições abertas durante o tempo que desejar sem incorrer em encargos noturnos e reduza os custos globais de negociação.</li>
+                                                    <li>Negoceie activos derivados e financeiros numa única conta Deriv MT5 Swap-Free.</li>
                                                 </ul>
                                         </td>
                                     </tr>
@@ -444,7 +443,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="left" style="padding: 30px 30px 0px 30px;" class="dark-black">
+                            <td class="paragraph-td" align="left" style="padding: 20px 30px 0px 30px;" class="dark-black">
                                 <p class="dark-subtext">Dirija-se agora ao Trader's Hub para criar a sua conta MT5 sem swap e comece a poupar nos custos noturnos!</p>
                             </td>
                         </tr>
@@ -532,8 +531,8 @@
                         </tr>
                         <tr>
                             <td id="footer-links-td" align="center" class="dark-black">
-                                <p><a href="https://deriv.com/pt/help-centre/">Centro de ajuda</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/pt/terms-and-conditions">Termos e Condições</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Segurança & privacidade</a></p>
-                                <p id="unsubscribe-p" class="dark-gray dark-subtext">Não quer mais receber esses emails? <a href="https://app.deriv.com/account/personal-details">Cancelar inscrição</a>.</p>
+                                <p><a href="https://deriv.com/pt/help-centre/">Centro de ajuda</a>&nbsp;&nbsp;&nbsp;<span class="dark-black">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/pt/terms-and-conditions">Termos e Condições</a>&nbsp;&nbsp;&nbsp;<span class="dark-black">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Segurança & privacidade</a></p>
+                                <p id="unsubscribe-p" class="dark-black dark-subtext">Não quer mais receber esses emails? <a href="https://app.deriv.com/account/personal-details">Cancelar inscrição</a>.</p>
                             </td>
                         </tr>
                         <tr>
