@@ -94,7 +94,7 @@
                 /* Applied to all tags */
                 *{ font-family: 'Ubuntu', Arial, sans-serif; color: #414652; }
                 p, a{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
-                h1{ padding: 0px 60px 0px; margin-top: -15px; color: #414652; font-size: 27px; font-weight: 700; text-align: center; line-height: 1.5; }
+                h1{ padding: 0px 43px 0px; margin-top: -15px; color: #414652; font-size: 27px; font-weight: 700; text-align: center; line-height: 1.5; }
                 h3{ padding: 0px 50px 0px; font-size: 18px; font-weight: 500; text-align: center; line-height: 1.2; }
                 body{
                     width: 100%;
@@ -142,10 +142,10 @@
                     }
                     a:hover{ text-decoration: underline; }
                     a.button, a.button-white{
-                        padding: 6px 20px;
+                        padding: 7px 20px;
                         border-radius: 16px;
                         font-size: 14px;
-                        font-weight: 500 !important;
+                        font-weight: 700 !important;
                         text-decoration: none;
                         text-align: center;
                         line-height: 20px;
@@ -380,6 +380,11 @@
                                                 <img src="https://static.deriv.com/email/images/header-2023/ppc-crypto-pt.png" width="600" alt="">
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <td bgcolor="#fff" cellpadding="0" cellspacing="0" align="center">
+                                                <h1 style="padding: 10px 0px 10px 0px; margin-top: 15px; margin-left: 30px; color: #414652 !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 25px; font-weight: 700; text-align: center; line-height: 1.2;">Comece a sua jornada de negociação em cripto com confiança</h1>
+                                            </td>
+                                        </tr>
                                     </table>
                                     <![endif]-->
                                     <!--[if !gte mso 9]><!-- -->
@@ -394,7 +399,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td id="title-text-td" align="center" style="padding: 30px 30px 0px;">
+                                        <td id="title-text-td" align="center" style="padding: 30px 0px 0px 0px;">
                                             <h1 class="dark-subtext">Comece a sua jornada de negociação em cripto com confiança</h1>
                                         </td>
                                     </tr>
@@ -404,12 +409,7 @@
                         </tr>
                         <tr>
                             <td class="greeting-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">
-                                <p class="dark-subtext">{% if customer.firstName != blank %}
-                Olá {{customer.firstName | titlecase }},
-                {% else %}
-                Olá trader,
-                {% endif %}</p>
+                                <p class="dark-subtext">Olá,</p>
                             </td>
                         </tr>
                         <tr>
@@ -420,19 +420,19 @@
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 20px 30px 30px;" class="dark-black">
-                                <p class="dark-subtext"> O ebook "Como Negociar Criptomoedas com a Deriv", escrito pelo experiente trader Vince Stanzione, está repleto de dicas práticas e técnicas para guiá-lo através do mundo da negociação de criptomoedas com a Deriv.</p>
+                                <p class="dark-subtext">O ebook "Como Negociar Criptomoedas com a Deriv", escrito pelo experiente trader Vince Stanzione, está repleto de dicas práticas e técnicas para guiá-lo através do mundo da negociação de criptomoedas com a Deriv.</p>
                             </td>
                         </tr>
                         <tr>
                             <td align="center" class="dark-black">
                                 <!--[if (gte mso 9)|(IE)]>
-                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://static.deriv.com/marketing/ebook-crypto-en-hq.pdf" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#fff" fillcolor="#fff">
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://deriv.link/ebook-crypto-pt-hq" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#fff" fillcolor="#fff">
                                 <w:anchorlock/>
                                 <center style="color:#414652;font-family:sans-serif;font-size:14px;font-weight:bold;">Baixe seu ebook agora</center>
                                 </v:roundrect>
                                 <![endif]-->
                                 <!--[if !gte mso 9]><!-- -->
-                                <a class="button-white" href="https://static.deriv.com/marketing/ebook-crypto-pt-hq.pdf" target="_blank" style="color: #414652 !important;">Baixe seu ebook agora</a>
+                                <a class="button-white" href="https://deriv.link/ebook-crypto-pt-hq" target="_blank" style="color: #414652 !important;">Baixe seu ebook agora</a>
                                 <!--<![endif]-->
                             </td>
                         </tr>
@@ -512,6 +512,7 @@
                                 </a>
                             </td>
                         </tr>
+                        <!--[endif]-->
                         <tr>
                             <td id="footer-links-td" align="center" class="dark-black">
                                 <p><a href="https://deriv.com/pt/help-centre/">Centro de ajuda</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/pt/terms-and-conditions">Termos e Condições</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Segurança & privacidade</a></p>
