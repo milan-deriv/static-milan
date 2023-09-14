@@ -145,7 +145,7 @@
                         padding: 6px 20px;
                         border-radius: 16px;
                         font-size: 14px;
-                        font-weight: 500 !important;
+                        font-weight: 700 !important;
                         text-decoration: none;
                         text-align: center;
                         line-height: 20px;
@@ -380,6 +380,11 @@
                                                 <img src="https://static.deriv.com/email/images/header-2023/ppc-stocks-fr.png" width="600" alt="">
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <td bgcolor="#fff" cellpadding="0" cellspacing="0" align="center">
+                                                <h1 style="padding: 10px 0px 10px 0px; margin-top: 15px; margin-left: 30px; color: #414652 !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 25px; font-weight: 700; text-align: center; line-height: 1.2;">Bienvenue!</h1>
+                                            </td>
+                                        </tr>
                                     </table>
                                     <![endif]-->
                                     <!--[if !gte mso 9]><!-- -->
@@ -404,11 +409,7 @@
                         </tr>
                         <tr>
                             <td class="greeting-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">{% if customer.firstName != blank %}
-                Bonjour {{customer.firstName | titlecase }},
-                {% else %}
-                Bonjour! trader,
-                {% endif %}</p>
+                                <p class="dark-subtext">Bonjour</p>
                             </td>
                         </tr>
                         <tr>
@@ -452,13 +453,13 @@
                                 </td>
                             </tr>
                         </div>
-                        <tr>
-                            <td align="center" style="padding: 0px 120px 0px 120px;" class="mb-no-padding light-gray-bg paragraph-td">
+                        <!--<![endif]-->
+                        <tr class="light-gray-bg">
+                            <td align="center" style="padding: 0px 120px 0px 120px;" class="paragraph-td mb-no-padding">
                                 <p class="dark-subtext" style="font-weight: 700;">1. Connectez-vous à votre compte Deriv.<br/>
                                 </p>
                             </td>
                         </tr>
-                        <!--<![endif]-->
                         <tr class="mobile-hide">
                             <td align="center" class="light-gray-bg" style="padding: 30px 30px 0px 30px;">
                                 <input class="body-img" type="image" src="https://static.deriv.com/email/images/deriv-2023/ppc-welcome-2.png"/>
@@ -473,8 +474,8 @@
                             </tr>
                         </div>
                         <!--<![endif]-->
-                        <tr>
-                            <td align="center" style="padding: 0px 140px 0px 120px;" class="light-gray-bg mb-no-padding paragraph-td">
+                        <tr class="light-gray-bg">
+                            <td align="center" style="padding: 0px 140px 0px 120px;" class="paragraph-td mb-no-padding">
                                 <p class="dark-subtext" style="font-weight: 700;">2. Ajouter un compte démo Deriv MT5 Financier ou Financier STP.<br/>
                                 </p>
                             </td>
@@ -493,8 +494,8 @@
                             </tr>
                         </div>
                         <!--<![endif]-->
-                        <tr>
-                            <td align="center" style="padding: 0px 70px 20px 70px;" class="light-gray-bg mb-no-padding paragraph-td">
+                        <tr class="light-gray-bg">
+                            <td align="center" style="padding: 0px 70px 20px 70px;" class="paragraph-td mb-no-padding">
                                 <p class="dark-subtext" style="font-weight: 700;">3. Connectez-vous et commencez à trader. Disponible sur le terminal web, l'application de bureau et l'application mobile.<br/>
                                 </p>
                             </td>
@@ -570,6 +571,7 @@
                                 </a>
                             </td>
                         </tr>
+                        <!--[endif]-->
                         <tr>
                             <td id="footer-links-td" align="center" class="dark-black">
                                 <p><a href="https://www.deriv.com/fr/help-centre">Centre D'aide</a>&nbsp;&nbsp;&nbsp;<span class="dark-black">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/fr/terms-and-conditions/">Conditions générales</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Sécurité et confidentialité</a></p>
