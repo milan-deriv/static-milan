@@ -411,7 +411,7 @@
                         </tr>
                         <tr>
                             <td class="greeting-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Dear Partner,</p>
+                                <p class="dark-subtext">{% if customer.name != blank %} Dear {{customer.name | titlecase }}, {% else %} Dear partner, {% endif %}</p>
                             </td> 
                         </tr>
                         <tr>
