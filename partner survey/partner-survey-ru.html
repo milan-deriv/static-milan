@@ -35,7 +35,7 @@
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- ==== END OF META TAGS ==== -->
-        <title>Partner survey</title>
+        <title>Пройдите опрос и получите шанс выиграть приз.</title>
         <!-- ==== STYLES ==== -->
             <!-- Styles for Outlook: -->
                 <!--[if mso]>
@@ -145,7 +145,7 @@
                         border: 0;
                         border-radius: 16px;
                         font-size: 14px;
-                        font-weight: 500 !important;
+                        font-weight: 700 !important;
                         text-decoration: none;
                         text-align: center;
                         line-height: 22px;
@@ -384,7 +384,7 @@
                                         </tr>
                                         <tr>
                                             <td cellspacing="0">
-                                                <h1 style="padding: 0px 50px 0px 50px; margin-top: 15px; margin-left: 30px; color: #fff !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 32px; font-weight: 700; text-align: center; line-height: 1.2;" class="dark-subtext">Your feedback matters to us</h1>
+                                                <h1 style="padding: 0px 50px 0px 50px; margin-top: 15px; margin-left: 30px; color: #fff !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 32px; font-weight: 700; text-align: center; line-height: 1.2;" class="dark-subtext">Ваше мнение важно для нас</h1>
                                             </td>
                                         </tr>
                                     </table>
@@ -402,7 +402,7 @@
                                     </tr>
                                     <tr>
                                         <td id="title-text-td" align="center" style="padding: 0px;">
-                                            <h1 class="dark-subtext">Your feedback matters to us</h1>
+                                            <h1 class="dark-subtext">Ваше мнение важно для нас</h1>
                                         </td>
                                     </tr>
                                 </table>
@@ -411,17 +411,21 @@
                         </tr>
                         <tr>
                             <td class="greeting-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Dear Partner,</p>
+                                <p class="dark-subtext">{% if customer.name != blank %}
+                                    Уважаемый {{customer.name | titlecase }},
+                                    {% else %}
+                                    Уважаемый партнер,
+                                    {% endif %}</p>
                             </td> 
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">We would like to hear your feedback!</p>
+                                <p class="dark-subtext">Мы хотели бы узнать ваше мнение!</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Take a short survey and help us to further improve our partnership program and enter a draw where five lucky partners will have the opportunity to win a box with exclusive branded prizes!</p>
+                                <p class="dark-subtext">Пройдите небольшой опрос, ваши ответы помогут улучшить нашу партнерскую программу! Все респонденты будут участвовать в розыгрыше пяти наборов эксклюзивных фирменных призов!</p>
                             </td>
                         </tr>
                         <!--Gray table input 1-->
@@ -430,12 +434,12 @@
                                 <table class="dark-gray" style="width: 100%; margin: auto; background-color: #f2f3f4; border-radius: 15px;">
                                     <tr>
                                         <td class="paragraph-td" align="left" style="padding: 20px 30px 0px 30px;">
-                                            <p>The survey will only require 5 minutes of your time to complete, asking you for feedback on the following:</p>
+                                            <p>Для заполнения анкеты потребуется всего 5 минут. Пожалуйста, поделитесь своим мнением по следующим вопросам: </p>
                                             <ul>
-                                                <li class="dark-subtext">Your experience as a partner</li>
-                                                <li class="dark-subtext">Insights into understanding your clients' needs</li>
-                                                <li class="dark-subtext">Interactions with our team</li>
-                                                <li class="dark-subtext">Overall satisfaction with our partnership program.</li>
+                                                <li class="dark-subtext">Ваш опыт работы, как нашего партнера</li>
+                                                <li class="dark-subtext">Потребности ваших клиентов</li>
+                                                <li class="dark-subtext">Взаимодействие с нашей командой</li>
+                                                <li class="dark-subtext">Общая удовлетворенность нашей партнерской программой.</li>
                                             </ul>
                                         </td>
                                     </tr>
@@ -444,7 +448,7 @@
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 20px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">The survey will only be available until<strong> DD-MM-YYYY!</strong></p>
+                                <p class="dark-subtext">Опрос будет доступен только до<strong> DD-MM-YYYY!</strong></p>
                             </td>
                         </tr>
                         <tr>
@@ -452,30 +456,29 @@
                                 <!--[if (gte mso 9)|(IE)]>
                                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="XXXXX" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
                                 <w:anchorlock/>
-                                <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Start survey</center>
+                                <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Начать опрос</center>
                                 </v:roundrect>
                                 <![endif]-->
                                 <!--[if !gte mso 9]><!-- -->
-                                <a class="button" href="XXXXX" target="_blank">Start survey</a>
+                                <a class="button" href="XXXXX" target="_blank">Начать опрос</a>
                                 <!--<![endif]-->
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 20px 30px 30px 30px;" class="dark-black">
-                                <p class="dark-subtext">Keep in mind that your responses will be kept completely confidential and will only be used to improve our partnership program.</p>
+                                <p class="dark-subtext">Ваши ответы полностью конфиденциальны и будут использованы только для улучшения нашей партнерской программы.</p>
                                     <br>
-                                <p class="dark-subtext">Thank you for your time. We look forward to hearing your insights.</p>
+                                <p class="dark-subtext">Спасибо за уделенное время. Мы с нетерпением ждем вашего мнения.</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td-discl" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext"><strong>Disclaimer:</strong> By participating in this survey, you acknowledge and agree that your responses will be used exclusively to enhance our products, services, and partnership programmes. Your information will be kept confidential. The selection of winners will be at our sole discretion and will be chosen randomly. Chosen winners will be contacted via email to arrange a prize collection, consisting of branded Deriv merchandise.</p>
+                                <p class="dark-subtext"><strong>Отказ от ответственности:</strong> принимая участие в данном опросе, вы соглашаетесь с тем, что ваши ответы будут использованы исключительно для улучшения наших продуктов, услуг и партнерских программ. Ваша информация будет конфиденциальной. Выбор победителей будет произведен случайным образом. Механизм определения победителей будет выбран по нашему усмотрению. С победителями свяжутся по электронной почте, чтобы договориться о получении приза, состоящего из фирменных вещей Deriv.</p>
                             </td>
                         </tr>
-                        
                         <tr>
                             <td class="paragraph-td" align="center" style="padding: 20px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">If you have any questions, contact us:<br/>
+                                <p class="dark-subtext">Если у Вас возникнут какие-либо вопросы, пожалуйста, обращайтесь к нам:<br/>
                                     <a href="https://eu.deriv.com/contact_us/?is_livechat_open=true" target="_blank">Live chat</a> | <a href="https://api.whatsapp.com/send/?phone=35699578341&text&type=phone_number&app_absent=0" target="_blank">WhatsApp</a></p>
                             </td>
                         </tr>
@@ -541,8 +544,8 @@
                         <!--[endif]-->
                         <tr>
                             <td id="footer-links-td" align="center" class="dark-black">
-                                <p><a href="https://www.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-black">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
-                                <p id="unsubscribe-p" class="dark-black dark-subtext">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details">Unsubscribe</a></p>
+                                <p><a href="https://www.deriv.com/ru/help-centre">Поддержка</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/ru/terms-and-conditions/">Условия и положения</a>&nbsp;&nbsp;&nbsp;<span class="dark-black">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Безопасность и конфиденциальность</a></p>
+                                <p id="unsubscribe-p" class="dark-black dark-subtext">Больше не хотите получать эти письма? <a href="https://app.deriv.com/account/personal-details">Отписаться</a></p>
                             </td>
                         </tr>
                         <tr>
