@@ -35,7 +35,7 @@
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- ==== END OF META TAGS ==== -->
-        <title>Partner survey prize</title>
+        <title>É um dos premiados do inquérito aos parceiros da Deriv!</title>
         <!-- ==== STYLES ==== -->
             <!-- Styles for Outlook: -->
                 <!--[if mso]>
@@ -93,7 +93,7 @@
                 /* Applied to all tags */
                 *{ font-family: 'Ubuntu', Arial, sans-serif; color: #414652; }
                 p, a{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
-                h1{ padding: 0px 60px 0px; margin-top: 15px; color: #414652; font-size: 32px; font-weight: 700; text-align: center; line-height: 1.5; }
+                h1{ padding: 0px 50px 0px; margin-top: 15px; color: #414652; font-size: 32px; font-weight: 700; text-align: center; line-height: 1.5; }
                 h3{ padding: 0px 50px 0px; font-size: 18px; font-weight: 500; text-align: center; line-height: 1.2; }
                 body{
                     width: 100%;
@@ -145,7 +145,7 @@
                         border: 0;
                         border-radius: 16px;
                         font-size: 14px;
-                        font-weight: 500 !important;
+                        font-weight: 700 !important;
                         text-decoration: none;
                         text-align: center;
                         line-height: 22px;
@@ -377,7 +377,7 @@
                                         </tr>
                                         <tr>
                                             <td cellspacing="0">
-                                                <h1 style="padding: 0px 50px 0px 50px; margin-top: 15px; margin-left: 30px; color: #fff !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 32px; font-weight: 700; text-align: center; line-height: 1.2;" class="dark-subtext">Your Prize: (name of the prize)!</h1>
+                                                <h1 style="padding: 0px 50px 0px 50px; margin-top: 15px; margin-left: 30px; color: #fff !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 32px; font-weight: 700; text-align: center; line-height: 1.2;" class="dark-subtext">O seu prémio: (nome do prémio)!</h1>
                                             </td>
                                         </tr>
                                     </table>
@@ -395,7 +395,7 @@
                                     </tr>
                                     <tr>
                                         <td id="title-text-td" align="center" style="padding: 0px;">
-                                            <h1 class="dark-subtext">Your Prize: (name of the prize)!</h1>
+                                            <h1 class="dark-subtext">O seu prémio: (nome do prémio)!</h1>
                                         </td>
                                     </tr>
                                 </table>
@@ -404,27 +404,31 @@
                         </tr>
                         <tr>
                             <td class="greeting-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Hi [Partner Name], Congratulations!</p>
+                                <p class="dark-subtext">{% if customer.name != blank %}
+                                    Olá {{customer.name | titlecase }},
+                                    {% else %}
+                                    Olá parceiro,
+                                    {% endif %} Parabéns!</p>
                             </td> 
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">You have won the surprise box with branded items!</p>
+                                <p class="dark-subtext">Ganhou a caixa surpresa com artigos da marca Deriv!</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Please contact [ email ] for details.</p>
+                                <p class="dark-subtext">Para mais informações, contactar [ email ].</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 0px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Thank you for participating in our survey! Your feedback matters to us.</p>
+                                <p class="dark-subtext">Obrigado por participar no nosso inquérito! A sua opinião é importante para nós.</p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="paragraph-td" align="center" style="padding: 20px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">If you have any questions, contact us:<br/>
+                            <td class="paragraph-td" align="center" style="padding: 30px 30px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">Se tiver alguma dúvida, contacte-nos:<br/>
                                     <a href="https://eu.deriv.com/contact_us/?is_livechat_open=true" target="_blank">Live chat</a> | <a href="https://api.whatsapp.com/send/?phone=35699578341&text&type=phone_number&app_absent=0" target="_blank">WhatsApp</a></p>
                             </td>
                         </tr>
@@ -440,13 +444,13 @@
                     <!--[if (gte mso 9)|(IE)]>
                         <table id="ol-footer-table" align="center"><tr><td>
                             <center>
-                                <a href="https://www.facebook.com/derivdotcom" target="_blank">
+                                <a href="https://www.facebook.com/derivportugues" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/facebook-gray.png" height="20" width="20" alt="Deriv.com on Facebook" title="Deriv.com on Facebook"/>
                                 </a>&nbsp;&nbsp;
-                                <a href="https://www.instagram.com/deriv_official/" target="_blank">
+                                <a href="https://www.instagram.com/deriv_portugues/" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/instagram-gray.png" height="20" width="20" alt="Deriv.com on Instagram" title="Deriv.com on Instagram"/>
                                 </a>&nbsp;&nbsp;
-                                <a href="https://twitter.com/derivdotcom" target="_blank">
+                                <a href="https://twitter.com/DerivPortugues" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/x-gray.png" height="20" width="20" alt="Deriv.com on Twitter" title="Deriv.com on Twitter"/>
                                 </a>&nbsp;&nbsp;
                                 <a href="https://www.youtube.com/c/Derivdotcom" target="_blank">
@@ -466,13 +470,13 @@
                         <!-- SOCIAL -->
                         <tr>
                             <td id="footer-social-td" align="center" class="dark-black">
-                                <a href="https://www.facebook.com/derivdotcom" target="_blank">
+                                <a href="https://www.facebook.com/derivportugues" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/facebook-gray.png" style="height: 20px;" alt="Deriv.com on Facebook" title="Deriv.com on Facebook"/>
                                 </a>&nbsp;&nbsp;
-                                <a href="https://www.instagram.com/deriv_official/" target="_blank">
+                                <a href="https://www.instagram.com/deriv_portugues/" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/instagram-gray.png" style="height: 20px;" alt="Deriv.com on Instagram" title="Deriv.com on Instagram"/>
                                 </a>&nbsp;&nbsp;
-                                <a href="https://twitter.com/derivdotcom" target="_blank">
+                                <a href="https://twitter.com/DerivPortugues" target="_blank">
                                     <img src="https://static.deriv.com/email/images/icons/x-gray.png" style="height: 20px;" alt="Deriv.com on Twitter" title="Deriv.com on Twitter"/>
                                 </a>&nbsp;&nbsp;
                                 <a href="https://www.youtube.com/c/Derivdotcom" target="_blank">
@@ -486,15 +490,16 @@
                                 </a>
                             </td>
                         </tr>
+                        <!--[endif]-->
                         <tr>
                             <td id="footer-links-td" align="center" class="dark-black">
-                                <p><a href="https://www.deriv.com/help-centre">Help Centre</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://www.deriv.com/terms-and-conditions/">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="dark-gray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Security and privacy</a></p>
-                                <p id="unsubscribe-p" class="dark-black dark-subtext">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details">Unsubscribe</a></p>
+                                <p><a href="https://deriv.com/pt/help-centre/">Centro de ajuda</a>&nbsp;&nbsp;&nbsp;<span class="dark-black">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/pt/terms-and-conditions">Termos e Condições</a>&nbsp;&nbsp;&nbsp;<span class="dark-black">|</span>&nbsp;&nbsp;&nbsp;<a href="https://deriv.com/tnc/security-and-privacy.pdf">Segurança & privacidade</a></p>
+                                <p id="unsubscribe-p" class="dark-black dark-subtext">Não quer mais receber esses emails? <a href="https://app.deriv.com/account/personal-details">Cancelar inscrição</a>.</p>
                             </td>
                         </tr>
                         <tr>
                             <td id="f-logo" align="center" class="dark-black">
-                                <a href="https://www.deriv.com">
+                                <a href="https://www.deriv.com/pt">
                                     <!--[if (gte mso 9)|(IE)]>
                                         <img src="https://static.deriv.com/logos/deriv-gray-2023.png" alt="Deriv.com" height="20" title="Deriv.com">
                                     <![endif]-->
