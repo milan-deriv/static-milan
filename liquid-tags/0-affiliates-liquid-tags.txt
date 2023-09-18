@@ -39,3 +39,10 @@ Xin chào {{customer.name | titlecase }},
 {% else %}
 Chào đối tác,
 {% endif %}
+
+-- TH --
+{% if customer.name != blank %}
+สวัสดี คุณ {{customer.name | titlecase }},
+{% else %}
+สวัสดี คุณ partner,
+{% endif %}
