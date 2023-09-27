@@ -411,7 +411,11 @@
                         </tr>
                         <tr>
                             <td class="greeting-td" align="left" style="padding: 20px 30px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Olá </p>
+                                <p class="dark-subtext">{% if customer.firstName != blank %}
+                                    Olá {{customer.firstName | titlecase }},
+                                    {% else %}
+                                    Olá trader,
+                                    {% endif %}</p>
                             </td>
                         </tr>
                         <tr>

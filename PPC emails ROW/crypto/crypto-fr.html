@@ -409,7 +409,16 @@
                         </tr>
                         <tr>
                             <td class="paragraph-td" align="left" style="padding: 20px 40px 20px 30px;" class="dark-black">
-                                <p class="dark-subtext">Salut, Bienvenue à bord! Nous sommes ravis que vous commenciez votre expérience crypto avec nous.
+                                <p class="dark-subtext">{% if customer.firstName != blank %}
+                                    Salut {{customer.firstName | titlecase }},
+                                    {% else %}
+                                    Salut trader,
+                                    {% endif %}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="paragraph-td" align="left" style="padding: 0px 40px 20px 30px;" class="dark-black">
+                                <p class="dark-subtext">Bienvenue à bord! Nous sommes ravis que vous commenciez votre expérience crypto avec nous.
                                 </p>
                             </td>
                         </tr>
