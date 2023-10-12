@@ -68,9 +68,9 @@ input[type=text] { height: 40px !important; border: 1px solid #d6dadb; border-ra
 .button-google-33-mb, .button-fb-33-mb, .button-apple-33-mb { width: 94px !important; font-size: 0.75rem; margin: 1rem 0 0 5px; }
 .button-google-33:hover, .button-fb-33:hover, .button-apple-33:hover, .button-google-33-mb:hover, .button-fb-33-mb:hover, .button-apple-33-mb:hover { background-color: #eee; }
 
-#laptop-header{ width: 45%; vertical-align: top; margin-top: 150px;}
+#book-header{ width: 45%; vertical-align: top; margin-top: 1%;}
 
-#laptop-header img { max-height: 350px; width: auto; }
+#book-header img { max-height: 720px; width: auto; }
 
 .footer-logo{ height: 40px; width: auto; vertical-align: top; }
 .footer-sm{ height: 32px; width: auto; margin-right: 8px; }
@@ -78,7 +78,7 @@ input[type=text] { height: 40px !important; border: 1px solid #d6dadb; border-ra
 
 @media screen and (max-width: 1160px){ 
     h1{ font-size: 2.4rem !important;  padding: 10px 5% 20px 8% !important;}
-    #laptop-header{ margin-top: 100px !important;}
+    #book-header{ margin-top: 100px !important;}
     h2{ font-size: 2rem; }
     .css-1u5gq9f .container{ margin-top: 0px !important; }
     .cta-red{padding: 8px 16px; border-radius: 16px; max-width: 180px !important; text-align: center; margin: 0px; }
