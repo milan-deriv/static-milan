@@ -16,7 +16,7 @@ Hola, socio,
 {% if customer.name != blank %}
 Bonjour {{customer.name | titlecase }},
 {% else %}
-Salut Partenaire,
+Bonjour Partenaire,
 {% endif %}
 
 -- ID --
