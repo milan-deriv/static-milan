@@ -6,7 +6,7 @@
     .flex__item--md-12 .widget, .flex__item--xs-12 .widget {
     padding: 0 !important;
      }
-    .css-gs3g3v .container, .css-5zgbui .container {
+    .css-gs3g3v .container, .css-5zgbui .container, {
     max-width: 100vw !important;
     padding: 0px 5% !important;
     } 
@@ -79,7 +79,7 @@
                     
                     #tablet-header{ width: 40%; vertical-align: top; margin-top: 1%;}
                     #white-box-header{ width: 60%; vertical-align: top; margin-top: 0.5%;}
-                    #first-text-box {max-width: 80% !important;}
+                    #first-text-box, #text-paragraph {max-width: 80% !important;}
                     #tablet-header img { max-height: 680px; width: auto; }
                     #white-box-header{ max-height: 700px; width: auto;}
                     
@@ -107,7 +107,7 @@
                         .css-1u5gq9f .container{ margin-top: 0px !important; }
                         .cta-red{padding: 8px 16px; border-radius: 16px; max-width: 180px !important; text-align: center; margin: 0px; }
                         .flex--12 .container {max-width: 100vw !important; margin: 0 !important;}
-                        #first-text-box {max-width: 100% !important;}
+                        #first-text-box, #text-paragraph {max-width: 100% !important;}
                         #booktextboxx {margin-left: 15% !important; padding-right: 10% !important;}
                         #vector {height:7px !important; margin: 0.2rem 0.4rem 0 0 !important;}
                         .button-book { gap: 2px; padding: 5px 5px; border-radius: 16px; font-size: 0.8rem; height: 1.8rem; width: 30% !important; margin: 1rem auto 1rem 1rem; font-weight: 700; }
@@ -131,8 +131,4 @@
                         .css-13hpov6 .container {margin: 0 !important; padding: auto 0 auto 0 !important;}
 
                     }
-                    https://lh3.googleusercontent.com/i-m1wu1m7j13MI5gWGYz3tmzfhaDwLEjwMHTDhQIUgWQF8TPB_vypobUIwDAtaNeKmoJSd3q-nRtJpog4STO2aOv2jQaLq16vzc=w242  mobile
-
-https://lh3.googleusercontent.com/RWQ8JHhgfqZCHmkWAlyl1c6lR1ZjzIRqTB82K_0pofW2bvU2XtahwPz6ponnxT-kh68p07nxSZTr-vRwa89LWdiHnU31gm_DUHY=w1064  big
-
-https://lh3.googleusercontent.com/MTcPJgka1q4YGxegUarCHi5C9ZPygJVi8W3g18lrLFXe-uXUzYWJ6Rg8phi1Y3OZGFiM3zmtqL30mKMTQqsdfCWxP8bvE0Lewpf1=w590   small
+                    
