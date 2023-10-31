@@ -408,7 +408,24 @@
                                         <td class="paragraph-td" align="left" style="padding: 20px 25px 20px 25px;">
                                             <p><strong>Here's how it works:</strong></p>
                                             <ol>
-                                                <li class="dark-subtext">Deposit at least XX USDC to your Airtm e-wallet</li>
+                                                <li class="dark-subtext">Deposit at least {% if customer.country == "Colombia" %}80
+                                                    {% endif %}
+                                                    {% if customer.country == "Bolivia" %}60
+                                                    {% endif %}
+                                                    {% if customer.country == "Pakistan" %}30
+                                                    {% endif %}
+                                                    {% if customer.country == "Ecuador" %}80
+                                                    {% endif %}
+                                                    {% if customer.country == "Bangladesh" %}30
+                                                    {% endif %}
+                                                    {% if customer.country == "Dominican Republic" %}40
+                                                    {% endif %}
+                                                    {% if customer.country == "India" %}90
+                                                    {% endif %}
+                                                    {% if customer.country == "Costa Rica" %}30
+                                                    {% endif %}
+                                                    {% if customer.country == "Zimbabwe" %}80
+                                                    {% endif %}  USDC to your Airtm e-wallet</li>
                                                 <li class="dark-subtext">Transfer at least 15 USD to your Deriv account</li>
                                                 <li class="dark-subtext">Receive a 3 USDC cashback to your Airtm e-wallet!</li>
                                             </ol>
