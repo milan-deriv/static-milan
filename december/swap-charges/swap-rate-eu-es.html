@@ -382,7 +382,7 @@
                     </tr>
                     <tr>
                         <td class="greeting-td dark-black" align="left" style="padding: 30px 30px 0px 30px;">
-                            <p class="dark-subtext">Hola [client's name],</p>
+                            <p class="dark-subtext">Hola {{ Profile.firstName | default:"trader" }},</p>
                         </td>
                     </tr>
                     <tr>
@@ -399,7 +399,7 @@
                                         <div style="width: 95%; margin: auto; padding: 10px 0px 0px;">
                                             <tr>
                                                 <td class="paragraph-td" align="left" style="padding: 20px 20px 0px 25px;">
-                                                    <p><strong>Efectivo [Dd Mmm Yyyy]</strong></p>
+                                                    <p><strong>Efectivo 22/12/2023</strong></p>
                                                     <ul>
                                                         <li class="dark-subtext" id="white">Se aplicarán tasas de swap uniformes para nuestros índices derivados.</li>
                                                         <li class="dark-subtext" id="white">Los gastos de swap ya no se triplicarán los lunes. </li>
@@ -672,7 +672,7 @@
                     </tr>
                     <tr>
                         <td class="dark-black" align="left" style="padding: 0px 20px 0px 30px;">
-                            <p class="dark-subtext">Le recomendamos que revise su estrategia de operación y los requisitos de su cuenta antes de que se produzcan estos cambios el <strong>[DD Mmm YYYY]</strong>.</p>
+                            <p class="dark-subtext">Le recomendamos que revise su estrategia de operación y los requisitos de su cuenta antes de que se produzcan estos cambios el <strong>22/12/2023</strong>.</p>
                         </td>
                     </tr>
                     <tr>
