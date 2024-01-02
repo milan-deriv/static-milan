@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
-<head><!-- ==== META TAGS ==== --><!-- Makes IE displays a webpage in Edge mode --><!-- Character encoding --><!-- Set 100% scale, allow zoom --><!-- Define supported color schemes --><!-- Remove default blue colour from links so you can style your own --><!-- Prevent iOS 11 from automatically scaling your email --><!-- FONTS: --><!-- Ubuntu 400: -->
+<head>
+    <!-- ==== META TAGS ==== --><!-- Makes IE displays a webpage in Edge mode --><!-- Character encoding --><!-- Set 100% scale, allow zoom --><!-- Define supported color schemes --><!-- Remove default blue colour from links so you can style your own --><!-- Prevent iOS 11 from automatically scaling your email --><!-- FONTS: --><!-- Ubuntu 400: -->
 	<link href="https://fonts.googleapis.com" rel="preconnect" />
 	<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&amp;display=swap" rel="stylesheet" /><!-- Ubuntu 500: -->
@@ -415,24 +416,33 @@
                     <tr>
                         <td align="center" class="trustpilot-td light" >
                             <!-- Trust widget -->
-                            <div style="float: center; width: 100%; height:auto;">
-                                <!-- TrustBox script -->
-                                <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-                                <!-- End TrustBox script -->
                                 <!-- TrustBox widget - Mini -->
-                                <div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="5ed4c8a9f74f310001f51bf7" data-style-height="150px" data-style-width="auto" data-theme="light" data-tags="SelectedReview">
-                                <a href="https://www.trustpilot.com/review/deriv.com" target="_blank" rel="noopener">Trustpilot</a>
+                                <div>
+                                    <p style="font-family: Arial, Arial Black, Tahoma, Trebuchet MS, Verdana, sans-serif; font-size: 13px; color: #3d3d3d; text-decoration: none;">
+                                        <a href="https://www.trustpilot.com/review/deriv.com?utm_medium=Trustbox&utm_source=EmailSignature1" target="_blank" rel="noopener noreferrer" style="text-decoration:none;text-underline: none;">
+                                          <img src="https://emailsignature.trustpilot.com/brand/s/1/logo.png" border="0" width="150" height="auto" style="max-width: 150px;width: 100%;border: none;" alt="Trustpilot Logo"><br/>
+                                          <img src="https://emailsignature.trustpilot.com/signature/en-US/1/5ed4c8a9f74f310001f51bf7/stars.png" border="0" width="260px" height="auto" style="max-width: 260px;max-height: auto;width: 100%;border: none;" alt="Trustpilot Stars"><br/>
+                                          <img src="https://emailsignature.trustpilot.com/signature/en-US/2/5ed4c8a9f74f310001f51bf7/text.png" border="0" height="18" style="max-height: 18px;margin:0;padding:10px 0px 0px;width:auto;border: none;" alt="Trustpilot rating">
+                                          <img src="https://emailsignature.trustpilot.com/newsletter/en-US/1/5ed4c8a9f74f310001f51bf7/text2.png" border="0" height="18" style="max-height: 18px;margin:0;padding:10px 0px 0px;width:auto;border: none;" alt="number of reviews"/>
+                                        </a>
+                                      </p>
                                 </div>
                                 <!-- End TrustBox widget - Mini-->
-                            </div>
                             <!-- End of Trust widget -->
                         </td>
                     </tr>
                     <!-- End of Trustpilot -->
-                    <tr>
+                    <tr class="mobile-hide">
                         <td class="paragraph-td dark-black" >
                             <div style="width: 100%; margin: auto; padding: 40px 0px 10px; text-align:center;">
                                 <img src="https://static.deriv.com/email/images/design-2023/awards-group.png" alt="" style="height: 147px;">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="display: none;" class="mb-visible-block" align="center">
+                        <td class="paragraph-td dark-black" >
+                            <div style="width: 100%; margin: auto; padding: 40px 0px 10px; text-align:center;">
+                                <img src="https://static.deriv.com/email/images/design-2023/awards-group.png" alt="" style="height: 125px;">
                             </div>
                         </td>
                     </tr>
@@ -445,8 +455,8 @@
                                         <h3>Launching various new offerings</h3>
                                     </td>
                                 </tr>
-                                <!--Table options input-->
-                                <tr>
+                                <!--Table options input desktop-->
+                                <tr class="mobile-hide">
                                     <td align="center" style="padding: 0px 0px 40px;">
                                         <table style="width: 90%; margin: auto; background-color: #FFFFFF; border-radius: 16px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);" class="dark-gray">
                                             <tr>
@@ -478,9 +488,40 @@
                                         </table>
                                     </td>
                                 </tr>
-                                <!--Table options closing-->
-                                <!--Table derived indices input-->
-                                <tr>
+                                <!--Table options closing desktop-->
+                                <!--Table options input mobile-->
+                                <tr style="display: none;" class="mb-visible-block" align="center">
+                                    <td align="center" style="padding: 0px 0px 40px;">
+                                        <table style="width: 420px; margin: auto; background-color: #FFFFFF; border-radius: 16px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);" class="dark-gray">
+                                            <tr>
+                                                <td class="paragraph-td" align="center" style="padding: 10px 0px;" class="dark-black" colspan="3">
+                                                    <p style="padding: 10px 0px;"><strong>Options</strong></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%; max-width: 180px; padding: 10px 0px;" align="center">
+                                                    <img src="https://static.deriv.com/email/images/icons-2023/vanilla-icon.png" alt="" style="height: auto; width:30px;">
+                                                </td>
+                                                <td style="width: 50%; padding: 10px 0px 5px; vertical-align: top !important;" align="center"><a href="https://deriv.com/trade-types/options/vanilla-options/" target="_blank" >Vanilla options</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%; max-width: 180px; padding: 10px 0px;" align="center">
+                                                    <img src="https://static.deriv.com/email/images/icons-2023/accumulators-icon.png" alt="" style="max-height: auto; width: 30px;">
+                                                    <td style="width: 50%; padding: 10px 0px 5px; vertical-align: top !important;" align="center"><a href="https://deriv.com/trade-types/options/accumulator-options/" target="_blank" >Accumulator options</a></td>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%; max-width: 180px; padding: 10px 0px 20px;" align="center">
+                                                    <img src="https://static.deriv.com/email/images/icons-2023/turbo-icon.png" alt="" style="max-height: auto; width: 30px;">
+                                                </td>
+                                                <td style="width: 50%; padding: 10px 0px 5px; vertical-align: top !important;" align="center"><a href="https://deriv.com/trade-types/options/turbo-options/" target="_blank" >Turbo options</a></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!--Table options closing mobile-->
+                                <!--Table derived indices input desktop-->
+                                <tr class="mobile-hide">
                                     <td align="center" style="padding: 0px 0px 40px;">
                                         <table style="width: 90%; margin: auto; background-color: #FFFFFF; border-radius: 16px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);" class="dark-gray">
                                             <tr>
@@ -503,9 +544,34 @@
                                         </table>
                                     </td>
                                 </tr>
-                                <!--Table derived indices closing-->
-                                <!--Table CFD platform input-->
-                                <tr>
+                                <!--Table derived indices closing desktop-->
+                                <!--Table derived indices input mobile-->
+                                <tr style="display: none;" class="mb-visible-block" align="center">
+                                    <td align="center" style="padding: 0px 0px 40px;">
+                                        <table style="width: 420px; margin: auto; background-color: #FFFFFF; border-radius: 16px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);" class="dark-gray">
+                                            <tr>
+                                                <td class="paragraph-td" align="center" style="padding: 10px 0px;" class="dark-black" colspan="2">
+                                                    <p class="dark-subtext" style="padding: 10px 0px 10px;"><strong>Derived indices</strong></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%; max-width: 30px; padding: 10px 0px;" align="center">
+                                                    <img src="https://static.deriv.com/email/images/icons-2023/dex-icon.png" alt="" style="height: auto; width:30px;">
+                                                </td>
+                                                <td style="width: 50%; padding: 10px 0px 20px; vertical-align: top !important;" align="center"><a href="https://blog.deriv.com/posts/new-synthetic-indices-offerings-deriv/" target="_blank" >DEX Indices</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 50%; max-width: 30px; padding: 10px 0px 20px;" align="center">
+                                                    <img src="https://static.deriv.com/email/images/icons-2023/driftswitch-icon.png" alt="" style="max-height: auto; width: 30px;">
+                                                </td>
+                                                <td style="width: 50%; padding: 10px 0px 20px; vertical-align: top !important;" align="center"><a href="https://blog.deriv.com/posts/new-synthetic-indices-offerings-deriv/" target="_blank" >Drift Switching Indices</a></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!--Table derived indices closing mobile-->
+                                <!--Table CFD platform input desktop-->
+                                <tr class="mobile-hide">
                                     <td align="center" style="padding: 0px 0px 10px;">
                                         <table style="width: 90%; margin: auto; background-color: #FFFFFF; border-radius: 16px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);" class="dark-gray">
                                             <tr>
@@ -524,10 +590,31 @@
                                         </table>
                                     </td>
                                 </tr>
-                                <!--Table CFD platform  closing-->
+                                <!--Table CFD platform closing desktop-->
+                                <!--Table CFD platform input mobile-->
+                                <tr style="display: none;" class="mb-visible-block" align="center">
+                                    <td align="center" style="padding: 0px 0px 10px;">
+                                        <table style="width: 420px; margin: auto; background-color: #FFFFFF; border-radius: 16px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);" class="dark-gray">
+                                            <tr>
+                                                <td class="paragraph-td" align="center" style="padding: 10px 0px ;" class="dark-black" colspan="2">
+                                                    <p class="dark-subtext" style="padding: 10px 0px 10px;"><strong>CFD platforms</strong></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 100%; max-width: 80px;" align="center">
+                                                    <img src="https://static.deriv.com/email/images/icons-2023/ctrader-icon.png" alt="" style="height: auto; width:70px;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 100%; padding: 20px 0px 20px; vertical-align: top !important;" align="center"><a href="https://deriv.com/deriv-ctrader/" target="_blank" >Deriv cTrader – our newest CFD copy trading platform</a></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!--Table CFD platform closing mobile-->
                                 <tr>
                                     <td class="paragraph-td" align="left" style="padding: 0px 30px 20px;" class="dark-black" colspan="2">
-                                        <p class="dark-subtext" style="padding: 10px 0px 10px;">We couldn’t have done it without you, so we’d like to say a big THANK YOU for making our 2023!</p>
+                                        <p class="dark-subtext" style="padding: 10px 0px 10px;">We couldn’t have done it without you, so we’d like to say a big <strong>THANK YOU</strong> for making our 2023 successful!</p>
                                     </td>
                                 </tr>
                             </table>                               
@@ -548,7 +635,8 @@
                                         <p class="dark-subtext" style="padding: 10px 0px 10px;">As we close the year on a high note, our final updates include:</p>
                                     </td>
                                 </tr>
-                                <tr>
+                                <!--December input desktop-->
+                                <tr class="mobile-hide">
                                     <td align="center" style="padding: 0px 15px 40px 30px; width: 50%; vertical-align: top;">
                                         <table style="max-width: 262; height: 336px; background-color: #F6F7F8; border-radius: 8px;" class="dark-gray">
                                             <tr style="vertical-align: top;">
@@ -598,12 +686,67 @@
                                         </table>
                                     </td>
                                 </tr> 
+                                <!--December closing desktop-->
+                                <!--December input mobile-->
+                                <tr style="display: none;" class="mb-visible-block" align="center">
+                                    <td align="center" style="padding: 0px 20px 40px; width: 50%; vertical-align: top;">
+                                        <table style="max-width: 262; height: 336px; background-color: #F6F7F8; border-radius: 8px;" class="dark-gray">
+                                            <tr style="vertical-align: top;">
+                                                <td align="center">
+                                                    <img src="https://static.deriv.com/email/images/design-2023/options.png" alt="" style="height: auto; width: 100%; border-radius: 8px 8px 0px 0px; vertical-align: top;">
+                                                    <p class="dark-subtext" style="padding: 0px 0px 0px;"><strong>A new type of option to trade</strong></p>
+                                                    <p class="text-box dark-subtext" style="padding: 0px 10px 10px;">Use your demo account to trade <strong>turbo options</strong> on Deriv Trader.</p>
+                                                </td>
+                                            </tr>
+                                            <tr style="vertical-align: top;">
+                                                <td align="center" style="padding: 10px 30px 30px 30px; vertical-align: top;" class="dark-gray">
+                                                    <!--[if (gte mso 9)|(IE)]>
+                                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://app.deriv.com/appstore/traders-hub" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
+                                                    <w:anchorlock/>
+                                                    <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Try it out</center>
+                                                    </v:roundrect>
+                                                    <![endif]-->
+                                                    <!--[if !gte mso 9]><!-- -->
+                                                    <a class="button-red" href="https://app.deriv.com/appstore/traders-hub" target="_blank">Try it out</output></a>
+                                                    <!--<![endif]-->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr style="display: none;" class="mb-visible-block" align="center">
+                                    <td align="center" style="padding: 0px 20px 40px; width: 50%; vertical-align: top;">
+                                        <table style="max-width: 262; height: 336px; background-color: #F6F7F8; border-radius: 8px;" class="dark-gray ">
+                                            <tr style="vertical-align: top;">
+                                                <td align="center">
+                                                    <img src="https://static.deriv.com/email/images/design-2023/baloon.png" alt="" style="height: auto; width: 100%; border-radius: 8px 8px 0px 0px; vertical-align: top;">
+                                                    <p class="dark-subtext" style="padding: 0px 0px 0px;"><strong>A new look for your charts </strong></p>
+                                                    <p class="text-box dark-subtext" style="padding: 0px 10px 6px;"><strong>Deriv Trader charts</strong> have an enhanced look and user-friendly features.</p>
+                                                </td>
+                                            </tr>
+                                            <tr style="vertical-align: top;">
+                                                <td align="center" style="padding: 0px 30px 30px 30px; vertical-align: top;" class="dark-gray">
+                                                    <!--[if (gte mso 9)|(IE)]>
+                                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://blog.deriv.com/posts/new-charts-on-the-deriv-trader-app/" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
+                                                    <w:anchorlock/>
+                                                    <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Learn more</center>
+                                                    </v:roundrect>
+                                                    <![endif]-->
+                                                    <!--[if !gte mso 9]><!-- -->
+                                                    <a class="button-red" href="https://blog.deriv.com/posts/new-charts-on-the-deriv-trader-app/" target="_blank">Learn more</output></a>
+                                                    <!--<![endif]-->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr> 
+                                <!--December closing mobile-->
                             </table>                               
                         </td>
                     </tr>
                     <!--Table white December’s product updates close-->
-                    <!--Table white Stay ahead input-->
-                    <tr>
+                    <!--Table white Stay ahead input desktop-->
+                    <tr class="mobile-hide">
                         <td class="dark-black mb-less-padding" align="center">
                             <table class="dark-black" style="width: 100%; margin: auto;">
                                 <tr>
@@ -626,9 +769,38 @@
                             </table>                               
                         </td>
                     </tr>
-                    <!--Table white Stay ahead closing-->
-                    <!--Table solana input-->
-                    <tr>
+                    <!--Table white Stay ahead closing desktop-->
+                    <!--Table white Stay ahead input mobile-->
+                    <tr style="display: none;" class="mb-visible-block" align="center">
+                        <td class="dark-black mb-less-padding" align="center">
+                            <table class="dark-black" style="width: 100%; margin: auto;">
+                                <tr>
+                                    <td align="center" style="padding: 0px 0px 10px;">
+                                        <table style="width: 100%; margin: auto;" class="dark-black">
+                                            <tr>
+                                                <td class="paragraph-td" align="center" class="dark-black" colspan="2">
+                                                    <h3 style="padding: 0px 0px 10px !important;">Stay ahead with on-the-go updates</h3>
+                                                </td>
+                                            </tr>
+                                            <tr align="center">
+                                                <td style="width: 100%; max-width: 450px;" >
+                                                    <a href="http://blog.deriv.com/videos/us-interest-rates-ecb-boe-data-crypto-boj-news/" target="_blank"><img src="https://static.deriv.com/email/images/design-2023/market-radar-2023.png" alt="" style="height: auto; width: 440px; border-radius: 8px;"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 100%; max-width: 450px;" >
+                                                    <a href="https://blog.deriv.com/videos/a-guide-to-deriv-ctrader/" target="_blank"> <img src="https://static.deriv.com/email/images/design-2023/ctrader-guide.png" alt="" style="height: auto; width: 440px; border-radius: 8px;"></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>                               
+                        </td>
+                    </tr>
+                    <!--Table white Stay ahead closing mobile-->
+                    <!--Table solana input desktop-->
+                    <tr class="mobile-hide">
                         <td align="center" style="padding: 10px 0px 20px;">
                             <table style="width: 100%; margin: auto; background-color: #F6F7F8;" class="dark-gray">
                                 <tr>
@@ -660,7 +832,41 @@
                             </table>
                         </td>
                     </tr>
-                    <!--Table solana closing-->
+                    <!--Table solana closing desktop-->
+                    <!--Table solana input mobile-->
+                    <tr style="display: none;" class="mb-visible-block" align="center">
+                        <td align="center" style="padding: 10px 0px 20px;">
+                            <table style="width: 100%; margin: auto; background-color: #F6F7F8;" class="dark-gray">
+                                <tr>
+                                    <td class="paragraph-td" align="center" class="dark-black">
+                                        <h3 style="padding: 20px 0px 10px !important;">Deriv Cashier updates</h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 100%; max-width: 100px;" align="center">
+                                        <img src="https://static.deriv.com/email/images/design-2023/solana-sol-logo.png" alt="" style="height: auto; width:100px;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%; padding: 20px 40px 20px !important; vertical-align: top !important;" align="center">Enjoy crypto-to-fiat transactions on your Deriv account using Solana, currently ranked among the top cryptocurrencies.</td>
+                                </tr>
+                                <tr style="vertical-align: top;">
+                                    <td align="center" style="padding: 10px 30px 40px 30px; vertical-align: top;" class="dark-gray">
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://app.deriv.com/cashier/deposit" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
+                                        <w:anchorlock/>
+                                        <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Go to cashier</center>
+                                        </v:roundrect>
+                                        <![endif]-->
+                                        <!--[if !gte mso 9]><!-- -->
+                                        <a class="button-red" href="https://app.deriv.com/cashier/deposit" target="_blank">Go to cashier</output></a>
+                                        <!--<![endif]-->
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!--Table solana closing mobile-->
                     <tr>
                         <td class="paragraph-td" align="left" style="padding: 0px 30px 30px 30px;" class="dark-black">
                             <p class="dark-subtext">Stay up-to-date with our products, trading tips, and industry insights on Deriv Blog.</p>
