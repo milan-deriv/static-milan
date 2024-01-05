@@ -366,7 +366,11 @@
                     </tr>
                     <tr>
                         <td class="greeting-td dark-black" align="left" style="padding: 30px 30px 0px 30px;">
-                            <p class="dark-subtext">Hi (partner’s name),</p>
+                            <p class="dark-subtext">{% if customer.name != blank %}
+                                Hi {{customer.name | titlecase }},
+                                {% else %}
+                                Hello partner,
+                                {% endif %}</p>
                         </td>
                     </tr>
                     <tr>
