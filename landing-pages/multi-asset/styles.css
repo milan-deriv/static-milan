@@ -2,6 +2,9 @@
     max-width: 100vw !important;
     padding: 0 0 !important;
     margin: 1% 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
      }
     .flex__item--md-12 .widget, .flex__item--xs-12 .widget {
     padding: 0 !important;
@@ -80,7 +83,7 @@
                     #tablet-header{ width: 40%; vertical-align: top; margin-top: 1%;}
                     #white-box-header{ width: 60%; vertical-align: top; margin-top: 0.5%;}
                     #first-text-box, #text-paragraph {max-width: 80% !important;}
-                    #tablet-header img { max-height: 680px; width: auto; }
+                    #tablet-header img { max-height: 40vw; width: auto; }
                     #white-box-header{ max-height: 700px; width: auto;}
                     
                     .footer-logo{ height: 40px; width: auto; vertical-align: top; }
