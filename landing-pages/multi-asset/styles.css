@@ -52,17 +52,10 @@
                     #pEmail_n1, #pAgree_n1, #pEmail_n2, #pAgree_n2{ color: #ff444f !important; font-size: 12px; display: none; margin: 0; }
                     #pEmail_n1, #pEmail_n2{ margin: -19px 0 15px; }
                     
-                    .cta{ background-color: #fff; padding: 10px 20px; border-radius: 16px; width: 180px; text-align: center; margin: 20px 12%; font-size: 0.8rem; font-family: 'IBM Plex Sans', 'Ubuntu', Arial, sans-serif; font-weight: 700;}
-                    .cta-red{background-color: #ff444f; padding: 10px 20px; border-radius: 16px; width: 180px; text-align: center; margin: 20px; font-size: 0.8rem; font-family: 'IBM Plex Sans', 'Ubuntu', Arial, sans-serif; font-weight: 700; color: #fff;}
-                    
                     /* Buttons */
-                    .button, .button-signup { display: flex; gap: 5px; padding: 10px 25px; justify-content: center; align-items: center; border-radius: 16px; font-size: 1rem; cursor: pointer; height: 2.6rem; width: 90% !important; margin: 1.2rem auto 1rem; font-weight: 700; }
-                    .button-book { display: flex; gap: 5px; padding: 10px 5px; justify-content: center; align-items: center; border-radius: 16px; font-size: 1rem; cursor: pointer; height: 2.6rem; width: 25% !important; margin: 3rem auto 1rem 0; font-weight: 700; }
-                    .button-google, .button-fb, .button-apple { display: inline-flex; gap: 5px; padding: 10px 10px; justify-content: center; align-items: center; border-radius: 16px; font-size: 1rem; cursor: pointer; height: 2.6rem; width: 29% !important; margin: 1rem 0.5rem 1.2rem; font-weight: 700; }
+                    .button, .button-signup, .button-google, .button-fb, .button-apple { display: flex; gap: 5px; padding: 10px 25px; justify-content: center; align-items: center; border-radius: 16px; font-size: 1rem; cursor: pointer; height: 2.6rem; width: 90% !important; margin: 1rem auto; font-weight: 700; }
                     .button-signup { background-color: #ff444f; color: #fff; border: 1px solid #ff444f; }
                     .button-signup:hover { background-color: #d43e47; }
-                    .button-book { background-color: #ff444f; color: #fff; border: 1px solid #ff444f; }
-                    .button-book:hover { background-color: #d43e47; }
                     .button-google { background-color: #fff; border: 0.5px solid #414652; }
                     .button-google span{ color: #414652; }
                     .button-google:hover { background-color: #eee; }
@@ -75,7 +68,7 @@
                     .button-signup:active, .button-google:active, .button-fb:active { transition: width 0.1s, height 0.1s; height: 37px; width: 113px; }
                     .button-google img, .button-fb img, .button-apple img{ width: 24px; }
                     
-                    .button-google-33, .button-google-33-mb, .button-fb-33, .button-fb-33-mb, .button-apple-33, .button-apple-33-mb { height: 2.6rem;  padding: 10px 10px; background-color: #fff; border: 0.5px solid #414652; border-radius: 16px; font-weight: 700; justify-content: center; align-items: center; display: inline-flex; gap: 5px; cursor: pointer;float: center; }
+                    .button-google-33, .button-google-33-mb, .button-fb-33, .button-fb-33-mb, .button-apple-33, .button-apple-33-mb { height: 2.6rem;  padding: 10px 25px; background-color: #fff; border: 0.5px solid #414652; border-radius: 16px; font-weight: 700; justify-content: center; align-items: center; display: flex; gap: 5px; cursor: pointer;float: left; }
                     .button-google-33, .button-fb-33, .button-apple-33 { width: 105px !important; font-size: 0.8rem; margin: 1rem 0 0 10px; }
                     .button-google-33-mb, .button-fb-33-mb, .button-apple-33-mb { width: 94px !important; font-size: 0.75rem; margin: 1rem 0 0 5px; }
                     .button-google-33:hover, .button-fb-33:hover, .button-apple-33:hover, .button-google-33-mb:hover, .button-fb-33-mb:hover, .button-apple-33-mb:hover { background-color: #eee; }
