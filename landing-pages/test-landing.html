@@ -35,20 +35,20 @@
                     }
                     #red-white-box {
                         max-width: 90vw;
-                        height: 42vw;
+                        height: 43vw;
                         background: linear-gradient(100deg, #ff444f 40%, #ffffff 0%);
                         border-radius: 8px;
                         display: flex; 
                         align-items: center; 
                         justify-content:space-evenly;
                         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 8px 16px 0 rgba(0, 0, 0, 0.08);
-                        margin: 0.5% 2.5%;
+                        margin: 0.5% 5%;
                     }
                     #red-gay {
-                        display: flex;
-                        float: left; 
+                        
+                        position: fixed;
                         width: 50%;
-                        padding:4.9% 0 0 5%;
+                        padding:5.4% 0 0 0%;
                         justify-content: space-evenly;
                     }
                     #red-gay img {
@@ -71,9 +71,54 @@
                     <img src="https://lh3.googleusercontent.com/IKf3D1jXKNZKPfkLhsOuhxPP4QrDD9MpgEO7N3XTjFiFCoThdS7BCoxac9ET5q-D3UZsrdIzJEJcZhhkQfSkXQU2RTNZw_gChE8=w1064" alt="">
                 </div>
             </div>
-            <div id="tablet-header" style="float: left; padding: 5% 0 0 0; ">
-                <div style="width: 800px; display: flex !important;">
-                    <img src="https://lh3.googleusercontent.com/IKf3D1jXKNZKPfkLhsOuhxPP4QrDD9MpgEO7N3XTjFiFCoThdS7BCoxac9ET5q-D3UZsrdIzJEJcZhhkQfSkXQU2RTNZw_gChE8=w1064" alt="" >
+            <div id="white-box" style="width:50%; margin: 4% 0px; float: right;">
+                <div id="white-box-header" style="width: 490px;  background-color: #fff; border: 0px; border-radius: 10px; padding: 1%;  margin-bottom: 25px; margin-left: 15%; box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 8px 16px 0 rgba(0, 0, 0, 0.08);">
+                    <h2 style="margin: 2rem 1.2rem 0;">Sign up</h2>
+                    <p style="margin: 0.5rem 1.2rem;">At Deriv, you have the flexibility to trade a wide array of assets. From 50+ Forex currency pairs to Stocks & Indices,  Commodities,  Cryptocurrencies, and exclusive Synthetics, opportunities are limitless.</p>
+                    <input id="email_input_n1" type="text" placeholder="Email" style="width: 90%; padding: 0px 0px 0px 1rem;"/><br/>
+                    <p id="pEmail_n1" style="margin: 0.5rem 1.2rem;">Please enter a valid email</p>
+                    <input type="checkbox" id="ckbx_n1" style="margin: 1rem 0.2rem 0px 1.5rem;"/>
+                    <label  for="ckbx_n1">
+                        I agree to the <a href="https://eu.deriv.com/terms-and-conditions/#clients" target="_blank" style="color: #ff444f !important;">terms and conditions</a>.
+                    </label><br/>
+                    <p id="pAgree_n1">Please tick the check box for signup</p>
+                    <button id="myBtn_n1" class="button-signup" type="button">Create demo account</button>
+                    <p class="disclamer" style="color: #999; padding: 0.5rem 1.2rem; font-size: 0.8rem; line-height: 1.2;">
+                        By pressing "Create demo account", you confirm that you are 18 or older. You understand that we may use your email address to send you information about Deriv products and services as well as market news. You can always unsubscribe from these emails in your account settings. For more information, please take a look at Deriv's <a href="https://deriv.com/tnc/security-and-privacy.pdf" style="color: #ff444f !important;">Security and privacy</a>.
+                    </p>
+                    <div style="display: flex; justify-content: space-around;">
+                        <div style="display: flex; justify-content: space-around; align-items: center;">
+                            <div style="width: 100px; border-bottom: 1px solid #999;"></div>
+                        </div>
+                        <span style="padding: 0.7rem 10px; color: #999;">Or sign up with</span>
+                        <div style="display: flex; justify-content: space-around; align-items: center;">
+                            <div style="width: 100px; border-bottom: 1px solid #999;"></div>
+                        </div>
+                    </div>
+                    <div class="social-media-buttons">
+                        <a class="social-media-login" data-platform="google">
+                            <button class="button-google">
+                                <img
+                            src="https://static.deriv.com/email/images/icons/social-google.png"
+                            />                                    <span>Google</span>
+                            </button>
+                        </a>
+                        <a class="social-media-login" data-platform="facebook">
+                            <button class="button-fb">
+                                <img
+                            src="https://static.deriv.com/email/images/icons/social-facebook-blue.png"
+                            />                                    <span>Facebook</span>
+                            </button>
+                        </a>
+                        <a class="social-media-login" data-platform="apple">
+                            <button class="button-apple">
+                                <img
+                            src="https://static.deriv.com/email/images/icons/social-apple-white.png"
+                            />
+                                <span>Apple</span>
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
