@@ -376,7 +376,7 @@
                     </tr>
                     <tr>
                         <td class="greeting-td" align="left" style="padding: 30px 30px 20px 30px;" class="dark-black">
-                            <p class="dark-subtext">Hello trader,</p>
+                            <p class="dark-subtext">Hello {{ Profile.firstName | default:"trader" }},</p>
                         </td>
                     </tr>
                     <tr>
