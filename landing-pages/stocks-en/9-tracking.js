@@ -109,7 +109,7 @@ window.onload = (function () {
                     utm_source: queryParams.get("utm_source"),
                     utm_medium: queryParams.get("utm_medium"),
                     utm_campaign: queryParams.get("utm_campaign"),
-                    utm_content: "chart-patterns",
+                    utm_content: "stock-ebook",
                 },
             })
         );

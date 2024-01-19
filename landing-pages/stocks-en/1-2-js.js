@@ -35,39 +35,56 @@
         }
         return result;
     }
+
     function decode(s) {
     return s.replace(/(%[0-9A-Z]{2})+/g, decodeURIComponent);
     }
+
     function init(converter) {
         function api() {}
+
         function set(key, value, attributes) {
             if (typeof document === "undefined") {
                 return;
             }
-            attributes = extend({ path: "/", }, api.defaults, attributes);
+
+            attributes = extend(
+                { 
+                    path: "/", 
+                }, 
+                api.defaults, 
+                attributes
+            );
+
             if (typeof attributes.expires === "number") {
                 attributes.expires = new Date(
                     new Date() * 1 + attributes.expires * 864e5
                 );
             }
+
             // We're using "expires" because "max-age" is not supported by IE
             attributes.expires = attributes.expires
-                ? attributes.expires.toUTCString() : "";
+                ? attributes.expires.toUTCString() 
+                : "";
+
             try {
                 var result = JSON.stringify(value);
                 if (/^[\{\[]/.test(result)) {
                     value = result;
                 }
             } catch (e) {}
+
             value = converter.write
                 ? converter.write(value, key)
                 : encodeURIComponent(String(value)).replace(
                     /%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,
                 decodeURIComponent
                 );
+
             key = encodeURIComponent(String(key))
                 .replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent)
                 .replace(/[\(\)]/g, escape);
+
             var stringifiedAttributes = "";
             for (var attributeName in attributes) {
                 if (!attributes[attributeName]) {
@@ -77,6 +94,7 @@
                 if (attributes[attributeName] === true) {
                     continue;
                 }
+
                 // Considers RFC 6265 section 5.2:
                 // ...
                 // 3.  If the remaining unparsed-attributes contains a %x3B (";")
@@ -86,40 +104,51 @@
                 // ...
                 stringifiedAttributes += "=" + attributes[attributeName].split(";")[0];
             }
+
             return (document.cookie = key + "=" + value + stringifiedAttributes);
         }
+
         function get(key, json) {
             if (typeof document === "undefined") {
                 return;
             }
+
             var jar = {};
             // To prevent the for loop in the first place assign an empty array
             // in case there are no cookies at all.
             var cookies = document.cookie ? document.cookie.split("; ") : [];
             var i = 0;
+
             for (; i < cookies.length; i++) {
                 var parts = cookies[i].split("=");
                 var cookie = parts.slice(1).join("=");
+
                 if (!json && cookie.charAt(0) === '"') {
                     cookie = cookie.slice(1, -1);
                 }
+
                 try {
                     var name = decode(parts[0]);
                     cookie =
-                    (converter.read || converter)(cookie, name) || decode(cookie);
+                        (converter.read || converter)(cookie, name) || decode(cookie);
+
                     if (json) {
                         try {
                             cookie = JSON.parse(cookie);
                         } catch (e) {}
                     }
+
                     jar[name] = cookie;
+
                     if (key === name) {
                         break;
                     }
                 } catch (e) {}
             }
+
             return key ? jar[key] : jar;
         }
+
         api.set = set;
         api.get = function (key) {
             return get(key, false /* read as raw */);
@@ -128,12 +157,22 @@
             return get(key, true /* read as json */);
         };
         api.remove = function (key, attributes) {
-            set( key, "", extend(attributes, { expires: -1, }) );
+            set( 
+                key, 
+                "", 
+                extend(attributes, { 
+                    expires: -1, 
+                }) 
+            );
         };
+
         api.defaults = {};
+
         api.withConverter = init;
+
         return api;
     }
+
     return init(function () {});
 });
 
@@ -141,6 +180,7 @@ const CookieStorage = function (cookie_name, cookie_domain = "") {
     const hostname = window.location.hostname;
     const is_deriv_com = String(hostname).includes("deriv.com");
     const is_binary_sx = String(hostname).includes("binary.sx");
+
     this.initialized = false;
     this.cookie_name = cookie_name;
     if (is_deriv_com) {
@@ -223,12 +263,14 @@ const getCookiesFields = () => [
 
 const getCookiesObject = (cookies) => {
     const cookies_objects = {};
+
     cookies.forEach((cookie_name) => {
         const cookie_object = new CookieStorage(
             cookie_name.includes("utm") ? "utm_data" : cookie_name
         );
         cookies_objects[cookie_name] = cookie_object;
     });
+
     return cookies_objects;
 };
 
@@ -244,15 +286,55 @@ const getDataObjFromCookies = (cookies, fields) => {
 
 const getVerifyEmailRequest = (formatted_email) => {
     const affiliate_token = Cookies.getJSON("affiliate_tracking");
+
     const cookies = getCookiesFields();
     const cookies_objects = getCookiesObject(cookies);
+
+    const fields = [
+        "date_first_contact",
+        "signup_device",
+        "gclid",
+        "utm_source",
+        "utm_ad_id",
+        "utm_adgroup_id",
+        "utm_adrollclk_id",
+        "utm_campaign",
+        "utm_campaign_id",
+        "utm_fbcl_id",
+        "utm_gl_client_id",
+        "utm_medium",
+        "utm_msclk_id",
+        "utm_term",
+        "t"
+    ];
+
+    let url_parameters = {};
+
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    fields.forEach((fld) => {
+        const fld_value = urlParams.get(fld);
+
+        if (fld_value) {
+            if (fld === 't') {
+                url_parameters['affiliate_token'] = fld_value
+                return;
+            }
+            url_parameters[fld] = fld_value;
+        }
+    });
+
     const cookies_value = getDataObjFromCookies(cookies_objects, cookies);
+
     return {
         verify_email: formatted_email,
         type: "account_opening",
         url_parameters: {
+            ...url_parameters,
             ...(affiliate_token && { affiliate_token: affiliate_token }),
             ...(cookies_value && { ...cookies_value }),
+            utm_content: 'chart-patterns-ebook'
         },
     };
 };
