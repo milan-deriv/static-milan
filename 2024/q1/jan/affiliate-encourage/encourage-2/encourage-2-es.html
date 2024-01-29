@@ -67,6 +67,7 @@
                 *{ font-family: 'Ubuntu', Arial, sans-serif; color: #414652; }
                 p, a{ font-family: 'IBM Plex Sans', Arial, sans-serif; color: #414652; }
                 h1{ padding: 0px 60px 0px; margin-top: -15px; color: #414652; font-size: 27px; font-weight: 700; text-align: center; line-height: 1.5; }
+                h2{ padding: 0px 50px 0px; font-size: 22px; font-weight: 500; text-align: center; line-height: 1.2; }
                 h3{ padding: 0px 50px 0px; font-size: 18px; font-weight: 500; text-align: center; line-height: 1.2; }
                 body{
                     width: 100%;
@@ -255,6 +256,7 @@
                         #logo-img-td img{ height: 30px; padding: 20px 0 0 0px; }
                         #title-img-td img{ width: 100% !important; }
                         h1{ font-size: 24px; padding: 10px 30px 0px !important; margin-top: 10px; }
+                        h2{ font-size: 20px; padding: 0px 20px 0px !important;}
                         h3{ font-size: 16px; padding: 0px 20px 0px !important;}
                         #slash-td{ margin: 0; padding: 0; }
                         .greeting-td, .paragraph-td .paragraph-td-note{
@@ -311,7 +313,7 @@
                         /* Applies dark background if dark mode is selected */
                         .dark-black{ background-color: #0e0e0e !important; }
                         /* Custom dark mode font colors */
-                        h1, h2, p, span, b, strong { color: #ffffff !important; }
+                        h1, h2, h3, p, span, b, strong { color: #ffffff !important; }
                         .dark-gray{ background-color: #2e2e2e !important; }
                         .dark-subtext{ color: #c2c2c2 !important; }
      					.light-subtext{ color: #ffffff !important; }
@@ -324,7 +326,7 @@
                     [data-ogsc] a, a:visited{ color: #ff444f; text-decoration: none; }
                     [data-ogsc] li { color: #c2c2c2 !important; }
                     /* Custom dark mode font colors */
-                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b, [data-ogsc] strong{ color: #ffffff !important; }
+                    [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] h3, [data-ogsc] p, [data-ogsc] span, [data-ogsc] b, [data-ogsc] strong{ color: #ffffff !important; }
                     [data-ogsc] #logo-img-td img{ height: 18px; padding: 20px 0 0 0px; }
                     /* Applies dark background if dark mode is selected */
                     [data-ogsc] .dark-black{ background-color: #0e0e0e !important; }
@@ -370,7 +372,7 @@
                                             </tr>
                                             <tr>
                                                 <td bgcolor="#fff" cellpadding="0" cellspacing="0">
-                                                    <h1 style="padding: 0px 200px 0px 0px; margin-top: 15px; margin-left: 30px; color: #414652 !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 25px; font-weight: 700; text-align: center; line-height: 1.2;">10 days to open a real Deriv account</h1>
+                                                    <h1 style="padding: 0px 200px 0px 0px; margin-top: 15px; margin-left: 30px; color: #414652 !important; font-family: 'Ubuntu', Arial, sans-serif;  font-size: 25px; font-weight: 700; text-align: center; line-height: 1.2;">10 días para abrir una cuenta de Deriv real</h1>
                                                 </td>
                                             </tr>
                                         </table>
@@ -392,22 +394,22 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="dark-black" align="left" style="padding: 30px 30px 0px 30px;">
+                            <td class="dark-black paragraph-td" align="left" style="padding: 30px 30px 0px 30px;">
                                 <p class="dark-subtext">Hola [Affiliate’s name],</p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="dark-black" align="left" style="padding: 20px 30px 0px 30px;">
+                            <td class="dark-black paragraph-td" align="left" style="padding: 20px 30px 0px 30px;">
                                 <p class="dark-subtext">Para seguir recibiendo comisiones, por favor abre una cuenta de Deriv real y verifica tu cuenta <strong>en un plazo de 10 días</strong>.</p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="dark-black" align="left" style="padding: 20px 30px 0px 30px;">
+                            <td class="dark-black paragraph-td" align="left" style="padding: 20px 30px 0px 30px;">
                                 <p class="dark-subtext">Así te asegurarás de recibir tus comisiones puntualmente y sin contratiempos.</p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="dark-black" align="left" style="padding: 20px 30px 20px 30px;">
+                            <td class="dark-black paragraph-td" align="left" style="padding: 20px 30px 20px 30px;">
                                 <p class="dark-subtext">Si no abres una cuenta de Deriv real en este plazo, tu cuenta de afiliado será <strong style="color: #ff444f !important;">suspendida</strong>, y es posible que no recibas tus comisiones.</p>
                             </td>
                         </tr>
@@ -416,8 +418,8 @@
                                 <table class="dark-gray" style="width: 100%; margin: auto; background-color: #F9F9FA;">
                                     <tr>
                                         <td class="paragraph-td">
-                                            <h2 class="dark-subtext" style="padding: 20px 30px 10px; text-align: center; color: #ff444f;">Esto es lo que tienes que hacer:</h2>
-                                            <h3 class="dark-subtext" style="padding: 0px 30px 10px; text-align: center;">Paso 1: Abrir tu cuenta Deriv real</h3>
+                                            <h2 style="padding: 20px 30px 10px; text-align: center; color: #ff444f;">Esto es lo que tienes que hacer:</h2>
+                                            <h3 style="padding: 0px 30px 10px; text-align: center;">Paso 1: Abrir tu cuenta Deriv real</h3>
                                             <div style="width: 100%; margin: auto; padding: 0px 0px 0px;">
                                                 <p class="dark-subtext" style="padding: 0px 0px 0px;"><input class="body-img" type="image" src="https://static.deriv.com/email/images/deriv-2023/affiliates-real-m.png" alt="" style="margin: 5px auto 0;width: 47%;"></p>
                                                 <p class="dark-subtext text-box" style="padding: 20px 20px 0px; text-align: center;">Para empezar, tendrás que crear una <a href="https://deriv.com/signup/" target="_blank">cuenta demo gratuita en Deriv</a>. Si ya tienes una cuenta demo,<strong> inicia sesión en esa cuenta</strong> y continúa creando una cuenta de Deriv real.</p>
@@ -435,7 +437,7 @@
                                     </tr>
                                     <tr>
                                         <td class="paragraph-td">
-                                            <h3 class="dark-subtext" style="padding: 0px 30px 10px; text-align: center;">Paso 2: Verificar tu cuenta</h3>
+                                            <h3 style="padding: 0px 30px 10px; text-align: center;">Paso 2: Verificar tu cuenta</h3>
                                             <div style="width: 100%; margin: auto; padding: 0px 0px 0px;">
                                                 <p class="dark-subtext text-box" style="padding: 20px 20px 0px; text-align: center;">Después de crear tu cuenta real de Deriv, necesitamos que la verifiques presentando tu comprobante de identidad y tu comprobante de domicilio.</p>
                                                 <p class="dark-subtext text-box" style="padding: 15px 20px 20px; text-align: center;">Para verificar tu identidad, <a href="https://app.deriv.com/account/proof-of-identity" target="_blank">sube</a> una foto de cualquiera de los siguientes documentos:</p>
@@ -498,12 +500,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="dark-black" align="left" style="padding: 30px 20px 20px 30px;">
+                            <td class="dark-black paragraph-td" align="left" style="padding: 30px 20px 20px 30px;">
                                 <p class="dark-subtext">Una vez verificada tu cuenta, tus comisiones se abonarán en tu cuenta de operaciones real, y podrás retirar fondos de tu cuenta con el método de pago que prefieras.</p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="dark-black" align="left" style="padding: 0px 20px 30px 30px;">
+                            <td class="dark-black paragraph-td" align="left" style="padding: 0px 20px 30px 30px;">
                                 <p class="dark-subtext">Si tienes alguna pregunta, ponte en contacto con nosotros a través de nuestro <a href="https://deriv.com/?is_livechat_open=true" target="_blank">Live Chat</a> o ponte en contacto con el gestor de tu país.</p>
                             </td>
                         </tr>
@@ -513,39 +515,40 @@
                 </td>
             </tr>
             <!-- End Email body--><!-- FOOTER -->
-                    <tr>
-                        <td align="center" class="mb-no-padding"><!--[if (gte mso 9)|(IE)]>
-                            <table id="ol-footer-table" align="center"><tr><td>
-                                <center>
-                                    <pre><a href="https://www.facebook.com/derivdotcom" target="_blank"><img src="https://static.deriv.com/email/images/icons/facebook-gray.png" height="20" width="20" alt="Deriv.com on Facebook" title="Deriv.com on Facebook"/></a> <a href="https://www.instagram.com/deriv_official/" target="_blank"><img src="https://static.deriv.com/email/images/icons/instagram-gray.png" height="20" width="20" alt="Deriv.com on Instagram" title="Deriv.com on Instagram"/></a> <a href="https://twitter.com/derivdotcom" target="_blank"><img src="https://static.deriv.com/email/images/icons/x-gray.png" height="20" width="20" alt="Deriv.com on Twitter" title="Deriv.com on Twitter"/></a> <a href="https://www.youtube.com/c/Derivdotcom" target="_blank"><img src="https://static.deriv.com/email/images/icons/youtube-gray.png" height="20" width="20" alt="Deriv.com on Youtube" title="Deriv.com on Youtube"/></a> <a href="https://www.linkedin.com/company/derivdotcom/" target="_blank"><img src="https://static.deriv.com/email/images/icons/linkedin-gray.png" height="20" width="20" alt="Deriv.com on LinkedIn" title="Deriv.com on LinkedIn"/></a></pre>
-                                </center>
-                        <![endif]--><!--[if !gte mso 9]><!-- -->
-                        <table class="dark-black" id="footer-table"><!-- Insert Trustpilot widget here --><!-- SOCIAL -->
-                            <tbody>
-                                <tr>
-                                    <td align="center" class="dark-black" id="footer-social-td">
-                                        <pre><a href="https://www.facebook.com/derivdotcom" target="_blank"><img alt="Deriv.com en Facebook" src="https://static.deriv.com/email/images/icons/facebook-gray.png" style="height: 20px;" title="Deriv.com en Facebook" /></a> <a href="https://www.instagram.com/deriv_official/" target="_blank"><img alt="Deriv.com en Instagram" src="https://static.deriv.com/email/images/icons/instagram-gray.png" style="height: 20px;" title="Deriv.com en Instagram" /></a> <a href="https://twitter.com/derivdotcom" target="_blank"><img alt="Deriv.com en Twitter" src="https://static.deriv.com/email/images/icons/x-gray.png" style="height: 20px;" title="Deriv.com en Twitter" /></a> <a href="https://www.youtube.com/c/Derivdotcom" target="_blank"><img alt="Deriv.com en Youtube" src="https://static.deriv.com/email/images/icons/youtube-gray.png" style="height: 20px;" title="Deriv.com en Youtube" /></a> <a href="https://www.linkedin.com/company/derivdotcom/" target="_blank"><img alt="Deriv.com en LinkedIn" src="https://static.deriv.com/email/images/icons/linkedin-gray.png" style="height: 20px;" title="Deriv.com en LinkedIn" /></a></pre>
-                                    </td>
-                                </tr>
-                                <!--[endif]-->
-                                <tr>
-                                    <td align="center" class="dark-black" id="footer-links-td">
-                                    <p><a href="https://www.deriv.com/help-centre">Centro de Ayuda</a>  <span class="dark-gray">|</span>  <a href="https://www.deriv.com/terms-and-conditions/">Términos y condiciones</a>  <span class="dark-black">|</span>  <a href="https://deriv.com/tnc/security-and-privacy.pdf">Seguridad y privacidad</a></p>
-                                    <p class="dark-black dark-subtext" id="unsubscribe-p">¿No desea seguir recibiendo estos mensajes? <a href="https://app.deriv.com/account/personal-details">Cancelar subscripción</a></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="center" class="dark-black" id="f-logo"><a href="https://www.deriv.com"><!--[if (gte mso 9)|(IE)]>
-                                                    <img src="https://static.deriv.com/logos/deriv-gray-2023.png" alt="Deriv.com" height="20" title="Deriv.com">
-                                                <![endif]--> <!--[if !gte mso 9]><!-- --> <img alt="Deriv.com" src="https://static.deriv.com/logos/deriv-gray-2023.png" style="height: 20px;" title="Deriv.com" /> <!--[endif]--> </a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!--[if (gte mso 9)|(IE)]> 
-                            </td></tr></table>
-                        <![endif]--></td>
-                    </tr>
-                </tbody>
-            </table>
-        </body>
-    </html>
+			<tr>
+				<td align="center" class="mb-no-padding"><!--[if (gte mso 9)|(IE)]>
+							<table id="ol-footer-table" align="center"><tr><td>
+								<center>
+									<pre><a href="https://www.facebook.com/derivespanol" target="_blank"><img src="https://static.deriv.com/email/images/icons/facebook-gray.png" height="20" width="20" alt="Deriv.com on Facebook" title="Deriv.com on Facebook"/></a> <a href="https://www.instagram.com/deriv_espanol/" target="_blank"><img src="https://static.deriv.com/email/images/icons/instagram-gray.png" height="20" width="20" alt="Deriv.com on Instagram" title="Deriv.com on Instagram"/></a> <a href="https://twitter.com/DerivEspanol" target="_blank"><img src="https://static.deriv.com/email/images/icons/x-gray.png" height="20" width="20" alt="Deriv.com on Twitter" title="Deriv.com on Twitter"/></a> <a href="https://www.youtube.com/c/Derivdotcom" target="_blank"><img src="https://static.deriv.com/email/images/icons/youtube-gray.png" height="20" width="20" alt="Deriv.com on Youtube" title="Deriv.com on Youtube"/></a> <a href="https://www.linkedin.com/company/derivdotcom/" target="_blank"><img src="https://static.deriv.com/email/images/icons/linkedin-gray.png" height="20" width="20" alt="Deriv.com on LinkedIn" title="Deriv.com on LinkedIn"/></a> <a href="https://t.me/Derivchannelofficial" target="_blank"><img src="https://static.deriv.com/email/images/icons/telegram-gray.png" height="20" width="20" alt="Deriv.com on Telegram" title="Deriv.com on Telegram"/></a></pre>
+								</center>
+						<![endif]--><!--[if !gte mso 9]><!-- -->
+				<table class="dark-black" id="footer-table"><!-- Insert Trustpilot widget here --><!-- SOCIAL -->
+					<tbody>
+						<tr>
+							<td align="center" class="dark-black" id="footer-social-td">
+							<pre><a href="https://www.facebook.com/derivespanol" target="_blank"><img alt="Deriv.com on Facebook" src="https://static.deriv.com/email/images/icons/facebook-gray.png" style="height: 20px;" title="Deriv.com on Facebook" /></a> <a href="https://www.instagram.com/deriv_espanol/" target="_blank"><img alt="Deriv.com on Instagram" src="https://static.deriv.com/email/images/icons/instagram-gray.png" style="height: 20px;" title="Deriv.com on Instagram" /></a> <a href="https://twitter.com/DerivEspanol" target="_blank"><img alt="Deriv.com on Twitter" src="https://static.deriv.com/email/images/icons/x-gray.png" style="height: 20px;" title="Deriv.com on Twitter" /></a> <a href="https://www.youtube.com/c/Derivdotcom" target="_blank"><img alt="Deriv.com on Youtube" src="https://static.deriv.com/email/images/icons/youtube-gray.png" style="height: 20px;" title="Deriv.com on Youtube" /></a> <a href="https://www.linkedin.com/company/derivdotcom/" target="_blank"><img alt="Deriv.com on LinkedIn" src="https://static.deriv.com/email/images/icons/linkedin-gray.png" style="height: 20px;" title="Deriv.com on LinkedIn" /></a> <a href="https://t.me/Derivchannelofficial" target="_blank"><img alt="Deriv.com on Telegram" src="https://static.deriv.com/email/images/icons/telegram-gray.png" style="height: 20px;" title="Deriv.com on Telegram" /></a></pre>
+							</td>
+						</tr>
+						<!--[endif]-->
+						<tr>
+							<td align="center" class="dark-black" id="footer-links-td">
+							<p><a href="https://www.deriv.com/es/help-centre">Centro de Ayuda</a>   <span class="dark-gray">|</span>   <a href="https://www.deriv.com/es/terms-and-conditions/">Términos y condiciones</a>   <span class="dark-black">|</span>   <a href="https://deriv.com/responsible">Seguridad y privacidad</a></p>
+
+							<p class="dark-black dark-subtext" id="unsubscribe-p">¿No desea seguir recibiendo estos correos electrónicos? <a href="https://app.deriv.com/account/personal-details">Cancelar suscripción</a></p>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="dark-black" id="f-logo"><a href="https://www.deriv.com/es"><!--[if (gte mso 9)|(IE)]>
+											<img src="https://static.deriv.com/logos/deriv-gray-2023.png" alt="Deriv.com" height="20" title="Deriv.com">
+										<![endif]--> <!--[if !gte mso 9]><!-- --> <img alt="Deriv.com" src="https://static.deriv.com/logos/deriv-gray-2023.png" style="height: 20px;" title="Deriv.com" /> <!--[endif]--> </a></td>
+						</tr>
+					</tbody>
+				</table>
+				<!--[if (gte mso 9)|(IE)]> 
+							</td></tr></table>
+						<![endif]--></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
