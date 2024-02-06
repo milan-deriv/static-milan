@@ -137,8 +137,8 @@
                         font-weight: 700; 
                     }
 
-                    .button-signup { background-color: #ff444f; color: #fff; border: 1px solid #ff444f; }
-                    .button-signup:hover { background-color: #d43e47; }
+                    .button-signup, .button-signup1 { background-color: #ff444f; color: #fff; border: 1px solid #ff444f; }
+                    .button-signup:hover, .button-signup1:hover { background-color: #d43e47; }
                     .button-google { background-color: #fff; border: 0.5px solid #414652; }
                     .button-google span{ color: #414652; }
                     .button-google:hover { background-color: #eee; }
@@ -210,7 +210,7 @@
                     }
                     #red-form-bottom {
                         max-width: 90vw;
-                        height: 22vw;
+                        height: 24.5vw;
                         background: #ff444f ;
                         border-radius: 8px;
                         display: flex; 
@@ -219,20 +219,75 @@
                         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 8px 16px 0 rgba(0, 0, 0, 0.1);
                         margin: 5%;
                     }
-                    .button-google-33, .button-google-33-mb, .button-fb-33, .button-fb-33-mb, .button-apple-33, .button-apple-33-mb { height: 2.6rem;  padding: 10px 25px; background-color: #fff; border: 0.5px solid #414652; border-radius: 16px; font-weight: 700; justify-content: center; align-items: center; display: flex; gap: 5px; cursor: pointer;float: left; }
-                    .button-google-33, .button-fb-33, .button-apple-33 { width: 105px !important; font-size: 0.8rem; margin: 1rem 0 0 10px; }
-                    .button-google-33-mb, .button-fb-33-mb, .button-apple-33-mb { width: 94px !important; font-size: 0.75rem; margin: 1rem 0 0 5px; }
+                    .button-google-33, .button-google-33-mb, .button-fb-33, .button-fb-33-mb, .button-apple-33, .button-apple-33-mb { height: 2.2vw;  padding: 1% 10%; background-color: #fff; border: 0.5px solid #414652; border-radius: 16px; font-weight: 700; justify-content: center; align-items: center; display: flex; gap: 3px; cursor: pointer;float: left; }
+                    .button-google-33, .button-fb-33, .button-apple-33 { width: 22.5% !important; font-size: 0.8rem; margin: 2% 1% 0 0; }
+                    .button-google-33-mb, .button-fb-33-mb, .button-apple-33-mb { width: 5vw !important; font-size: 0.75rem; margin: 2% 3% 0 0x; }
                     .button-google-33:hover, .button-fb-33:hover, .button-apple-33:hover, .button-google-33-mb:hover, .button-fb-33-mb:hover, .button-apple-33-mb:hover { background-color: #eee; }
-
+                    .button-google-33 img, .button-fb-33 img, .button-apple-33 img { width: 1.5vw !important; }
+ 
+                    #white-box-footer-position{
+                        width: 50%; 
+                        height: 100%; 
+                        float: left; 
+                        vertical-align: top;
+                    }
                     #white-box-footer{
-                        width: auto; 
-                        height: 18vw;
-                        margin: clamp(2%, 10vw, 10%); 
-                        padding: clamp(0, 3vw, 1%);
+                        width: 30vw; 
+                        height: 22vw;
+                        margin: 5% 0 5% 5%; 
+                        padding: 5% 0 5% 5%;
+                        background-color: #fff; 
+                        border: 0px; 
+                        border-radius: 8px;
+                        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 8px 16px 0 rgba(0, 0, 0, 0.08);
                     }
                     .text1 {
                         font-size: clamp(0.3125rem, 1vw, 1rem);
-                        padding: 1% 1% 0;
+                        padding: 0 1% 1%;
+                    }
+                    label{
+                        font-size: clamp(0.3125rem, 1vw, 1rem);
+                        padding: 0 1%;
+                    }
+
+                    #email_input2 { 
+                        height: 2.2vw !important; 
+                        border: 1px solid #d6dadb; 
+                        border-radius: 16px; 
+                        margin: 1%;
+                        width: 14.5vw !important; 
+                        padding: 0 0 0 3%;
+                        font-size: clamp(0.3125rem, 1vw, 1rem);
+                    }
+                    
+                    #ckbx_n3 { 
+                        height: 0.7vw !important;
+                        margin: 2% 1%;
+                    }
+                    
+                    #pEmail_n3, #pAgree_n3 { 
+                        color: #ff444f !important; 
+                        font-size: clamp(0.3125rem, 1vw, 1rem);
+                        display: none; 
+                        margin: 0 0 0 15%; 
+                    }
+                     
+                    #pEmail_n3, #pEmail_n3 { 
+                        margin: -19px 0 15px; 
+                    }
+                    .button-signup1 { 
+                        display: flex; 
+                        gap: 5px; 
+                        padding: 0px 5px; 
+                        justify-content: center; 
+                        align-items: center; 
+                        border-radius: 16px; 
+                        font-size: clamp(0.3125rem, 1vw, 1rem); 
+                        cursor: pointer; 
+                        height: 2.2vw !important; 
+                        width: 16% !important; 
+                        margin: 1% 1%; 
+                        font-weight: 700; 
                     }
 
                     @media screen and (max-width: 840px)
@@ -456,13 +511,13 @@
             </div>
         <!-- Trust pilot closing -->
         <div id="red-form-bottom">
-            <div style="width: 50%; height: 100%; float: left; vertical-align: top;">
-                <div id="white-box-footer" style="width: 420px; background-color: #fff; border: 0px; border-radius: 10px; padding: 5%; box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 8px 16px 0 rgba(0, 0, 0, 0.08); margin: 5% 0 5% 5%; float: left;">
-                    <h2 style="line-height: 1.2;">Join over 2.5 million <br/>traders worldwide</h2>
+            <div id="white-box-footer-position">
+                <div id="white-box-footer">
+                    <h2 style="margin-top: 0 !important;">Join over 2.5 million <br/>traders worldwide</h2>
                     <p class="text1" style="color: 676767;">Try our demo account</p>
                     <div style="display: flex; margin-bottom: 5px;">
-                        <input id="email_input_n3" placeholder="Email" style="width: 250px; height: 2.5rem; float: left; margin-top: 5px;" type="text" name="fname">
-                        <button id="myBtn_n3" class="button-signup" style="width: 125px !important; margin-top: 5px !important; margin-left: 10px;" type="button">Sign up</button>
+                        <input id="email_input2" placeholder="Email" type="text" name="fname">
+                        <button id="myBtn_n3" class="button-signup1" type="button">Sign up</button>
                     </div>
                     <p id="pEmail_n3" style="color: #ff444f !important; font-size: 12px; display: none; margin-top: -14px; margin-bottom: 15px !important;">Please enter a valid email</p>
                     <input type="checkbox" id="ckbx_n3"/>
@@ -471,23 +526,23 @@
                     </label><br/>
                     <p id="pAgree_n3" style="color: #ff444f !important; font-size: 12px; display: none; margin: 4px 0 0;">Please tick the check for signup.</p>
                     <div style="width: 100%; text-align: left;">
-                        <p style="padding: 1rem 0 0 0; color: #999;">Or sign up with</p>
+                        <p class="text1" style="padding: 4% 0 0 1%; color: #999;">Or sign up with</p>
                         <div class="social-media-buttons" style="width: 100%; heigth: 70px; float: left;">
                             <a class="social-media-login" data-platform="google">
                                 <button class="button-google-33">
-                                    <img src="https://static.deriv.com/email/images/icons/social-google.png" style="width: 25px;"/>
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIxLjU0NjkgMTIuMjAxM0MyMS41NDY5IDExLjUxNzkgMjEuNDg1MyAxMC44MzQ0IDIxLjM2NzYgMTAuMTYyMUgxMS45NzI3VjE0LjAxNjVIMTcuMzM5NkMxNy4xMTU1IDE1LjI0ODkgMTYuMzk4NCAxNi4zMzU4IDE1LjM1MDggMTcuMDI0OUwxOC41NzIxIDE5LjUyOTFDMjAuNDYwMSAxNy43OTI0IDIxLjU0NjkgMTUuMjM3NyAyMS41NDY5IDEyLjIwMTNaIiBmaWxsPSIjM0U4MkYxIi8+CjxwYXRoIGQ9Ik0xNS4zNDk5IDE3LjAyNDlDMTQuNDU5MiAxNy42MjQzIDEzLjMxNjMgMTcuOTc3MyAxMS45NzE4IDE3Ljk3NzNDOS4zNzIzMiAxNy45NzczIDcuMTc2MjQgMTYuMjIzOCA2LjM5MTkzIDEzLjg2NTJMMy4wNTg1OSAxNi40NDc5QzQuNzUwNDcgMTkuODE0OCA4LjIwMTQ1IDIxLjk0MzcgMTEuOTcxOCAyMS45MzgxQzE0LjY2NjQgMjEuOTM4MSAxNi45MjQxIDIxLjA0NzMgMTguNTcxMiAxOS41MjM1TDE1LjM0OTkgMTcuMDI0OVoiIGZpbGw9IiMzMkE3NTMiLz4KPHBhdGggZD0iTTYuMzkyMTYgMTAuMDc4N0wzLjA1ODgyIDcuNDk2MDlDMS42NDcwNiAxMC4zMTQgMS42NDcwNiAxMy42MzYxIDMuMDU4ODIgMTYuNDU0MUw2LjM5MjE2IDEzLjg3MTRDNS45Nzc1OSAxMi42MzkgNS45Nzc1OSAxMS4zMDU2IDYuMzkyMTYgMTAuMDc4N1oiIGZpbGw9IiNGOUJCMDAiLz4KPHBhdGggZD0iTTExLjk3MTggMkM4LjIwMTQ1IDIgNC43NTA0NyA0LjEyODg1IDMuMDU4NTkgNy40OTU4TDYuMzkxOTMgMTAuMDc4NEM3LjE3NjI0IDcuNzE5ODkgOS4zNzIzMiA1Ljk2NjM5IDExLjk3MTggNS45NjYzOUMxMy40MzM5IDUuOTY2MzkgMTQuNzUwNSA2LjQ3MDU5IDE1Ljc4MTMgNy40NTY1OEwxOC42NDQgNC41OTM4NEMxNi45MTg1IDIuOTg1OTkgMTQuNjYwOCAyIDExLjk3MTggMloiIGZpbGw9IiNFNzQxMzMiLz4KPC9zdmc+Cg=="/>
                                     <span>Google</span>
                                 </button>
                             </a>
                             <a class="social-media-login" data-platform="facebook">
                                 <button class="button-fb-33">
-                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjxkZWZzPjxwYXRoIGlkPSJhIiBkPSJNLjAwMS4wMDFIMjJ2MjEuODY1SC4wMDF6Ii8+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMSkiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PG1hc2sgaWQ9ImIiIGZpbGw9IiNmZmYiPjx1c2UgeGxpbms6aHJlZj0iI2EiLz48L21hc2s+PHBhdGggZmlsbD0iIzE4NzdmMiIgZD0iTTIxIDExLjA2MUMyMSA1LjUwNSAxNi41MjMgMSAxMSAxUzEgNS41MDUgMSAxMS4wNjFDMSAxNi4wODMgNC42NTcgMjAuMjQ1IDkuNDM4IDIxdi03LjAzaC0yLjU0di0yLjkxaDIuNTRWOC44NDVjMC0yLjUyMiAxLjQ5Mi0zLjkxNSAzLjc3Ny0zLjkxNSAxLjA5NCAwIDIuMjM4LjE5NyAyLjIzOC4xOTd2Mi40NzZoLTEuMjZjLTEuMjQzIDAtMS42My43NzUtMS42MyAxLjU3djEuODg4aDIuNzczbC0uNDQzIDIuOTA4aC0yLjMzVjIxYzQuNzgtLjc1NSA4LjQzNy00LjkxNyA4LjQzNy05LjkzOSIgbWFzaz0idXJsKCNiKSIvPjwvZz48L3N2Zz4=" style="width: 25px;"/>
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjxkZWZzPjxwYXRoIGlkPSJhIiBkPSJNLjAwMS4wMDFIMjJ2MjEuODY1SC4wMDF6Ii8+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMSkiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PG1hc2sgaWQ9ImIiIGZpbGw9IiNmZmYiPjx1c2UgeGxpbms6aHJlZj0iI2EiLz48L21hc2s+PHBhdGggZmlsbD0iIzE4NzdmMiIgZD0iTTIxIDExLjA2MUMyMSA1LjUwNSAxNi41MjMgMSAxMSAxUzEgNS41MDUgMSAxMS4wNjFDMSAxNi4wODMgNC42NTcgMjAuMjQ1IDkuNDM4IDIxdi03LjAzaC0yLjU0di0yLjkxaDIuNTRWOC44NDVjMC0yLjUyMiAxLjQ5Mi0zLjkxNSAzLjc3Ny0zLjkxNSAxLjA5NCAwIDIuMjM4LjE5NyAyLjIzOC4xOTd2Mi40NzZoLTEuMjZjLTEuMjQzIDAtMS42My43NzUtMS42MyAxLjU3djEuODg4aDIuNzczbC0uNDQzIDIuOTA4aC0yLjMzVjIxYzQuNzgtLjc1NSA4LjQzNy00LjkxNyA4LjQzNy05LjkzOSIgbWFzaz0idXJsKCNiKSIvPjwvZz48L3N2Zz4=" />
                                     <span>Facebook</span>
                                 </button>
                             </a>
                             <a class="social-media-login" data-platform="apple">
                                 <button class="button-apple-33">
-                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTE3LjI5NCAxMi40NzNjMC0yLjQ2IDIuMDYzLTMuNjUgMi4xNDItMy43My0xLjE5LTEuNjY1LTIuOTM1LTEuOTAzLTMuNTctMS45ODMtMS41MDgtLjE1OC0zLjAxNS44NzMtMy43My44NzMtLjc5MyAwLTEuOTgzLS44NzMtMy4yNTItLjg3My0xLjY2NiAwLTMuMTc0Ljk1Mi00LjA0NiAyLjQ2LTEuNzQ2IDMuMDE1LS40NzYgNy40NTggMS4xOSA5LjkxNy44NzMgMS4xOSAxLjgyNSAyLjUzOSAzLjA5NCAyLjQ2czEuNzQ1LS43OTQgMy4yNTMtLjc5NCAxLjkwNC43OTQgMy4yNTMuNzk0IDIuMjIxLTEuMTkgMy4wMTUtMi4zOGMuOTUyLTEuMzUgMS4zNDgtMi42OTggMS4zNDgtMi43NzctLjA3OS0uMDgtMi42OTctMS4wMzItMi42OTctMy45Njd6bS0yLjQ2LTcuMjk5QzE1LjQ3IDQuMyAxNS45NDUgMy4xOSAxNS44NjYgMmMtLjk1Mi4wOC0yLjIyMi42MzUtMi44NTYgMS41MDctLjYzNS43MTQtMS4xOSAxLjkwNS0xLjAzMiAzLjAxNSAxLjAzMi4wOCAyLjE0Mi0uNTU1IDIuODU2LTEuMzQ4eiIvPjwvc3ZnPg==" style="width: 25px;"/>
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTE3LjI5NCAxMi40NzNjMC0yLjQ2IDIuMDYzLTMuNjUgMi4xNDItMy43My0xLjE5LTEuNjY1LTIuOTM1LTEuOTAzLTMuNTctMS45ODMtMS41MDgtLjE1OC0zLjAxNS44NzMtMy43My44NzMtLjc5MyAwLTEuOTgzLS44NzMtMy4yNTItLjg3My0xLjY2NiAwLTMuMTc0Ljk1Mi00LjA0NiAyLjQ2LTEuNzQ2IDMuMDE1LS40NzYgNy40NTggMS4xOSA5LjkxNy44NzMgMS4xOSAxLjgyNSAyLjUzOSAzLjA5NCAyLjQ2czEuNzQ1LS43OTQgMy4yNTMtLjc5NCAxLjkwNC43OTQgMy4yNTMuNzk0IDIuMjIxLTEuMTkgMy4wMTUtMi4zOGMuOTUyLTEuMzUgMS4zNDgtMi42OTggMS4zNDgtMi43NzctLjA3OS0uMDgtMi42OTctMS4wMzItMi42OTctMy45Njd6bS0yLjQ2LTcuMjk5QzE1LjQ3IDQuMyAxNS45NDUgMy4xOSAxNS44NjYgMmMtLjk1Mi4wOC0yLjIyMi42MzUtMi44NTYgMS41MDctLjYzNS43MTQtMS4xOSAxLjkwNS0xLjAzMiAzLjAxNSAxLjAzMi4wOCAyLjE0Mi0uNTU1IDIuODU2LTEuMzQ4eiIvPjwvc3ZnPg=="/>
                                     <span>Apple</span>
                                 </button>
                             </a>
@@ -496,7 +551,7 @@
                 </div>
             </div>
             <div style="width: 50%; padding: 5% 0px; float: right;">
-                <h1 style="color: #fff; margin: 0 5% 5% 10%; padding: 0% 5% 0%;">Get a taste of the Deriv experience</h1>
+                <h2 style="color: #fff; font-size: clamp(1.2rem, 2.5vw, 3rem) !important; letter-spacing: 1.5px !important;">Get a taste of the<br/> Deriv experience</h2>
             </div>
         </div>
     </main>
