@@ -252,8 +252,10 @@
 			verify_email: formatted_email,
 			type: "account_opening",
 			url_parameters: {
+				...url_parameters,
 				...(affiliate_token && { affiliate_token: affiliate_token }),
 				...(cookies_value && { ...cookies_value }),
+				utm_content: 'crypto-ebook'
 			},
 		};
 	};
