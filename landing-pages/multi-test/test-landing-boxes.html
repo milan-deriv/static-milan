@@ -57,7 +57,7 @@
                     #red-gay img {
                         height: auto; 
                         width: 42vw;
-                        padding: 12.5% 0 0 19%;
+                        padding: 12.2% 0 0 19%;
                         box-sizing: initial !important;
                     }
                     #white-box{
@@ -78,7 +78,6 @@
                     }
                     h2{
                         font-size: clamp(0.8125rem, 2.3vw, 2.5rem) !important;
-                        text-align: center;
                         margin: 3% 0 !important;
                     }
                     #signup {
@@ -203,12 +202,47 @@
                     #trust {
                         margin: 7% 0;
                     }
-                    h4{font-size: 2.5rem; vertical-align:middle !important; padding-top: 2rem; text-align: right;}
+                    h4 {
+                        font-size: clamp(1.5rem, 4vw, 2.5rem); 
+                        vertical-align:middle !important; 
+                        padding-top: 2.2rem; 
+                        text-align: right;
+                    }
+                    #red-form-bottom {
+                        max-width: 90vw;
+                        height: 22vw;
+                        background: #ff444f ;
+                        border-radius: 8px;
+                        display: flex; 
+                        align-items: center; 
+                        justify-content:space-evenly;
+                        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+                        margin: 5%;
+                    }
+                    .button-google-33, .button-google-33-mb, .button-fb-33, .button-fb-33-mb, .button-apple-33, .button-apple-33-mb { height: 2.6rem;  padding: 10px 25px; background-color: #fff; border: 0.5px solid #414652; border-radius: 16px; font-weight: 700; justify-content: center; align-items: center; display: flex; gap: 5px; cursor: pointer;float: left; }
+                    .button-google-33, .button-fb-33, .button-apple-33 { width: 105px !important; font-size: 0.8rem; margin: 1rem 0 0 10px; }
+                    .button-google-33-mb, .button-fb-33-mb, .button-apple-33-mb { width: 94px !important; font-size: 0.75rem; margin: 1rem 0 0 5px; }
+                    .button-google-33:hover, .button-fb-33:hover, .button-apple-33:hover, .button-google-33-mb:hover, .button-fb-33-mb:hover, .button-apple-33-mb:hover { background-color: #eee; }
+
+                    #white-box-footer{
+                        width: auto; 
+                        height: 18vw;
+                        margin: clamp(2%, 10vw, 10%); 
+                        padding: clamp(0, 3vw, 1%);
+                    }
+                    .text1 {
+                        font-size: clamp(0.3125rem, 1vw, 1rem);
+                        padding: 1% 1% 0;
+                    }
 
                     @media screen and (max-width: 840px)
                     {
                         #red-gay img { padding: 13.3% 0 0 19% !important; }
+                        h4{ text-align: center; padding: 0 3% 2% 0;}
+                        .hide-desktop{ display: none !important; }
+                        .show-mobile{ display: block !important; }
                     }
+                    
 
 	</style>
 	<!-- ==== END OF STYLES ==== -->
@@ -287,7 +321,7 @@
     <main>
         <!-- White boxes 1 -->
         <div>
-            <h2 style="color: #ff444f;">Boost your trading with diversified assets, markets and trade types</h2>
+            <h2 style="color: #ff444f; text-align: center;">Boost your trading with diversified assets, markets and trade types</h2>
         </div>
         <div class="market-boxes">
             <div class="box">
@@ -327,7 +361,7 @@
         <!-- White boxes closing -->
         <div>
             <div style="margin-top: 7%;">
-                <h2 style="color: #ff444f;"> Why choose Deriv?</h2>
+                <h2 style="color: #ff444f; text-align: center;" > Why choose Deriv?</h2>
             </div>
             <div>
                 <p id="tradable-assets">  Tradable assets across different markets&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24/7 trading for Synthetics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiple platforms and trading types<br/>   Up to 1:1000 leverage, tight spreads and 0% commission&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minimum deposit of only $5<br/>Zero deposit and withdrawal fees on Deriv Accounts</p>
@@ -336,7 +370,7 @@
         <!-- Red background white boxes -->
         <div style="background-color: #ff444f;">
             <div >
-                <h2 style="color: #fff; padding-top: 2%;">Choose what you want to trade</h2>
+                <h2 style="color: #fff; padding-top: 2%; text-align: center;">Choose what you want to trade</h2>
             </div>
             <div class="market-boxes">
                 <div class="box1">
@@ -386,12 +420,30 @@
         </div>
         <!-- White background silver boxes closing -->
         <!-- Trust pilot -->
-            <div style="background-color: #F6F7F8 !important;">
-                <div style="float: left; width: 50%; height:100%;">
-                <!-- This is the paragraph text -->
-                <h4 style="vertical-align:middle; height:100%; margin-right: 4%;">Rated excellent on</h4>
+            <div style="background-color: #F6F7F8 !important; padding: 5% 0 2%; margin: 5% 0; height: 200px; width: 100%;" class="hide-desktop">
+                <div>
+                    <div style="float: left; width: 50%; height:100%;">
+                    <!-- This is the paragraph text -->
+                    <h4 style="vertical-align:middle ; height:100%; margin-right: 4%;">Rated excellent on</h4>
+                    </div>
+                    <div style="float: right; width: 50%; height:100%;">
+                        <!-- TrustBox script -->
+                        <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+                        <!-- End TrustBox script -->
+                        <!-- TrustBox widget - Mini -->
+                        <div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="5ed4c8a9f74f310001f51bf7" data-style-height="150px" data-style-width="auto" data-theme="light" data-tags="SelectedReview">
+                        <a href="https://www.trustpilot.com/review/deriv.com" target="_blank" rel="noopener">Trustpilot</a>
+                        </div>
+                        <!-- End TrustBox widget -->
+                    </div>
                 </div>
-                <div style="float: right; width: 50%; height:100%;">
+            </div>
+            <div class="show-mobile !mportant" style="display: none; background-color: #F6F7F8 !important; padding: 5% 0 2%; margin: 5% 0; height: 200px; width: 100%;">
+                <div style="width: 100%;">
+                <!-- This is the paragraph text -->
+                <h4>Rated excellent on</h4>
+                </div>
+                <div class="trustmobile" align="center">
                     <!-- TrustBox script -->
                     <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
                     <!-- End TrustBox script -->
@@ -403,6 +455,50 @@
                 </div>
             </div>
         <!-- Trust pilot closing -->
+        <div id="red-form-bottom">
+            <div style="width: 50%; height: 100%; float: left; vertical-align: top;">
+                <div id="white-box-footer" style="width: 420px; background-color: #fff; border: 0px; border-radius: 10px; padding: 5%; box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 8px 16px 0 rgba(0, 0, 0, 0.08); margin: 5% 0 5% 5%; float: left;">
+                    <h2 style="line-height: 1.2;">Join over 2.5 million <br/>traders worldwide</h2>
+                    <p class="text1" style="color: 676767;">Try our demo account</p>
+                    <div style="display: flex; margin-bottom: 5px;">
+                        <input id="email_input_n3" placeholder="Email" style="width: 250px; height: 2.5rem; float: left; margin-top: 5px;" type="text" name="fname">
+                        <button id="myBtn_n3" class="button-signup" style="width: 125px !important; margin-top: 5px !important; margin-left: 10px;" type="button">Sign up</button>
+                    </div>
+                    <p id="pEmail_n3" style="color: #ff444f !important; font-size: 12px; display: none; margin-top: -14px; margin-bottom: 15px !important;">Please enter a valid email</p>
+                    <input type="checkbox" id="ckbx_n3"/>
+                    <label for="ckbx_n3" style="margin-left: 5px;">
+                        I agree to the <a href="https://deriv.com/terms-and-conditions/#clients" style="color: #ff444f !important;">terms and conditions</a>.
+                    </label><br/>
+                    <p id="pAgree_n3" style="color: #ff444f !important; font-size: 12px; display: none; margin: 4px 0 0;">Please tick the check for signup.</p>
+                    <div style="width: 100%; text-align: left;">
+                        <p style="padding: 1rem 0 0 0; color: #999;">Or sign up with</p>
+                        <div class="social-media-buttons" style="width: 100%; heigth: 70px; float: left;">
+                            <a class="social-media-login" data-platform="google">
+                                <button class="button-google-33">
+                                    <img src="https://static.deriv.com/email/images/icons/social-google.png" style="width: 25px;"/>
+                                    <span>Google</span>
+                                </button>
+                            </a>
+                            <a class="social-media-login" data-platform="facebook">
+                                <button class="button-fb-33">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjxkZWZzPjxwYXRoIGlkPSJhIiBkPSJNLjAwMS4wMDFIMjJ2MjEuODY1SC4wMDF6Ii8+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMSkiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PG1hc2sgaWQ9ImIiIGZpbGw9IiNmZmYiPjx1c2UgeGxpbms6aHJlZj0iI2EiLz48L21hc2s+PHBhdGggZmlsbD0iIzE4NzdmMiIgZD0iTTIxIDExLjA2MUMyMSA1LjUwNSAxNi41MjMgMSAxMSAxUzEgNS41MDUgMSAxMS4wNjFDMSAxNi4wODMgNC42NTcgMjAuMjQ1IDkuNDM4IDIxdi03LjAzaC0yLjU0di0yLjkxaDIuNTRWOC44NDVjMC0yLjUyMiAxLjQ5Mi0zLjkxNSAzLjc3Ny0zLjkxNSAxLjA5NCAwIDIuMjM4LjE5NyAyLjIzOC4xOTd2Mi40NzZoLTEuMjZjLTEuMjQzIDAtMS42My43NzUtMS42MyAxLjU3djEuODg4aDIuNzczbC0uNDQzIDIuOTA4aC0yLjMzVjIxYzQuNzgtLjc1NSA4LjQzNy00LjkxNyA4LjQzNy05LjkzOSIgbWFzaz0idXJsKCNiKSIvPjwvZz48L3N2Zz4=" style="width: 25px;"/>
+                                    <span>Facebook</span>
+                                </button>
+                            </a>
+                            <a class="social-media-login" data-platform="apple">
+                                <button class="button-apple-33">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTE3LjI5NCAxMi40NzNjMC0yLjQ2IDIuMDYzLTMuNjUgMi4xNDItMy43My0xLjE5LTEuNjY1LTIuOTM1LTEuOTAzLTMuNTctMS45ODMtMS41MDgtLjE1OC0zLjAxNS44NzMtMy43My44NzMtLjc5MyAwLTEuOTgzLS44NzMtMy4yNTItLjg3My0xLjY2NiAwLTMuMTc0Ljk1Mi00LjA0NiAyLjQ2LTEuNzQ2IDMuMDE1LS40NzYgNy40NTggMS4xOSA5LjkxNy44NzMgMS4xOSAxLjgyNSAyLjUzOSAzLjA5NCAyLjQ2czEuNzQ1LS43OTQgMy4yNTMtLjc5NCAxLjkwNC43OTQgMy4yNTMuNzk0IDIuMjIxLTEuMTkgMy4wMTUtMi4zOGMuOTUyLTEuMzUgMS4zNDgtMi42OTggMS4zNDgtMi43NzctLjA3OS0uMDgtMi42OTctMS4wMzItMi42OTctMy45Njd6bS0yLjQ2LTcuMjk5QzE1LjQ3IDQuMyAxNS45NDUgMy4xOSAxNS44NjYgMmMtLjk1Mi4wOC0yLjIyMi42MzUtMi44NTYgMS41MDctLjYzNS43MTQtMS4xOSAxLjkwNS0xLjAzMiAzLjAxNSAxLjAzMi4wOCAyLjE0Mi0uNTU1IDIuODU2LTEuMzQ4eiIvPjwvc3ZnPg==" style="width: 25px;"/>
+                                    <span>Apple</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 50%; padding: 5% 0px; float: right;">
+                <h1 style="color: #fff; margin: 0 5% 5% 10%; padding: 0% 5% 0%;">Get a taste of the Deriv experience</h1>
+            </div>
+        </div>
     </main>
 </body>
 </html>
