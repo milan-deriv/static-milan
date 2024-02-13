@@ -92,7 +92,7 @@
                     }
                     h2{
                         font-size: clamp(0.8125rem, 2.3vw, 2.5rem) !important;
-                        margin: 3% 0 !important;
+                        margin: 3% 0;
                     }
                     #signup {
                         font-size: clamp(0.6875rem, 2vw, 1.5rem);
@@ -169,15 +169,15 @@
                     .button-start-trading { 
                         display: flex;
                         gap: 1%; 
-                        padding: 0px 3%; 
+                        padding: 0px 1%; 
                         justify-content: center; 
                         align-items: center ; 
                         border-radius: 16px; 
-                        font-size: clamp(0.3125rem, 1vw, 1rem); 
+                        font-size: clamp(0.3125rem, 1vw, 2rem); 
                         cursor: pointer; 
-                        height: 2.2vw !important; 
-                        width: 8vw !important; 
-                        margin: 2% 43%; 
+                        height: 3vw !important; 
+                        width: 6vw !important; 
+                        margin: 2% 45%; 
                         font-weight: 700; 
                     }
 
@@ -323,7 +323,7 @@
                     .footer-sm{ height: 32px; width: auto; margin-right: 8px; }
                     .footer-sm-mb{ height: 24px; width: auto; margin-right: 15px; }
 
-                    @media screen and (max-width: 840px)
+                    @media screen and (max-width: 510px)
                     {
                         #red-gay img { padding: 13.3% 0 0 19% !important; }
                         h4{ text-align: center; padding: 0 3% 2% 0;}
@@ -337,6 +337,7 @@
 	<!-- ==== END OF STYLES ==== -->
 </head>
 <body>
+    <div class="hide-desktop">
     <div>
         <div style="max-height: 40px; width: 6vw; margin: 0 0 0 8%; padding: 0;">
             <div style="margin: 0.5% 0px 0.5% 6.5%; padding: 0px; ">
@@ -448,8 +449,8 @@
         </div>
         <!-- White boxes closing -->
         <div>
-            <div style="margin-top: 7%;">
-                <h2 style="color: #ff444f; text-align: center;" > Why choose Deriv?</h2>
+            <div style="margin-top: 5%;">
+                <h2 style="color: #ff444f; text-align: center; margin-bottom: 2%;" > Why choose Deriv?</h2>
             </div>
             <div>
                 <p id="tradable-assets">  Tradable assets across different markets&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24/7 trading for Synthetics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiple platforms and trading types<br/>   Up to 1:1000 leverage, tight spreads and 0% commission&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minimum deposit of only $5<br/>Zero deposit and withdrawal fees on Deriv Accounts</p>
@@ -654,6 +655,10 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div>
+
+    </div>
     </main>
     </body>
     </html>
