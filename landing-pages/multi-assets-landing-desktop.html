@@ -55,7 +55,8 @@
                     margin: 0.5% 0 0% 10%; 
                     padding: 0;
                 }
-                #red-white-box{max-width: 90vw;
+                #red-white-box{
+                    max-width: 90vw;
                     height: 44vw;
                     background: linear-gradient(100deg, #ff444f 47%, #ffffff 0%);
                     border-radius: 16px;
@@ -89,12 +90,12 @@
                     width: 45vw;
                 }
                 #signup-box{
-                        float: right;
-                        width: 40%;
-                        height: 35vw;
-                        margin: 4vw 2vw 5vw 15vw;
-                        padding: 0vw;
-                    }
+                    float: right;
+                    width: 40%;
+                    height: 35vw;
+                    margin: 6vw 2vw 5vw 12vw;
+                    padding: 0vw;
+                }
                 #signup {
                     font-size: 24px;
                     font-weight: 700;
@@ -122,7 +123,7 @@
                         margin: 0;
                         padding: 0;
                     }
-                label, #pAgree_n1, #pEmail_n1, span {
+                label, #pAgree_n1, #pEmail_n1 {
                     font-size: 14px;
                     vertical-align: top;
                     padding: 0;
@@ -164,6 +165,25 @@
                     margin: 0 0 0.7vw 0;
                     color: #999999;
                 }
+                .line{
+                    width: 100px; 
+                    border-bottom: 1px solid #999;
+                }  
+                .span {
+                    color: #999999 !important; 
+                    padding: 0 40px !important;
+                    font-size: 14px;
+                    vertical-align: top;
+                    padding: 0;
+                    margin: 0;
+                }
+                .haveacc{
+                    font-size: 16px;
+                    font-weight: 400;
+                    padding: 0;
+                    margin: 15px 0 0 80px; 
+                    color: #414652 !important;
+                }
 
             }
             @media screen and (max-width:1400px){
@@ -184,9 +204,33 @@
                 input[type=checkbox] { 
                         height: 13px;
                     }
-                label, #pAgree_n1, #pEmail_n1, span {
+                label, #pAgree_n1, #pEmail_n1 {
                 font-size: 13.7px;
                 }
+                .button, .button-signup, .button-google, .button-fb, .button-apple {
+                        font-size: 13.7px;
+                        height: 30px; 
+                        width: 352px; 
+                    }
+                .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active {height: 32px; width: 350px; }
+                #disclaimer{
+                    font-size: 11.5px;
+                }
+                #signup-box{
+                        float: right;
+                        width: 40%;
+                        height: 35vw;
+                        margin: 3vw 2vw 5vw 5vw;
+                        padding: 0vw;
+                    }
+                .line{
+                width: 90px; 
+                }
+                .haveacc{
+                    font-size: 15.4px;
+                    margin: 15px 0 0 75px;
+                }
+
                 
             }
             @media screen and (max-width:1200px){
@@ -208,60 +252,378 @@
                         height: 12px;
                         justify-content: center;
                     }
-                label, #pAgree_n1, #pEmail_n1, span {
+                label, #pAgree_n1, #pEmail_n1 {
                 font-size: 13.4px;
                 }
-                
+                .button, .button-signup, .button-google, .button-fb, .button-apple {
+                        font-size: 13.4px;
+                        height: 28px; 
+                        width: 337px; 
+                    }
+                .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active {height: 30px; width: 335px; }
+                .button-google img, .button-fb img, .button-apple img{ width: 20px; height: auto; }
+                #disclaimer{
+                    font-size: 10.9px;
+                }
+                #signup-box{
+                        float: right;
+                        width: 40%;
+                        height: 35vw;
+                        margin: 1vw 3vw 5vw 0vw;
+                        padding: 0vw;
+                }
+                .line{
+                    width: 83px; 
+                }
+                .span {
+                    font-size: 13.4px;
+                }
+                .haveacc{
+                    font-size: 14.7px !important;
+                    margin: 10px 0 0 70px;
+                }
+
             }
-            @media screen and (max-width:1050px){
+            @media screen and (max-width:1080px){
                 h1 {
                     font-size: 26px;
                 }
                 #signup {
                     font-size: 18px;
+                    margin: 0;
                 }
                 .text {
                     font-size: 13px;
+                    margin: 0;
                 }
                 #email_input_n1{
                     height: 24px; 
                     width: 290px;
                     font-size: 13px;
+                    margin:0 0 0.1vw 0;
                 }
-                label, #pAgree_n1, #pEmail_n1, span {
+                label, #pAgree_n1, #pEmail_n1 {
                     font-size: 13px;
+                    margin: 0;
                     }
-                
-            }
-            @media screen and (max-width:920px){
-                .text {
-                    font-size: 11px;
+                .button, .button-signup, .button-google, .button-fb, .button-apple {
+                    font-size: 13px;
+                    height: 26px; 
+                    width: 302px; 
+                    margin: 0 0 0.3vw 0;
                 }
-                #email_input_n1{
-                    height: 22px; 
-                    width: 240px;
-                    border: 1px solid #d6dadb; 
-                    border-radius: 16px; 
-                    margin: 0 0 vw 0; 
-                    padding: 0 0 0 3%;
-                    font-size: 11px;
+                .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active {height: 28px; width: 300px; }
+                #disclaimer{
+                    font-size: 9.8px;
+                    margin: 0 0 0.2vw 0;
                 }
-                input[type=checkbox] { 
-                        height: 8px;
-                        vertical-align: top;
-                        margin-top: 2px;
-                    }
-                label, #pAgree_n1, #pEmail_n1, span {
-                font-size: 11px;
+                #signup-box{
+                        float: right;
+                        width: 40%;
+                        height: 35vw;
+                        margin: 1vw 3vw 0vw 0vw;
+                        padding: 0vw;
                 }
-                
-            }
-            @media screen and (max-width:800px){
-                            .hide-desktop{ display: none !important; }
-                            .show-mobile{ display: block !important; }
-                
+                .line{
+                width: 68px;
+                }
+                .span {
+                    font-size: 13px;
+                }
+                .haveacc{
+                    font-size: 13px !important;
+                    margin: 10px 0 0 60px;
+                }
             }
 
+
+
+
+            @media screen and (max-width:960px){
+                            .hide-desktop{ display: none !important; }
+                            .show-mobile{ display: block !important;}
+                
+                #logomob{
+                    max-height: 40px; 
+                    width: 100%; 
+                    margin: 2% 0; 
+                    padding: 0;
+                }
+                #red-white-box {
+                    max-width: 90%;
+                    height: 1760px;
+                    background: linear-gradient(169.9deg, #ff444f 38.7%, #ffffff 0%);
+                    border-radius: 16px;
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+                    margin: 0% 5% 10%;
+                }
+                h1{
+                    text-align: center;
+                    font-size: 38px !important;
+                    color: #fff !important;
+                    padding: 1% 0 0 0 !important;
+                }
+                #red-gay {
+                    position: absolute;
+                    text-align: center;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                }
+                #red-gay img {
+                    height: auto; 
+                    width: 564px;
+                    padding: 0;
+                    margin: 0;
+                }
+                #white-box-header{
+                    max-width: 100%; 
+                    height: auto;
+                    margin:8% 6% 0; 
+                    padding: 0;
+                }
+                #signup {
+                    font-size: 36px !important;
+                    text-align: left;
+                    padding:0;
+                    letter-spacing: 1px;
+                    margin: 5% 0 3% 17%;
+                    color: #414652;
+                }  
+                .text {
+                    font-size: 26px;
+                    padding: 0% 0% 0 17%;
+                    color: #414652;
+                }
+                #email_input_n1 { 
+                    float: left;
+                    align-items: center;
+                    height: 52px !important; 
+                    border: 1px solid #d6dadb; 
+                    border-radius: 16px; 
+                    margin: 4% 0 0 17%;
+                    width: 480px; 
+                    padding: 0 0 0 3%;
+                    font-size: 24px;
+                }
+                input[type=checkbox] { 
+                    height: 25px;
+                    margin: 0 0 0 17%;
+                    float: left;
+                }
+                #pEmail_n1 { 
+                    text-align: left;
+                    color: #ff444f !important; 
+                    font-size: 22px; 
+                    margin: 10% 0 0 19%; 
+                }
+                label{
+                    font-size: 22px;
+                    padding: 0 0 0 3%;
+                    float: left;
+                    color: #333333;
+                }
+                #pAgree_n1 { 
+                    text-align: left;
+                    color: #ff444f !important; 
+                    font-size: 22px; 
+                    margin: 1.5% 0 -4% 19%; 
+                }
+                /* Buttons */
+                .button, .button-signup, .button-google, .button-fb, .button-apple { 
+                    display: flex;
+                    gap: 8px; 
+                    padding: 0; 
+                    justify-content: center; 
+                    align-items: center; 
+                    border-radius: 16px; 
+                    font-size: 22px; 
+                    cursor: pointer; 
+                    height: 55px; 
+                    width: 500px; 
+                    margin: 1% 0 2% 17%; 
+                    font-weight: 700; 
+                }
+                .button-signup, .button-signup1, .button-start-trading { background-color: #ff444f; color: #fff; border: 1px solid #ff444f; }
+                    .button-signup:hover, .button-signup1:hover, .button-start-trading:hover { background-color: #d43e47; }
+                    .button-google { background-color: #fff; border: 0.5px solid #414652; }
+                    .button-google span{ color: #414652; }
+                    .button-google:hover { background-color: #eee; }
+                    .button-fb{ background-color: #1877f2; color: #fff; border: 0.5px solid #1877f2; }
+                    .button-fb span{ color: #fff; }
+                    .button-fb:hover{ background-color: #1E88E5; }
+                    .button-apple { background-color: #000; border: 0.5px solid #414652; }
+                    .button-apple span{ color: #fff; }
+                    .button-apple:hover { background-color: #2e2e2e; }
+                    .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active { transition: width 0.1s, height 0.1s; height: 57px; width: 500px; }
+                    .button-google img, .button-fb img, .button-apple img{ width: 40px !important; margin: 0.5% 0 0 0 !important; }
+
+                #disclaimer{
+                    color: #999; padding: 0% 0% 1% 19%; font-size: 18px; text-align: left; 
+                }
+                .line{
+                    width: 140px; 
+                    border-bottom: 1px solid #999;
+                }
+                .span {
+                    color: #999999 !important; 
+                    padding: 0 40px !important;
+                    font-size: 22px;
+                    vertical-align: top;
+                    padding: 0;
+                    margin: 0;
+                }
+                .haveacc{
+                    font-size: 24px !important;
+                    font-weight: 400;
+                    padding: 0;
+                    margin: 25px 0 0 0px; 
+                    color: #414652 !important;
+                }
+            }
+            @media screen and (max-width:880px){
+                #red-gay img {
+                    margin: 0.2% 0 0 0;
+                }
+            }
+            @media screen and (max-width:820px){
+                #red-white-box {
+                    max-width: 90%;
+                    height: 1590px;
+                    background: linear-gradient(169.9deg, #ff444f 39.5%, #ffffff 0%);
+                    border-radius: 16px;
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+                    margin: 0% 5% 10%;
+                }
+                #red-gay img {
+                    margin: -6% 0 0 0;
+                }
+                #signup {
+                    font-size: 33px !important;
+                    margin: 5% 0 3% 16%;
+                }  
+                .text {
+                    font-size: 23px;
+                    padding: 0% 0% 0 16%;
+                }
+                #email_input_n1 {
+                    height: 50px !important;
+                    margin: 4% 0 0 16%;
+                    width: 430px; 
+                    font-size: 21px;
+                }
+                input[type=checkbox] { 
+                    margin: 0 0 0 16%;
+                }
+                #pEmail_n1 {
+                    font-size: 19px; 
+                    margin: 10% 0 0 18%; 
+                }
+                label{
+                    font-size: 19px;
+                }
+                #pAgree_n1 {
+                    font-size: 19px; 
+                    margin: 1.5% 0 -4% 18%; 
+                }
+                /* Buttons */
+                .button, .button-signup, .button-google, .button-fb, .button-apple { 
+                    font-size: 19px; 
+                    cursor: pointer; 
+                    height: 52px; 
+                    width: 460px; 
+                    margin: 1% 0 2% 16%;
+                }
+                .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active { height: 53px; width: 460px; }
+                .button-google img, .button-fb img, .button-apple img{ width: 35px !important; }
+
+                #disclaimer{
+                    color: #999; padding: 0% 0% 1% 18.5%; font-size: 16px;
+                }
+                .line{
+                    width: 125px;
+                }
+                .span {
+                    font-size: 19px;
+                }
+                .haveacc{
+                    font-size: 21px !important;
+                }
+            }
+            @media screen and (max-width:790px){
+                #red-gay img {
+                    margin: -6.3% 0 0 0;
+                }
+            }
+            @media screen and (max-width:710px){
+                #red-white-box {
+                    max-width: 90%;
+                    height: 1590px;
+                    background: linear-gradient(169.9deg, #ff444f 39.5%, #ffffff 0%);
+                    border-radius: 16px;
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+                    margin: 0% 5% 10%;
+                }
+                h1{
+                    font-size: 34px !important;
+                }
+                #red-gay img {
+                    height: auto; 
+                    width: 520px;
+                    margin: -9% 0 0 0;
+                }
+                #signup {
+                    font-size: 30px !important;
+                    margin: 5% 0 3% 13%;
+                }  
+                .text {
+                    font-size: 20px;
+                    padding: 0% 0% 0 13%;
+                }
+                #email_input_n1 {
+                    height: 45px !important;
+                    margin: 3% 0 0 13%;
+                    width: 390px; 
+                    font-size: 18px;
+                }
+                input[type=checkbox] { 
+                    margin: 0 0 0 16%;
+                }
+                #pEmail_n1 {
+                    font-size: 19px; 
+                    margin: 10% 0 0 18%; 
+                }
+                label{
+                    font-size: 19px;
+                }
+                #pAgree_n1 {
+                    font-size: 19px; 
+                    margin: 1.5% 0 -4% 18%; 
+                }
+                /* Buttons */
+                .button, .button-signup, .button-google, .button-fb, .button-apple { 
+                    font-size: 19px; 
+                    cursor: pointer; 
+                    height: 52px; 
+                    width: 460px; 
+                    margin: 1% 0 2% 16%;
+                }
+                .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active { height: 53px; width: 460px; }
+                .button-google img, .button-fb img, .button-apple img{ width: 35px !important; }
+
+                #disclaimer{
+                    color: #999; padding: 0% 0% 1% 18.5%; font-size: 16px;
+                }
+                .line{
+                    width: 125px;
+                }
+                .span {
+                    font-size: 19px;
+                }
+                .haveacc{
+                    font-size: 21px !important;
+                }
+            }
             
         </style>
         <!-- ==== END OF STYLES ==== -->
@@ -282,7 +644,7 @@
                 </div>
                 <div id="signup-box">
                     <p id="signup" style="color: #414652;">Sign up</p>
-                    <p class="text" style="color: #676767;">At Deriv, you have the flexibility to trade a wide array of <br/> assets. From 50+ Forex currency pairs to Stocks & <br/> Indices,  Commodities,  Cryptocurrencies, and exclusive<br/> Synthetics, opportunities are limitless.</p>
+                    <p class="text" style="color: #676767;">At Deriv, you have the flexibility to trade a wide array of <br/> assets. From 50+ Forex currency pairs to Stocks & <br/> Indices, Commodities, Cryptocurrencies, and exclusive<br/> Synthetics, opportunities are limitless.</p>
                     <input  id="email_input_n1" type="text" placeholder="Email" style=""/><br/>
                     <p id="pEmail_n1" style="color: #333333; margin: 0 0 0 0.5vw;">Please enter a valid email</p>
                     <input type="checkbox" id="ckbx_n1" />
@@ -296,12 +658,12 @@
                     </p>
                     <div style="display: flex; margin: 0 0 0.7vw 0; padding: 0;">
                         <div style="display: flex; align-items: center;">
-                            <div style="width: 5.3vw; border-bottom: 1px solid #999;"></div>
+                            <div class="line"></div>
                         </div>
-                        <span style=" color: #999999; padding: 0 2vw;">Or sign up with</span>
+                        <span class="span">Or sign up with</span>
                         
-                        <div style="display: flex; justify-content: space-around; align-items: center;">
-                            <div style="width: 5.3vw; border-bottom: 1px solid #999;"></div>
+                        <div style="display: flex; align-items: center;">
+                            <div class="line"></div>
                         </div>
                     </div>
                     <div class="social-media-buttons">
@@ -328,7 +690,79 @@
                             </button>
                         </a>
                     </div>
-                    <p class="text" style="margin: 1vw 0 0 4vw; color: #414652;">Already have an account? <a href="https://deriv.com/" style="color: #ff444f !important;">Log in</a></p>
+                    <p class="haveacc">Already have an account? <a href="https://deriv.com/" style="color: #ff444f !important;">Log in</a></p>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="show-mobile" style="display: none">
+            <div id="logomob">
+                <div style="text-align: center; margin:0; padding: 0;">
+                    <a href="https://deriv.com/" target="_blank"><img src="https://static.deriv.com/logos/red-xl.png" alt="Deriv Logo" style="max-height: 5vw;"/></a>
+                </div>
+            </div>
+            <div id="red-white-box">
+                <div id="red-gay">
+                    <!-- Red slash -->
+                    <div>
+                        <h1>Trade multiple assets,<br/>not just one!</h1>
+                    </div>
+                    <div>
+                        <img src="https://lh3.googleusercontent.com/tqHQAjhQ1Zu5-1qGExFNWIF2YqsRee5jcqP8SjAu8VA1tfXxO3jKacMR36jde7-defCpLe83FeFYNIRsD1OFx7VTh3LGf5H5IQ=w965" alt="">
+                    </div>
+                    <!-- Closing red slash -->
+                    <div id="white-box-header">
+                        <p id="signup"><strong>Sign up</strong></p>
+                        <p class="text" style="color: 676767; text-align: left;">At Deriv, you have the flexibility to trade a wide <br/>array of assets. From 50+ Forex currency pairs<br/> to Stocks & Indices, Commodities,<br/> Cryptocurrencies, and exclusive Synthetics,<br/> opportunities are limitless.</p>
+                        <input id="email_input_n1" type="text" placeholder="Email" style=""/><br/>
+                        <p id="pEmail_n1">Please enter a valid email</p>
+                        <input type="checkbox" id="ckbx_n1" />
+                        <label  for="ckbx_n1">
+                            I agree to the <a href="https://eu.deriv.com/terms-and-conditions/#clients" target="_blank" style="color: #ff444f !important;">terms and conditions</a>.
+                        </label><br/>
+                        <p id="pAgree_n1">Please tick the check box for signup</p>
+                        <button id="myBtn_n1" class="button-signup" type="button" style="margin-top: 5% !important;">Sign up</button>
+                        <p id="disclaimer">
+                            By pressing "Sign up", you confirm that you are 18 or older. You <br/>understand that we may use your email address to send you<br/> information about Deriv products and services as well as market <br/>news. You can always unsubscribe from these emails in your <br/>account settings. For more information, please take a look at <br/>Deriv's <a href="https://deriv.com/tnc/security-and-privacy.pdf" style="color: #ff444f !important;">Security and privacy</a>.
+                        </p>
+                        <div style="display: flex; margin: 2% 0 3% 17%; padding: 0;">
+                            <div style="display: flex; align-items: center;">
+                                <div class="line"></div>
+                            </div>
+                            <span class="span">Or sign up with</span>
+                            
+                            <div style="display: flex; align-items: center;">
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <div class="social-media-buttons">
+                            <a class="social-media-login" data-platform="google">
+                                <button class="button-google">
+                                    <img
+                                src="https://static.deriv.com/email/images/icons/social-google.png"
+                                />                                    <span>Google</span>
+                                </button>
+                            </a>
+                            <a class="social-media-login" data-platform="facebook">
+                                <button class="button-fb">
+                                    <img
+                                src="https://static.deriv.com/email/images/icons/social-facebook-blue.png"
+                                />                                    <span>Facebook</span>
+                                </button>
+                            </a>
+                            <a class="social-media-login" data-platform="apple">
+                                <button class="button-apple">
+                                    <img
+                                src="https://static.deriv.com/email/images/icons/social-apple-white.png"
+                                />
+                                    <span>Apple</span>
+                                </button>
+                            </a>
+                        </div>
+                        <p class="haveacc">Already have an account? <a href="https://deriv.com/" style="color: #ff444f !important;">Log in</a></p>
+                    </div>
                 </div>
             </div>
         </div>
