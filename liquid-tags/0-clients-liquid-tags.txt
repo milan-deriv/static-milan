@@ -81,3 +81,10 @@ Chào {{customer.name | titlecase }},
 {% else %}
 Chào trader,
 {% endif %}
+
+-- RU --
+{% if customer.name != blank %}
+Здравствуйте {{customer.name | titlecase }},
+{% else %}
+Здравствуйте трейдер,
+{% endif %}
