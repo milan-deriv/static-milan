@@ -398,7 +398,11 @@
                     </tr>
                     <tr>
                         <td class="paragraph-td dark-black" align="right" style="padding: 30px 30px 20px 30px;">
-                            <p class="dark-subtext">مرحبًا [اسم العميل]،</p>
+                            <p class="dark-subtext">{% if customer.name != blank %} 
+                                عزيزي {{customer.name | titlecase }}, 
+                                {% else %} 
+                                عزيزي التاجر, 
+                                {% endif %}</p>
                         </td>
                     </tr>
                     <tr>

@@ -88,3 +88,10 @@ Chào trader,
 {% else %}
 Здравствуйте трейдер,
 {% endif %}
+
+-- AR --
+{% if customer.name != blank %} 
+عزيزي {{customer.name | titlecase }}, 
+{% else %} 
+عزيزي التاجر, 
+{% endif %}
