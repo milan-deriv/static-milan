@@ -80,12 +80,12 @@
                     #tablet-header{ width: 40%; vertical-align: top; margin-top: 1%;}
                     #white-box-header{ width: 60%; vertical-align: top; margin-top: 0.5%;}
                     #first-text-box {max-width: 80% !important;}
-                    #tablet-header img { max-height: 680px; width: auto; }
+                    #tablet-header img { max-height: 540px; width: auto; }
                     #white-box-header{ max-height: 700px; width: auto;}
                     
                     .footer-logo{ height: 40px; width: auto; vertical-align: top; }
-                    .footer-sm{ height: 32px; width: auto; margin-right: 8px; }
-                    .footer-sm-mb{ height: 24px; width: auto; margin-right: 15px; }
+                    .footer-sm{ height: 40px; width: auto; margin-right: 8px; }
+                    .footer-sm-mb{ height: 32px; width: auto; margin-right: 15px; }
                     
                     @media screen and (max-width: 1160px){ 
                         .page-background {max-width: 100vw !important; padding: 0 0 !important; margin: 1% 0 !important;}
@@ -128,6 +128,7 @@
                         #booktextboxx {margin: 0 0.5rem !important; padding-right: 1rem !important;}
                         #white-box-header {margin-left: 0% !important;}
                         .button-book { margin: 1rem 33% 1rem 33% !important; }
+                        .trustmobile {display: flex; justify-content:center; width:100%;}
                         #lefttextbox {width: 100vw !important; margin-left: 0.5rem !important;}
                         #greytextbox {width: 90% !important; background-color: #F6F7F8; border: 0px; border-radius: 10px; margin: 1.3rem !important; padding: 0% !important;}
                         .hide-desktop{ display: none !important; }
