@@ -236,6 +236,9 @@
             .mb-font-size{
                 font-size: 14px !important;
             }
+            .mb-font-size1{
+                font-size: 12px !important;
+            }
             h1 {
             font-family: 'IBM Plex Sans', Arial, sans-serif;
             font-size: 26px !important;
@@ -243,6 +246,11 @@
             font-weight: bold;
             margin: 0; 
         }
+        .table-border {
+                        border: 2px solid #EBECEF;
+                        border-radius: 8px; 
+                        overflow: hidden;
+                    }
         }
         @media (prefers-color-scheme: dark ) {
             /* Shows Dark Mode-Only Content, Like Images */
@@ -256,6 +264,7 @@
             /* Custom Dark Mode Background Color */
             .darkmodeblack { background-color:#0e0e0e !important; }
             .darkmodelowblack { background-color: #202020 !important;}
+            .darkmodelowblack1 { background-color: #303030 !important;}
             .dark-border-radius { background-color: #202020 !important; border-radius: 16px !important;}
 
             /* Custom Dark Mode Font Colors */
@@ -333,7 +342,7 @@
                         </div>
                         <!-- END HERO -->
                         <tr>
-                            <td align="center" style="padding: 0px 40px 20px; background-color: #fff;" class="mobile-side darkmodeblack">
+                            <td align="center" style="padding: 10px 40px 20px; background-color: #fff;" class="mobile-side darkmodeblack">
                                 <h1 style="font-family: 'Ubuntu', 'IBM Plex Sans', Arial, sans-serif; font-size: 30px; line-height: 1.5 ; color: #414652; font-weight: 700;margin:0;">Your Weekly Economic Update!</h1>
                             </td>
                         </tr>
@@ -347,58 +356,111 @@
                                 <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size">Don't miss our weekly economic updates! Stay ahead with valuable insights into market movements. Explore the week ahead with our calendar:</p>
                             </td>
                         </tr>
+                        <!--Table gray input-->
                         <tr>
                             <td align="center">
-                                <!--Table gray input-->
-                                <table class="darkmodelowblack" style="width: 90%; height: auto; margin: 10px 0px 30px; background-color: #f6f7f8; border-radius: 8px;">
-                                    <tr> 
-                                        <td align="center" style="margin: 0px; padding: 20px 0px 0; width: 25%; vertical-align:middle; ">
-                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size"><strong>Day</strong></p>
+                                <table class="darkmodeblack table-border" style="width: 90%; height: auto; margin: 20px 0px 30px; border-radius: 8px;">
+                                    <!--Table dark gray Day, DAtes, Economic events, Assets that may be affected input-->
+                                    <tr > 
+                                        <td class="darkmodelowblack" align="center" style="margin: 0px; padding: 20px 0px; width: 20%; vertical-align:middle; background-color: #EBECEF; border-radius:16px 0 0; overflow: hidden;">
+                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1"><strong>Day</strong></p>
                                         </td>
-                                        <td align="center" style="margin: 0px; padding: 20px 0px 0; width: 25%; vertical-align:middle; ">
-                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size"><strong>Dates</strong></p>
+                                        <td class="darkmodelowblack" align="center" style="margin: 0px; padding: 20px 0px; width: 15%; vertical-align:middle;background-color: #EBECEF;">
+                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1"><strong>Dates</strong></p>
                                         </td>
-                                        <td align="left" style="margin: 0px; padding: 20px 0px 0; width: 25%; vertical-align:middle; ">
-                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size"><strong>Economic events</strong></p>
+                                        <td class="darkmodelowblack" align="center" style="margin: 0px; padding: 20px 0 20px 0px; width: 45%; vertical-align:middle;background-color: #EBECEF;">
+                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1"><strong>Economic events</strong></p>
                                         </td>
-                                        <td align="center" style="margin: 0px; padding: 20px 0px 0; width: 25%; vertical-align:middle; ">
-                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size"><strong>Assets that <br>may be<br> affected</strong></p>
-                                        </td>
-                                    </tr>
-                                    <tr> 
-                                        <td align="center" style="margin: 0px; padding: 20px 0px; width: 25%; vertical-align:middle; ">
-                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size">You gain </p>
-                                        </td>
-                                        <td align="center" style="margin: 0px; padding: 20px 0px; width: 25%; vertical-align:middle; ">
-                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size">You gain </p>
-                                        </td>
-                                        <td align="left" style="margin: 0px; padding: 20px 0px; width: 25%; vertical-align:middle; ">
-                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size">You gain </p>
-                                        </td>
-                                        <td align="center" style="margin: 0px; padding: 20px 0px; width: 25%; vertical-align:middle; ">
-                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size">You gain </p>
+                                        <td class="darkmodelowblack" align="center" style="margin: 0px; padding: 20px 20px 20px 0; width: 20%; vertical-align:middle;background-color: #EBECEF;border-radius:0 16px 0 0; overflow: hidden;">
+                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1"><strong>Assets that<br>may be<br>affected</strong></p>
                                         </td>
                                     </tr>
+                                    <!--Table dark gray Day, DAtes, Economic events, Assets that may be affected closing-->
+
+
+                                    <!--Table light gray first column input-->
+                                    <tr> 
+                                        <td class="darkmodelowblack1" align="center" style="margin: 0px; padding: 5px 0px; width: 20%; vertical-align:middle; background-color: #F6F7F8;">
+                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1">Monday</p>
+                                        </td>
+                                        <td class="darkmodelowblack1" align="center" style="margin: 0px; padding: 5px 0px; width: 15%; vertical-align:middle;background-color: #F6F7F8;">
+                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1">1 April</p>
+                                        </td>
+                                        <td class="darkmodelowblack1" align="left" style="margin: 0px; padding: 5px 0px; width: 45%; vertical-align:middle;background-color: #F6F7F8;">
+                                            <ul>
+                                                <li style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1">US ISM manufacturing Parchasing Managers Index</li>
+                                            </ul>
+                                        </td>
+                                        <td class="darkmodelowblack1" align="center" style="margin: 0px; padding: 0px; width: 20%; vertical-align:middle;background-color: #F6F7F8;">
+                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1"></p>
+                                        </td>
+                                    </tr>
+                                    <!--Table light gray first column closing-->
+
+
+                                    <!--Table light gray second column input-->
+                                    <tr> 
+                                        <td class="darkmodelowblack1" align="center" style="margin: 0px; padding: 5px 0px; width: 20%; vertical-align:middle; background-color: #F6F7F8;">
+                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1">Wednesday</p>
+                                        </td>
+                                        <td class="darkmodelowblack1" align="center" style="margin: 0px; padding: 5px 0px; width: 15%; vertical-align:middle; background-color: #F6F7F8;">
+                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1">3 April</p>
+                                        </td>
+                                        <td class="darkmodelowblack1" align="left" style="margin: 0px; padding: 5px 0px; width: 45%; vertical-align:middle; background-color: #F6F7F8;">
+                                            <ul>
+                                                <li style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1">EU Harmonised Index of Consumer Prices</li>
+                                                <li style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1">US ADP employment change</li>
+                                                <li style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1">US ISM non-manufacturing Purchasing Managers Index</li>
+                                            </ul>
+                                        </td>
+                                        <td class="darkmodelowblack1" align="center" style="margin: 0px; padding: 0px; width: 20%; vertical-align:middle;background-color: #F6F7F8;">
+                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1">US_30<br> US_100<br> US_500<br> XAUUSD<br> EURUSD</p>
+                                        </td>
+                                    </tr>
+                                    <!--Table light gray second column closing-->
+
+
+                                    <!--Table light gray third column input-->
+                                    <tr> 
+                                        <td class="darkmodelowblack1" align="center" style="margin: 0px; padding: 5px 0px; width: 20%; vertical-align:middle;background-color: #F6F7F8; border-radius:0 0 0 16px; overflow: hidden;">
+                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1">Friday</p>
+                                        </td>
+                                        <td class="darkmodelowblack1" align="center" style="margin: 0px; padding: 5px 0px; width: 15%; vertical-align:middle;background-color: #F6F7F8;">
+                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1">5 April</p>
+                                        </td>
+                                        <td class="darkmodelowblack1" align="left" style="margin: 0px; padding: 5px 0px; width: 45%; vertical-align:middle; background-color: #F6F7F8;">
+                                            <ul>
+                                                <li style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1">EU retail sales</li>
+                                                <li style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1">US nonfarm payrolls</li>
+                                                <li style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1">US average hourly earnings</li>
+                                                <li style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1">US unemployment rate</li>
+                                            </ul>
+                                        </td>
+                                        <td class="darkmodelowblack1" align="center" style="margin: 0px; padding: 0px; width: 20%; vertical-align:middle;background-color: #F6F7F8; border-radius:0 0 16px 0; overflow: hidden;">
+                                            <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size1"></p>
+                                        </td>
+                                    </tr>
+                                    <!--Table light gray third column closing-->
                                 </table>
-                                <!--Table gray closing-->
                             </td>
                         </tr>    
+                        <!--Table gray closing-->
                         <tr>
                             <td align="left" style="padding: 0px 30px 40px; background-color: #fff;" class="mobile-side darkmodeblack">
-                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size">Log into Trader’s Hub to check your open positions to make sure you have enough margin.</p>
+                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size">Watch out for our weekly updates on Twitter!</p>
                             </td>
                         </tr>
                         <!-- BUTTON -->
                         <tr>
                             <td align="center" class="darkmodeblack">
                                 <!--[if (gte mso 9)|(IE)]>
-                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://app.deriv.com/appstore/traders-hub" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
+                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://x.com/derivdotcom" style="height:40px;v-text-anchor:middle;width:230px;" arcsize="30%" strokecolor="#ff444f" fillcolor="#ff444f">
                                 <w:anchorlock/>
-                                <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Take me to Trader’s Hub</center>
+                                <center style="color:#fff;font-family:sans-serif;font-size:14px;font-weight:bold;">Follow us</center>
                                 </v:roundrect>
                                 <![endif]-->
                                 <!--[if !gte mso 9]><!-- -->
-                                <a class="button" href="https://app.deriv.com/appstore/traders-hub" target="_blank" style="text-decoration: none; text-align: center; line-height: 20px; padding: 10px 16px;display: inline-block; font-weight: bold; font-family: 'Ubuntu','IBM Plex Sans', Arial, sans-serif; font-size: 14px;border-radius: 16px; overflow: visible; border: 0;color: #ffffff; background: #ff444f;">Take me to Trader’s Hub</a>
+                                <a class="button" href="https://x.com/derivdotcom" target="_blank" style="text-decoration: none; text-align: center; line-height: 20px; padding: 10px 16px;display: inline-block; font-weight: bold; font-family: 'Ubuntu','IBM Plex Sans', Arial, sans-serif; font-size: 14px;border-radius: 16px; overflow: visible; border: 0;color: #ffffff; background: #ff444f;">Follow us</a>
                                 <!--<![endif]-->
                             </td>
                         </tr>
