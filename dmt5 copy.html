@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -47,18 +47,84 @@
                 src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFsdP3pBms.woff2) format('woff2');
                 unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
             }
-            
-                        
-            html, body{ width: 100% !important; margin: 0 !important;}
             a{ text-decoration: none; }
-        
+
+            header {
+                max-width: 2600px;
+                margin: 0 auto 2%;
+                border: 5px solid;
+                height: auto;
+            }
+            .navlogo{
+                width: 1220px;
+                margin: 0.2% auto;
+                border: 5px solid #ff008c;
+            }
+            .navlogo img {
+                position: relative;
+                left: 2%;
+            }
+            
+            .redwhite {
+                border: 5px solid #0000ff;
+                width: 1229px;
+                margin: auto;
+                height: 912px;
+                display: flex; 
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(101deg, #ff444f 44%, #ffffff 0%);
+                position: relative;
+                border-radius: 16px;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+            }
+            .left {
+                height: 100%;
+                position: relative;
+                border: 5px solid #00ff08;
+                width: 50%;
+
+            }
+            .right {
+                position: relative;
+                height: 100%;
+                border: 5px solid #fbff00;
+                width: 50%;
+            }
+            h1{
+                position: absolute;
+                top: 2%;
+                left: 9%;
+                color: #ffffff;
+                font-size: 40px;
+                font-family: 'Ubuntu';
+            }
+            #redh3{
+                position: absolute;
+                top: 11%;
+                left: 9%;
+                font-weight: 400;
+                color: #ffffff;
+                font-family: 'IBM Plex Sans';
+                font-size: 24px;
+                margin: 0;
+            }
+            .left img {
+                position: relative;
+                width: 920px;
+                height: auto;
+                top: 140px;
+                left: 1.5%;
+            }
         }
         </style>
         <!-- ==== END OF STYLES ==== -->
     </head>
     <body>
         <header>
-            <a class="navlogo" href="https://deriv.com/" target="_blank"><img src="https://static.deriv.com/logos/red-xl.png" alt="Deriv Logo" style="width: 96.44px; height: 32px;"/></a>
+            <div class="navlogo">
+                <a  href="https://deriv.com/" target="_blank"><img src="https://static.deriv.com/logos/red-xl.png" alt="Deriv Logo" style="width: 96.44px; height: 32px;"/></a>
+            </div>
             <div class="redwhite">
 
                 <div class="left">
