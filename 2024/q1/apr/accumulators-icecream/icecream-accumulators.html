@@ -264,9 +264,35 @@
             margin: 0; 
             }
         }
-        @media (prefers-color-scheme: dark) {
-            .no-darkmode {
-                background-color: #eeeeee !important;
+        @media (prefers-color-scheme: dark ) {
+            /* Shows Dark Mode-Only Content, Like Images */
+            
+            .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+            .dark-imglow { display:block !important; width: 100px !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+    
+            /* Hides Light Mode-Only Content, Like Images */
+            .light-img { display:none; display:none !important; }
+
+            /* Custom Dark Mode Background Color */
+            .darkmodeblack { background-color:#0e0e0e !important; }
+            .darkmodelowblack { background-color: #202020 !important;}
+            .dark-border-radius { background-color: #202020 !important; border-radius: 16px !important;}
+            .darkblack-border-radius { background-color:#0e0e0e !important; border-radius: 16px !important;}
+
+            /* Custom Dark Mode Font Colors */
+            h1, h2, p, span, a, b { color: #ffffff !important; }
+            .darkmodegray { color: #6e6e6e !important; }
+            .darkcolor-subtext{ color: #c2c2c2 !important; }
+            .darkcolor-white, strong{ color: #ffffff !important; }
+            .darkborder{ border-color: #6e6e6e !important; }
+
+            /* Custom Dark Mode Text Link Color */
+            .link { color: #91ADD4 !important; }
+            .dark-visible-block {
+                display:inline-block !important;
+            }
+            .dark-hide {
+                display:none !important;
             }
         }
     </style>
@@ -315,15 +341,27 @@
                                 </td>
                             </tr>
                             <!-- BUTTON CLOSING -->
-                            <tr align="center" class="mobile-hide">
+                            <tr align="center" class="mobile-hide dark-hide">
                                 <td align="center">
                                         <input type="image" src="https://static.deriv.com/email/images/design-2024/icecream-body-en.png"  width= "600" height="auto"/>
                                 </td>
                             </tr> 
+                            <tr align="center" class="mobile-hide dark-visible-block" style="display: none; mso-hide:all;">
+                                <td align="center">
+                                        <input type="image" src="https://static.deriv.com/email/images/design-2024/icecream-body-dark-en.png"  width= "600" height="auto"/>
+                                </td>
+                            </tr> 
                             <div>
-                                <tr align="center" style="display: none; mso-hide:all;" class="mobile-visible-block">
+                                <tr align="center" style="display: none; mso-hide:all;" class="mobile-visible-block dark-hide">
                                     <td align="center" >  
                                             <input type="image" src="https://static.deriv.com/email/images/design-2024/icecream-body-en-m.png" width="100%" height="auto"/>
+                                    </td>
+                                </tr>  
+                            </div>
+                            <div>
+                                <tr align="center" style="display: none; mso-hide:all;" class="mobile-visible-block dark-visible-block">
+                                    <td align="center" >  
+                                            <input type="image" src="https://static.deriv.com/email/images/design-2024/icecream-body-dark-en-m.png" width="100%" height="auto"/>
                                     </td>
                                 </tr>  
                             </div>
