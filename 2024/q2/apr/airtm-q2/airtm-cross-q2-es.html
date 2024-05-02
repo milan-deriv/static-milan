@@ -357,8 +357,36 @@
                             </tr>
                             <tr>
                                 <td align="left" style="padding: 8px 30px 10px; background-color: #fff;" class="mobile-side darkmodeblack">
-                                    <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size">Como beneficio, Airtm le recompensa con un <strong>reembolso de 5 USD</strong> cuando recargue su monedero electrónico con un minimo de XXX USD y deposite 15 USD o más en Deriv ¡del <strong>5 al 15 de mayo!</strong></p>
-                                    <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #ff444f; font-weight: 400;margin:0; text-align: center; padding-top: 20px ;" class="darkcolor-subtext mb-font-size-note">* Rigen los términos y condiciones.</p>
+                                    <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 16px; line-height: 1.5 ; color: #414652; font-weight: 400;margin:0;" class="darkcolor-subtext mb-font-size">Como beneficio, Airtm le recompensa con un <strong>reembolso de 5 USD</strong> cuando recargue su monedero electrónico con un minimo de 
+                                        {% if Profile.country == "Argentina" %}
+                                        55,00 USDC
+                                        {% endif %} 
+                                        {% if Profile.country == "Bolivia" %}
+                                        60,00 USDC
+                                        {% endif %} 
+                                        {% if Profile.country == "Colombia" %}
+                                        70,00 USDC
+                                        {% endif %} 
+                                        {% if Profile.country == "Costa Rica" %}
+                                        80,00 USDC
+                                        {% endif %}  
+                                        {% if Profile.country == "Ecuador" %}
+                                        65,00 USDC
+                                        {% endif %} 
+                                        {% if Profile.country == "Pakistan" %}
+                                        30,00 USDC
+                                        {% endif %}  
+                                        {% if Profile.country == "Peru" %}
+                                        65,00 USDC
+                                        {% endif %}  
+                                        {% if Profile.country == "Cameroon" %}
+                                        60,00 USDC
+                                        {% endif %}   
+                                        {% if Profile.country == "Madagascar" %}
+                                        15,00 USDC
+                                        {% endif %} 
+                                        y deposite 15 USD o más en Deriv ¡del <strong>5 al 15 de mayo!</strong></p>
+                                    <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; font-size: 14px; line-height: 1.5 ; color: #ff444f !important; font-weight: 400;margin:0; text-align: center; padding-top: 20px ;" class="darkcolor-subtext mb-font-size-note"><a href="https://help.airtm.com/es-LA/support/solutions/articles/47001260810-bases-y-condiciones-de-la-promoci%C3%B3n-deriv-cashback-30-" target="_blank" style="color: #ff444f !important;">* Rigen los términos y condiciones.</a></p>
                                 </td>
                             </tr>
                             <tr>
