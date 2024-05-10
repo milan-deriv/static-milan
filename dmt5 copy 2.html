@@ -51,62 +51,66 @@
 
         html { box-sizing: border-box; }
         *, *::before, *::after { box-sizing: inherit; }
-        html, body { height: 100%; margin: 0; padding: 0; }
+        html, body { height: 100%; margin: 0 !important; padding: 0 !important; }
         a { text-decoration: none; }
+        .widget { padding: 0 !important; }
 
-        .wrapper {
-            max-width: 1440px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+            .wrapper {
+                max-width: 1500px;
+                margin: 0 auto;
+                padding: 0 2%;
+            }
 
-        .navlogo {
-            text-align: left;
-        }
+            .navlogo {
+                text-align: left;
+                max-width: 1400px;
+            }
 
-        .navlogo img {
-            max-width: 100%;
-            height: auto;
-            margin: 0.5% 0 0.5% 2%;
-        }
-        /* left side of redwhite opening */
-        .redwhite {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(101deg, #ff444f 45%, #ffffff 0%);
-            border-radius: 16px;
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
-        }
+            .navlogo img {
+                max-width: 100%;
+                height: auto;
+                margin: 0.5% 0 0.5% 2%;
+            }
+        
+            .redwhite {
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(101deg, #ff444f 45%, #ffffff 0%);
+                border-radius: 16px;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+            }
 
-        .left, .right {
-            width: 50%;
-            padding: 20px;
-        }
-
-        .left img {
-            max-width: 145%;
-            height: auto;
-            margin-left: 6%;
-        }
-        h1{
-            font-size: 40px;
-            font-family: 'Ubuntu';
-            color: #ffffff;
-            margin: 3% 0 0 12%;
-        }
-        #redh3{
-            font-size: 24px;
-            font-family: 'IBM Plex Sans';
-            font-weight: 400;
-            color: #ffffff;
-            margin: 0 0 0 12%;
-        }
-        /* left side of redwhite closing */
-        /* right side of redwhite opening */
-        h3 {
-                width: 70%;
+            .left, .right {
+                width: 50%;
+                padding: 0px;
+            }
+        /* left side redwhite opening */
+            .left img {
+                width: 105%;
+                height: auto;
+                margin-left: 8%;
+            }
+            h1{
+                font-size: 40px;
+                font-family: 'Ubuntu';
+                color: #ffffff;
+                margin: 5% 0 0 20%;
+                padding-bottom: 0 !important;
+            }
+            #redh3{
+                font-size: 24px;
+                font-family: 'IBM Plex Sans';
+                font-weight: 400;
+                color: #ffffff;
+                margin: 0 0 0 20%;
+            }
+        /* left side redwhite closing */
+        /* right side redwhite opening */
+            h3 {
+                width: 75%;
                 font-size: 24px;
                 font-weight: 700;
                 line-height: 36px;
@@ -115,7 +119,7 @@
                 margin: 0 0 2% 15%;
             }
             .size16 {
-                width: 70%;
+                width: 75%;
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 24px;
@@ -132,7 +136,7 @@
                 border: 1px solid #999999;
                 border-radius: 16px;
                 height: 40px;
-                width: 70%;
+                width: 75%;
                 margin-left: 15%;
             }
             input[type=checkbox] {
@@ -140,7 +144,7 @@
 
             }
             .size14 {
-                width: 70%;
+                width: 75%;
                 font-size: 14px;
                 font-weight: 400;
                 color: #414652 !important;
@@ -148,7 +152,7 @@
                 font-family: 'IBM Plex Sans';
             }
             .size12 {
-                width: 70%;
+                width: 75%;
                 font-size: 12px;
                 font-weight: 400;
                 color: #414652 !important;
@@ -164,52 +168,178 @@
                 vertical-align: middle;
             }
             .width406{
-                width: 70%;
+                width: 75%;
                 margin-left: 15% !important;
             }
 
             /* Buttons */
             .button, .button-signup, .button-google, .button-fb, .button-apple { 
-                        display: flex; 
-                        gap: 1%; 
-                        padding: 0px 3%; 
-                        justify-content: center; 
-                        align-items: center; 
-                        border-radius: 16px; 
-                        font-size: 14px; 
-                        cursor: pointer; 
-                        height: 40px;
-                        width: 70%; 
-                        margin: 2% 0 2% 15%; 
-                        font-weight: 700; 
+                display: flex; 
+                gap: 1%; 
+                padding: 0px 3%; 
+                justify-content: center; 
+                align-items: center; 
+                border-radius: 16px; 
+                font-size: 14px; 
+                cursor: pointer; 
+                height: 40px;
+                width: 75%; 
+                margin: 2% 0 2% 15%; 
+                font-weight: 700; 
+            }
+
+            .button-signup, .button-signup1, .button-start-trading { background-color: #ff444f; color: #fff; border: 1px solid #ff444f; }
+            .button-signup:hover, .button-signup1:hover, .button-start-trading:hover { background-color: #d43e47; }
+            .button-google { background-color: #fff; border: 0.5px solid #414652; }
+            .button-google span{ color: #414652; }
+            .button-google:hover { background-color: #eee; }
+            .button-fb{ background-color: #1877f2; color: #fff; border: 0.5px solid #1877f2; }
+            .button-fb span{ color: #fff; }
+            .button-fb:hover{ background-color: #1E88E5; }
+            .button-apple { background-color: #000; border: 0.5px solid #414652; }
+            .button-apple span{ color: #fff; }
+            .button-apple:hover { background-color: #2e2e2e; }
+            .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active { transition: width 0.1s, height 0.1s; height: 38px; width: 75%; }
+            .button-google img, .button-fb img, .button-apple img{ width: 24px; height: 24px;}
+            /* Buttons closing*/
+
+        /* right side redwhite closing */
+        @media (max-width: 840px) {
+                .navlogo {
+                    text-align: center;
+                    margin: 10px auto;
+                }
+                .redwhite{
+                    background: linear-gradient(170deg, #ff444f 33%, #ffffff 0%);
+                    margin: auto;
+                }
+
+                .left, .right {
+                    width: 100%;
+                }
+                /* left side redwhite opening */
+                .left img {
+                    width: 95%;
+                    margin: 0%;
+                }
+                h1{
+                    margin: 5% 0 0 10%;
+                    padding-bottom: 0 !important;
+                }
+                #redh3{
+                    margin: 0 0 0 10%;
+                }
+                /* left side  redwhite closing */
+                /* right side redwhite opening */
+                h3 {
+                    width: 80%;
+                    margin: 5% 0 2% 10%;
+                }
+                .size16 {
+                    width: 80%;
+                    margin: 0 0 2% 10%;
+                }
+                input[type=text] {
+                    width: 80%;
+                    margin-left: 10%;
+                }
+                input[type=checkbox] {
+                    margin-left: 10%;
+
+                }
+                .size14 {
+                    width: 80%;
+                }
+                .please {
+                    margin-left: 13% !important;
+                }
+                .size12 {
+                    width: 80%;
+                    margin-left: 10%;
+                }
+                .width406{
+                    width: 80%;
+                    margin-left: 10% !important;
+                }
+
+                /* Buttons */
+                    .button, .button-signup, .button-google, .button-fb, .button-apple {
+                        width: 80%; 
+                        margin: 2% 0 2% 10%;
                     }
-
-                    .button-signup, .button-signup1, .button-start-trading { background-color: #ff444f; color: #fff; border: 1px solid #ff444f; }
-                    .button-signup:hover, .button-signup1:hover, .button-start-trading:hover { background-color: #d43e47; }
-                    .button-google { background-color: #fff; border: 0.5px solid #414652; }
-                    .button-google span{ color: #414652; }
-                    .button-google:hover { background-color: #eee; }
-                    .button-fb{ background-color: #1877f2; color: #fff; border: 0.5px solid #1877f2; }
-                    .button-fb span{ color: #fff; }
-                    .button-fb:hover{ background-color: #1E88E5; }
-                    .button-apple { background-color: #000; border: 0.5px solid #414652; }
-                    .button-apple span{ color: #fff; }
-                    .button-apple:hover { background-color: #2e2e2e; }
-                    .button-signup:active, .button-google:active, .button-fb:active { transition: width 0.1s, height 0.1s; height: 37px; width: 113px; }
-                    .button-google img, .button-fb img, .button-apple img{ width: 1.5vw; }
-
+                    .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active { transition: width 0.1s, height 0.1s; height: 38px; width: 80%; }
                 /* Buttons closing*/
 
-        /* right side of redwhite closing */
+            /* right side redwhite closing */
+        }
+        @media (max-width: 520px) {
+            .navlogo img {
+                width: 72.33px !important;
+                height: 24px !important;
+            }
+            h1{
+                font-size: 28px;
+                margin: 8% 0 0 8%;
+                padding-right: 30% !important;
+                line-height: 32.17px;
+                padding-bottom: 0 !important;
+            }
+            #redh3{
+                font-size: 18px;
+                line-height: 28px;
+                margin: 1% 0 0 8%;
+                padding-right: 25%;
+            }
+            /* right side redwhite opening */
+            h3 {
+                width: 85%;
+                font-size: 18px;
+                line-height: 28px;
+                margin: 5% 0 2% 8%;
+            }
+            .size16 {
+                width: 85%;
+                font-size: 14px;
+                line-height: 20px;
+                margin: 0 0 3% 8%;
+            }
+            input[type=text] {
+                font-size: 14px;
+                line-height: 20px;
+                height: 38px;
+                width: 85%;
+                margin-left: 8%;
+            }
+            input[type=checkbox] {
+                margin-left: 8%;
 
-        @media (max-width: 800px) {
-            .redwhite{
-                background: linear-gradient(170deg, #ff444f 47%, #ffffff 0%);
+            }
+            .size14 {
+                width: 85%;
+                font-size: 12px;
+                line-height: 18px;
+            }
+            .size12 {
+                width: 85%;
+                font-size: 10px;
+                line-height: 13px;
+                margin-left: 8%;
+            }
+            .width406{
+                width: 85%;
+                margin-left: 8% !important;
             }
 
-            .left, .right {
-                width: 100%;
+            /* Buttons */
+            .button, .button-signup, .button-google, .button-fb, .button-apple {
+                height: 38px;
+                width: 85%; 
+                margin: 2% 0 2% 8%;
             }
+            .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active { transition: width 0.1s, height 0.1s; height: 36px; width: 85%; }
+            /* Buttons closing*/
+
+        /* right side redwhite closing */
         }
     </style>
 </head>
@@ -225,18 +355,18 @@
                 <div class="left">
                     <h1>Deriv MetaTrader5</h1>
                     <h3 id="redh3">Trade multiple assets at ultra-low spreads</h3>
-                    <img src="https://lh3.googleusercontent.com/yElVdc87Eu2E3GO9c3FWJxrTBm2Mm0O1HWCQxOSZ-LICiSIWT1z3D5FzlsNpqWtN_QEbqDbG9hNO-wUvGWCMEgvuvTESWIcqnAA=w1064" alt="">
+                    <img src="https://lh3.googleusercontent.com/qWhrnRZTbCRGpNKj_FgjnKJS0qmKUOTwcqVZm3fl8lqOwFnO85Rx-aCyW5rBpO9x0htT9OHblVEZS_HVjEgneys6NTAtxHJyjhA=w1064" alt="">
                 </div>
                 <div class="right">
                     <h3>Sign up</h3>
                     <p class="size16">Enter your email address to begin</p>
                     <input type="text" placeholder="Email" style=""/>
-                    <p class="size14" style="margin:2px 0 0 18%; color: #ff444f !important;">Please enter a valid email</p>
+                    <p class="size14 please" style="margin:2px 0 0 18%; color: #ff444f !important;">Please enter a valid email</p>
                     <input type="checkbox">
                     <label class="size14">
                         I agree to the <a href="https://eu.deriv.com/terms-and-conditions/#clients" target="_blank" style="color: #ff444f !important;">terms and conditions</a>.
                     </label>
-                    <p class="size14" style="margin:2px 0 0 18%; color: #ff444f !important;">Please tick the check box for signup</p>
+                    <p class="size14 please" style="margin:2px 0 0 18%; color: #ff444f !important;">Please tick the check box for signup</p>
                     <button type="button" class="button-signup">Create demo account</button>
                     <p class="size12">By pressing "Sign up", you confirm that you are 18 or older. You understand that we may use your email address to send you information about Deriv products and services as well as market news. You can always unsubscribe from these emails in your account settings. For more information, please take a look at Deriv's <a href="https://deriv.com/tnc/security-and-privacy.pdf" style="color: #ff444f !important;">Security and privacy</a>.</p>
 
