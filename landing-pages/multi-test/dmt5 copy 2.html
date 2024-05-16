@@ -204,6 +204,36 @@
             /* Buttons closing*/
             /* right side redwhite closing */
             /* Header box and logo */
+            /* white boxes (why trade with deriv) */
+            .title48 {
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 55.15px;
+                text-align: center;
+                color: #414652;
+                font-family: 'Ubuntu';
+                padding: 0 0 20px 0;
+            }
+            .boxes-flex {
+                padding: 50px;
+                margin: 30px auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 24px;
+            }
+            .box-flex{
+                width: 284px;
+                height: 192px;
+                border-radius: 16px;
+                padding: 24px;
+                gap: 24px;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+                
+            }
+            /* white boxes (why trade with deriv) */
+
             
         @media (max-width: 840px) {
                 .navlogo {
@@ -270,8 +300,12 @@
                     }
                     .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active { transition: width 0.1s, height 0.1s; height: 38px; width: 80%; }
                 /* Buttons closing*/
-
-            /* right side redwhite closing */
+                /* right side redwhite closing */
+                /* white boxes (why trade with deriv) */
+                .title48 {
+                    font-size: 40px;
+                }
+                /* white boxes (why trade with deriv) */
         }
         @media (max-width: 520px) {
             .navlogo img {
@@ -339,8 +373,13 @@
             }
             .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active { transition: width 0.1s, height 0.1s; height: 36px; width: 85%; }
             /* Buttons closing*/
-
-        /* right side redwhite closing */
+            /* right side redwhite closing */
+            /* white boxes (why trade with deriv) */
+            .title48 {
+                    font-size: 28px;
+                    line-height: 32.17px;
+                }
+            /* white boxes (why trade with deriv) */
         }
     </style>
 </head>
@@ -380,7 +419,22 @@
                 </div>
             </section>
             <section>
-                 <h2>Why trade with Deriv MT5</h2>
+                <div class="title48">
+                    <p>Why trade with Deriv MT5</p>
+                </div>
+                <div class="boxes-flex">
+                    <div class="box-flex">
+                        <p class="market"><img src="https://lh3.googleusercontent.com/ZNUHgBb8Lgdfk8mrE0dVHACL6nqaao1kC-6fhuucry6DwV7UNrcBoMXQzW-ZaRC-eZezSnpijvtlysyPOIuRewgCOxr77PT8M_s=s0" alt="Forex" class="icon" style="vertical-align: middle;"><strong style="padding-left: 10%;">Deriv MT5</strong></p>
+                        <p class="marketexp" style="padding-left: 34%;">The all-in-one CFD trading platform</p>
+                    </div>
+                    <div class="box-flex"></div>
+                    <div class="box-flex"></div>
+                    <div class="box-flex"></div>
+                    <div class="box-flex"></div>
+                    <div class="box-flex"></div>
+                    <div class="box-flex"></div>
+                    <div class="box-flex"></div>
+                </div>
 
             </section>
         </main>
