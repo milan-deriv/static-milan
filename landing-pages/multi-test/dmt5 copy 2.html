@@ -59,11 +59,6 @@
                 max-width: 2000px !important;
             }
             .wrapper {
-                max-width: 2000px !important;
-                margin: 0 auto !important;
-                padding: 0 auto !important;
-            }
-            .wrapper {
                 max-width: 1600px;
                 margin: 0 auto !important;
                 padding: 0 4%;
@@ -77,7 +72,7 @@
             .navlogo img {
                 max-width: 100%;
                 height: auto;
-                margin: 0.5% 0 0.5% 13%;
+                margin: 0.5% 0 0.5% 3%;
             }
         
             .redwhite {
@@ -96,7 +91,7 @@
                 width: 50%;
                 padding: 0px;
             }
-        /* left side redwhite opening */
+            /* left side redwhite opening */
             .left img {
                 width: 105%;
                 height: auto;
@@ -116,8 +111,8 @@
                 color: #ffffff;
                 margin: 0 0 0 20%;
             }
-        /* left side redwhite closing */
-        /* right side redwhite opening */
+            /* left side redwhite closing */
+            /* right side redwhite opening */
             h3 {
                 width: 75%;
                 font-size: 24px;
@@ -136,7 +131,7 @@
                 font-family: 'IBM Plex Sans';
                 margin: 0 0 2% 15%;
             }
-            input[type=text] {
+            input[type=email] {
                 font-size: 14px;
                 padding-left: 3%;
                 font-weight: 400;
@@ -150,6 +145,7 @@
             }
             input[type=checkbox] {
                 margin-left: 15%;
+                margin-top: 10px;
 
             }
             .size14 {
@@ -403,11 +399,11 @@
 
             /* DERIV EXPERIENCE (second sign up) */
             .deriv-exp {
-                background-color: #FBFBFC !important;
-                max-width: 2000px !important;
-                height: 584px;
-                margin: 0px auto;
-                padding:95px 20px;
+                max-width: 2000px;
+                height: auto;
+                margin: 0 auto;
+                padding: 80px 20px 150px;
+                background-color: #FBFBFC;
             }
             .boxes-flex-exp {
                 max-width: 1450px;
@@ -416,37 +412,229 @@
                 border-radius: 16px;
                 margin: 0px auto;
                 display: flex;
+                flex-direction: row-reverse;
                 flex-wrap: wrap;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 align-items: center;
                 align-content: center;
-                gap: 80px;
+                gap: 0 50px;
             }
-            .box-flex-exp1{
-                width: 414px;
-                height: 384px;
-                background-color: #fff;
-                border-radius: 8px;
-                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
-                margin-top: 100px;
-                
+            .box-flex-exp {
+                max-width: 486px;
             }
-            .box-flex-exp2{
-                width: 488px;
-                height: 130px;
-                align-content: center;
-                text-align: center;
-            }
-            .box-flex-exp2>.title48 {
+            .box-flex-exp > .title48 {
                 margin: 0px auto !important;
                 line-height: 60px;
                 color: #fff;
                 font-family: 'Ubuntu';
+            }
+            .box-flex-form {
+                display: flex;
+                flex-direction: column;
+                gap: 17px 0;
+                width: 414px;
+                height: 384px;
+                margin: 80px 0 0 0px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+                padding: 40px;
+            }
+            .size32 {
+                margin: 0;
+                padding: 0;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 40px;
+                color: #414652 !important;
+                font-family: 'Ubuntu';
 
             }
-            /* DERIV EXPERIENCE (second sign up) */
+            .psize16 {
+                margin: 0;
+                padding: 0px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                font-family: 'IBM Plex Sans';
+            }
+            .email-button {
+                display: flex;
+                justify-content: space-between;
+                gap: 0 5px;
+            }
+            .button-signup2 {
+                display: flex; 
+                gap: 1%; 
+                padding: 0px 3%; 
+                justify-content: center; 
+                align-items: center; 
+                border-radius: 16px; 
+                font-size: 14px; 
+                cursor: pointer; 
+                height: 40px;
+                width: 81px; 
+                margin: 0; 
+                font-weight: 700;
+                background-color: #ff444f; 
+                color: #fff; 
+                border: 1px solid #ff444f;
+            }
+            .email-button > input[type=email] {
+                font-size: 14px;
+                padding-left: 3%;
+                font-weight: 400;
+                line-height: 20px;
+                color: #999999;
+                border: 1px solid #999999;
+                border-radius: 16px;
+                height: 40px;
+                width: 245px;
+                margin-left: 0 !important;
+            }
+            .box-flex-form> label> input[type=checkbox] {
+                margin-left: 0% !important;
+            }
+            .buttons2 {
+                display: flex;
+                justify-content: space-between;
+                gap: 0 5px;
+            }
+            .buttons2>a>.button-google2, .button-fb2, .button-apple2 {
+                display: flex; 
+                gap: 1%; 
+                padding: 0px 3%; 
+                justify-content: center; 
+                align-items: center; 
+                border-radius: 16px; 
+                font-size: 14px; 
+                cursor: pointer; 
+                height: 40px;
+                width: 106px; 
+                margin: 0; 
+                font-weight: 700;
+            }
 
-            
+            .button-signup2:hover { background-color: #d43e47; }
+            .button-google2 { background-color: #fff; border: 0.5px solid #414652; }
+            .button-google2 span{ color: #414652; font-size: 12px; font-weight: 700; line-height: 18px;}
+            .button-google2:hover { background-color: #eee; }
+            .button-fb2{ background-color: #1877f2; color: #fff; border: 0.5px solid #1877f2; }
+            .button-fb2 span{ color: #fff; font-size: 12px; font-weight: 700; line-height: 18px;}
+            .button-fb2:hover{ background-color: #1E88E5; }
+            .button-apple2 { background-color: #000; border: 0.5px solid #414652; }
+            .button-apple2 span{ color: #fff; font-size: 12px; font-weight: 700; line-height: 18px;}
+            .button-apple2:hover { background-color: #2e2e2e; }
+            .button-signup2:active { transition: width 0.1s, height 0.1s; height: 38px; width: 25%; }
+            .button-google2:active, .button-fb2:active, .button-apple2:active { transition: width 0.1s, height 0.1s; height: 38px; width: 106px; }
+            .button-google2 img, .button-fb2 img, .button-apple2 img{ width: 24px; height: 24px;}
+            /* DERIV EXPERIENCE (second sign up) */
+            /* FOOTER */
+            .footer-log-sm {
+                max-width: 2000px !important;
+                height: auto;
+                margin: 30px auto 0;
+                padding: 20px;
+            }
+            .boxes-flex-log-sm {
+                max-width: 1450px;
+                height: auto;
+                margin: 0px auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+                gap: 20px 80px;
+            }
+            .box-flex-logo img {
+                width: 100px;
+                height: 32px;
+            }
+            .box-flex-sm img {
+                width: 40px;
+                height: 40px;
+            }
+            .disc-investor {
+                max-width: 1490px;
+                height: auto;
+                margin: 0px auto;
+                padding: 0 20px;
+                display: flex;
+                flex-direction: column;
+            }
+            .disc {
+                max-width: 1450px;
+            }
+            .investor {
+                max-width: 1450px;
+            }
+            .disc p {
+                padding-bottom: 20px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                font-family: 'IBM Plex Sans';
+            }
+            .investor img {
+                width: 220px;
+                height: 55px;
+                margin-bottom: 40px;
+            }
+            /* FOOTER */
+
+        @media (max-width: 1020px) {
+            /* DERIV EXPERIENCE (second sign up) */
+            .deriv-exp {
+                max-width: 2000px !important;
+                height: 1000px;
+            }
+            .boxes-flex-exp {
+                max-width: 800px;
+                height: 800px;
+                gap: 80px 0;
+            }
+            .box-flex-exp {
+                max-width: 486px;
+                margin-top: 100px;
+            }
+            .box-flex-form {
+                width: 800px;
+                height: 600px;
+                margin: 0 auto;
+            }
+            .email-button > input[type=email] {
+                font-size: 14px;
+                padding-left: 3%;
+                font-weight: 400;
+                line-height: 20px;
+                color: #999999;
+                border: 1px solid #999999;
+                border-radius: 16px;
+                height: 40px;
+                width: 100%;
+                margin-left: 0;
+            }
+            .email-button {
+                max-width: 800px;
+                display: flex;
+                flex-direction: column;
+            }
+            .button-signup2 {
+                width: 100%; 
+                margin-top: 17px;
+            }
+            .buttons2 {
+                max-width: 800px;
+                display: flex;
+                flex-direction: column;
+                gap: 17px 0;
+            }
+            .buttons2>a>.button-google2, .button-fb2, .button-apple2 {
+                width: 100%; 
+            }
+            /* DERIV EXPERIENCE (second sign up) */
+        }
         @media (max-width: 840px) {
                 .navlogo {
                     text-align: center !important;
@@ -485,7 +673,7 @@
                     width: 80%;
                     margin: 0 0 2% 10%;
                 }
-                input[type=text] {
+                input[type=email] {
                     width: 80%;
                     margin-left: 10%;
                 }
@@ -553,7 +741,7 @@
                 line-height: 20px;
                 margin: 0 0 3% 8%;
             }
-            input[type=text] {
+            input[type=email] {
                 font-size: 14px;
                 line-height: 20px;
                 height: 38px;
@@ -620,6 +808,9 @@
             .award {
                 padding: 0 10px !important;
             }
+            .award>div>.title48 {
+                padding: 30px 20px 0;
+            }
             .boxes-flex-award {
                 gap: 0px 8px;
             }
@@ -644,6 +835,66 @@
                 font-size: 22px;
             }
             /* TRUST PILOT */
+            /* DERIV EXPERIENCE (second sign up) */
+            .deriv-exp {
+                max-width: 2000px !important;
+                height: 1000px;
+            }
+            .boxes-flex-exp {
+                max-width: 800px;
+                height: 800px;
+                gap: 50px 0;
+            }
+            .box-flex-exp {
+                max-width: 170px;
+                margin-top: 100px;
+            }
+            .box-flex-exp > .title48 {
+                line-height: 40px;
+            }
+            .box-flex-form {
+                width: 800px;
+                height: 600px;
+                margin: 0 auto;
+            }
+            .size32 {
+                font-size: 24px;
+                line-height: 30px;
+            }
+            .psize16 {
+                font-size: 14px;
+            }
+            /* DERIV EXPERIENCE (second sign up) */
+            /* FOOTER */
+            .boxes-flex-log-sm {
+                gap: 20px 180px;
+            }
+            .box-flex-sm, .box-flex-logo {
+                margin: 0 auto;
+            }
+            .box-flex-sm img {
+                width: 35px;
+                height: 35px;
+            }
+            .box-flex-logo img {
+                width: 80px;
+                height: 26px;
+            }
+            .disc-investor {
+                padding: 0 10px;
+            }
+            .investor {
+                margin: 0 auto;
+            }
+            .disc {
+                margin: 0 auto;
+            }
+            .investor img {
+                width: 170px;
+                height: 35px;
+            }
+            /* FOOTER */
+
         }
     </style>
 </head>
@@ -665,14 +916,14 @@
                 <div class="right">
                     <h3>Sign up</h3>
                     <p class="size16">Enter your email address to begin</p>
-                    <input type="text" placeholder="Email" style=""/>
-                    <p class="size14 please" style="margin:2px 0 0 18%; color: #ff444f !important;">Please enter a valid email</p>
-                    <input type="checkbox">
-                    <label class="size14">
+                    <input id="email_input_n1" type="email" placeholder="Email" style=""/>
+                    <p class="size14 please" id="pEmail_n1" style="margin:2px 0 0 18%; color: #ff444f !important; display: none;">Please enter a valid email</p>
+                    <input type="checkbox" id="ckbx_n1">
+                    <label class="size14" for="ckbx_n1">
                         I agree to the <a href="https://eu.deriv.com/terms-and-conditions/#clients" target="_blank" style="color: #ff444f !important;">terms and conditions</a>.
                     </label>
-                    <p class="size14 please" style="margin:2px 0 0 18%; color: #ff444f !important;">Please tick the check box for signup</p>
-                    <button type="button" class="button-signup">Create demo account</button>
+                    <p id="pAgree_n1" class="size14 please" style="margin:2px 0 0 18%; color: #ff444f !important; display: none;">Please tick the check box for signup</p>
+                    <button id="myBtn_n1" type="button" class="button-signup">Create demo account</button>
                     <p class="size12">By pressing "Sign up", you confirm that you are 18 or older. You understand that we may use your email address to send you information about Deriv products and services as well as market news. You can always unsubscribe from these emails in your account settings. For more information, please take a look at Deriv's <a href="https://deriv.com/tnc/security-and-privacy.pdf" style="color: #ff444f !important;">Security and privacy</a>.</p>
 
                     <p class="size14 width406" style="text-align: center; margin: 4% 0;"><img src="https://lh3.googleusercontent.com/3dEdaLF3HUbDwSpbpDdBFhU6E_vXLeISQKjk3WkGRYWGgUVNcaAYu8vKuES5a60vWjpY2HZjDhHM8NhuW8h_km6EF016HmtJN76x=s0" class="border-line" align="left" style="margin-top: 8px;"> Or sign up with <img src="https://lh3.googleusercontent.com/3dEdaLF3HUbDwSpbpDdBFhU6E_vXLeISQKjk3WkGRYWGgUVNcaAYu8vKuES5a60vWjpY2HZjDhHM8NhuW8h_km6EF016HmtJN76x=s0" class="border-line" align="right" style="margin-top: 8px;"></p>
@@ -789,18 +1040,217 @@
         </section>
         <section  class="deriv-exp">
             <div class="boxes-flex-exp">
-                <div class="box-flex-exp1">
-                    <p>Join over 2.5 million <br/>traders worldwide</p>
-                    <p>Try our demo account</p>
-                </div>
-                <div class="box-flex-exp2">
+                <div class="box-flex-exp">
                     <p class="title48">Get a taste of the Deriv experience</p>
                 </div>
-                    <!-- End TrustBox widget -->
+                <div class="box-flex-form">
+                    <p class="size32">Join over 2.5 million traders worldwide</p>
+                    <p class="psize16">Try our demo account</p>
+                    <div class="email-button">
+                        <input id="email_input_n3" type="email" placeholder="Email address">
+                        <button id="myBtn_n3" type="button" class="button-signup2">Sign up</button>
+                    </div>
+                    <label>
+                        <input id="ckbx_n3" type="checkbox"> I agree to the <a href="https://eu.deriv.com/terms-and-conditions/#clients" target="_blank" style="color: #ff444f !important;">terms and conditions</a>.
+                    </label>
+                    <p class="psize16">Or sign up with</p>
+                    <div class="buttons2">
+                        <a data-platform="google"><button class="button-google2"><img src="https://static.deriv.com/email/images/icons/social-google.png"><span class="hide">Google</span></button></a>
+                        <a data-platform="facebook"><button class="button-fb2"><img src="https://static.deriv.com/email/images/icons/social-facebook-blue.png"><span class="hide">Facebook</span></button></a>
+                        <a data-platform="apple"><button class="button-apple2"><img src="https://static.deriv.com/email/images/icons/social-apple-white.png"><span class="hide">Apple</span></button></a>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <section  class="footer-log-sm">
+            <div class="boxes-flex-log-sm">
+                <div class="box-flex-logo">
+                    <img src="https://static.deriv.com/logos/deriv-gray-2023.png" alt="">
+                </div>
+                <div class="box-flex-sm">
+                    <a href="https://www.facebook.com/derivdotcom" target="_blank">
+                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/facebook-md.png" alt="" class="footer-sm">
+                    </a>
+                    <a href="https://www.instagram.com/deriv_official/" target="_blank">
+                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/instagram-md.png" alt="" class="footer-sm">
+                    </a>
+                    <a href="https://twitter.com/derivdotcom" target="_blank">
+                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/x-twitter-md.png" alt="" class="footer-sm">
+                    </a>
+                    <a href="https://www.youtube.com/c/Derivdotcom" target="_blank">
+                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/youtube-md.png" alt="" class="footer-sm">
+                    </a>
+                    <a href="https://www.linkedin.com/company/derivdotcom/" target="_blank">
+                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/linkedin-md.png" alt="" class="footer-sm">
+                    </a>
+                    <a href="https://t.me/Derivchannelofficial" target="_blank">
+                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/telegram-md.png" alt="" class="footer-sm">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="disc-investor">
+            <div class="disc">
+                <p>The products offered on our platforms are complex derivative products that carry a significant risk of potential loss. CFDs are complex instruments with a high risk of losing money rapidly due to leverage. You should consider whether you understand how these products work and whether you can afford to take the high risk of losing your money.</p>
+            </div>
+            <div class="investor">
+                <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/invest-in-people-platinum.png" alt="">
             </div>
         </section>
             </main>
     </div>
+
+
+    
+    <script>
+        const submit_btn_n1 = document.getElementById("myBtn_n1");
+        const ckbx_n1=document.getElementById("ckbx_n1");
+        const email_field_n1 =document.getElementById("email_input_n1");
+        ckbx_n1.addEventListener("click", fckbx_n1);
+        submit_btn_n1.addEventListener("click", f_submit_btn_n1);
+        email_field_n1.addEventListener("keyup", f_email_input_errmsg_n1);
+    
+        function f_email_input_errmsg_n1() {
+            const email = email_field_n1.value;
+            if(is_emailValid(email))
+                document.getElementById("pEmail_n1").style.display = "none";
+            else
+                document.getElementById("pEmail_n1").style.display = "block";
+        }
+    
+        function fckbx_n1() {
+            if(ckbx_n1.checked==true){
+                document.getElementById("pAgree_n1").style.display = "none";
+            }
+            else{
+                document.getElementById("pAgree_n1").style.display = "block";
+            }
+        }
+    
+        function f_submit_btn_n1() {
+            const email = email_field_n1.value;
+            if(is_emailValid(email)&&(ckbx_n1.checked==true)) {
+                const verify_email_req = getVerifyEmailRequest(email);
+                window.ws.send(JSON.stringify(verify_email_req));
+            }
+            else {
+                if(ckbx_n1.checked==false) {
+                    document.getElementById("pAgree_n1").style.display = "block";
+                    document.getElementById("pEmail_n1").style.display = "block";
+                    if(is_emailValid(email)) {
+                        document.getElementById("pEmail_n1").style.visibility = "hidden";
+                    }
+                }
+                else if(email=='') {
+                    document.getElementById("pEmail_n1").innerHTML="Insert your email address"
+                    document.getElementById("pEmail_n1").style.visibility = "visible";
+                }
+                else  {
+                    document.getElementById("pEmail_n1").innerHTML="Please enter a valid email"
+                    document.getElementById("pEmail_n1").style.visibility = "visible";
+                }
+            }
+        }
+    
+        function is_emailValid(email) { 
+            if (/^\w+([!#$%&'*+-/=?^_`{|}~\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+                return (true)
+            return (false)
+        }
+    
+        /// social login
+        const getDataLink = (data) => {
+            let data_link = "";
+            Object.keys(data).forEach((elem) => {
+                data_link += `&${elem}=${data[elem]}`;
+            });
+            return data_link;
+        };
+    
+        const loginUrl = (platform) => {
+            const cookies = getCookiesFields();
+            const cookies_objects = getCookiesObject(cookies);
+            const cookies_value = getDataObjFromCookies(cookies_objects, cookies);
+            const cookies_link = getDataLink(cookies_value);
+            const affiliate_tracking = Cookies.getJSON("affiliate_tracking");
+            const affiliate_token_link = affiliate_tracking ? `&affiliate_token=${affiliate_tracking}` : "";
+            const lang = "hi";
+            return `https://oauth.deriv.com/oauth2/authorize?app_id=16929&l=${lang}&brand=deriv&${affiliate_token_link}${cookies_link}&platform=&social_signup=${platform}`;
+        };
+    
+        window.onload = () => {
+            document.querySelectorAll(".social-media-login").forEach((e) => {
+                e.addEventListener("click", () => {
+                const platform = e.getAttribute("data-platform");
+                    window.location.href = loginUrl(platform);
+                });
+            });
+        };
+    </script>
+
+<script>
+    const submit_btn_n3 = document.getElementById("myBtn_n3");
+    const ckbx_n3=document.getElementById("ckbx_n3");
+    const email_field_n3 =document.getElementById("email_input_n3");
+    ckbx_n3.addEventListener("click", fckbx_n3);
+    submit_btn_n3.addEventListener("click", f_submit_btn_n3);
+    email_field_n3.addEventListener("keyup", f_email_input_errmsg_n3);
+
+    function f_email_input_errmsg_n3() {
+        const email = email_field_n3.value;
+        if(is_emailValid(email))
+            document.getElementById("pEmail_n3").style.display = "none";
+        else
+            document.getElementById("pEmail_n3").style.display = "block";
+    }
+
+    function fckbx_n3() {
+        if(ckbx_n3.checked==true){
+            document.getElementById("pAgree_n3").style.display = "none";
+        }
+        else{
+            document.getElementById("pAgree_n3").style.display = "block";
+        }
+    }
+  
+    function f_submit_btn_n3()  {
+        const email = email_field_n3.value;
+        if(is_emailValid(email)&&(ckbx_n3.checked==true)) {
+            const verify_email_req = getVerifyEmailRequest(email);
+            window.ws.send(JSON.stringify(verify_email_req));
+        } else {
+            if(ckbx_n3.checked==false) {
+                document.getElementById("pAgree_n3").style.display = "block";
+                document.getElementById("pEmail_n3").style.display = "block";
+                if(is_emailValid(email)) {
+                    document.getElementById("pEmail_n3").style.display = "none";
+                } 
+            } else if(email=='') {
+                document.getElementById("pEmail_n3").innerHTML="Insira o seu correo eletrónico."
+                document.getElementById("pEmail_n3").style.display = "block";
+            } else {
+                document.getElementById("pEmail_n3").innerHTML="Insira um correo eletrónico válido."
+                document.getElementById("pEmail_n3").style.display = "block";
+            }
+        }
+    }
+
+    function is_emailValid(email) { 
+        if (/^\w+([!#$%&'*+-/=?^_`{|}~\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+            return (true)
+        return (false)
+    }
+
+    /// social login
+    window.onload = () => {
+        document.querySelectorAll(".social-media-login").forEach((e) => {
+            e.addEventListener("click", () => {
+                const platform = e.getAttribute("data-platform");
+                window.location.href = loginUrl(platform);
+            });
+        });
+    };
+    /// End social login
+</script>
 </body>
 </html>
