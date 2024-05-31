@@ -1,185 +1,1236 @@
-<div id="headercall" class="hide-desktop">
-    <div style="max-height: 40px; width: 100vw; margin: 0; padding: 0;">
-        <div style="width: 150px; margin: 0px 0px 0% 6%; padding: 0px; ">
-            <a href="https://deriv.com/" target="_blank"><img src="https://static.deriv.com/logos/red-xl.png" alt="Deriv Logo" style="max-height: 32px; object-fit: scale-down; "/></a>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Fonts -->
+    <!-- Ubuntu 400: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Ubuntu 500: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- Ubuntu 700: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Welcome to Deriv! Here's your free e-book</title>
+    <script src="path/to/your/script.js" defer></script>
+
+    <style type="text/css">
+        /* latin */
+        @font-face {
+                font-family: 'IBM Plex Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: local('IBM Plex Sans'), local('IBMPlexSans'), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYXgKVElMYYaJe8bpLHnCwDKhdHeFaxOedc.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            /* latin */
+            @font-face {
+                font-family: 'IBM Plex Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: local('IBM Plex Sans Medium'), local('IBMPlexSans-Medium'), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIFsdP3pBms.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            /* latin */
+            @font-face {
+                font-family: 'IBM Plex Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'), url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFsdP3pBms.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+
+        html { box-sizing: border-box; }
+        *, *::before, *::after { box-sizing: inherit; }
+        html, body { height: 100%; margin: 0 !important; padding: 0 !important; }
+        a { text-decoration: none; }
+        .widget { padding: 0 !important; }
+            /* Header box and logo */
+            .css-1u5gq9f > .container {
+                max-width: 2000px !important;
+            }
+            .wrapper {
+                max-width: 1600px;
+                margin: 0 auto !important;
+                padding: 0 4%;
+            }
+
+            .navlogo {
+                text-align: left;
+                max-width: 1400px;
+            }
+
+            .navlogo img {
+                max-width: 100%;
+                height: auto;
+                margin: 0.5% 0 0.5% 3%;
+            }
+        
+            .redwhite {
+                max-width: 1450px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(101deg, #ff444f 45%, #ffffff 0%);
+                border-radius: 16px;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+            }
+
+            .left, .right {
+                width: 50%;
+                padding: 0px;
+            }
+            /* left side redwhite opening */
+            .left img {
+                width: 105%;
+                height: auto;
+                margin-left: 8%;
+            }
+            h1{
+                font-size: 40px;
+                font-family: 'Ubuntu';
+                color: #ffffff;
+                margin: 5% 0 0 20%;
+                padding-bottom: 0 !important;
+            }
+            #redh3{
+                font-size: 24px;
+                font-family: 'IBM Plex Sans';
+                font-weight: 400;
+                color: #ffffff;
+                margin: 0 0 0 20%;
+            }
+            /* left side redwhite closing */
+            /* right side redwhite opening */
+            h3 {
+                width: 75%;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 36px;
+                color: #414652;
+                font-family: 'Ubuntu';
+                margin: 0 0 2% 15%;
+            }
+            .size16 {
+                width: 75%;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #414652;
+                font-family: 'IBM Plex Sans';
+                margin: 0 0 2% 15%;
+            }
+            input[type=email] {
+                font-size: 14px;
+                padding-left: 3%;
+                font-weight: 400;
+                line-height: 20px;
+                color: #999999;
+                border: 1px solid #999999;
+                border-radius: 16px;
+                height: 40px;
+                width: 75%;
+                margin-left: 15%;
+            }
+            input[type=checkbox] {
+                margin-left: 15%;
+                margin-top: 10px;
+
+            }
+            .size14 {
+                width: 75%;
+                font-size: 14px;
+                font-weight: 400;
+                color: #414652 !important;
+                line-height: 20px;
+                font-family: 'IBM Plex Sans';
+            }
+            .size12 {
+                width: 75%;
+                font-size: 12px;
+                font-weight: 400;
+                color: #414652 !important;
+                line-height: 18px;
+                font-family: 'IBM Plex Sans';
+                margin-left: 15%;
+            }
+            .border-line{
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                height: 3.02px;
+                vertical-align: middle;
+            }
+            .width406{
+                width: 75%;
+                margin-left: 15% !important;
+            }
+
+            /* Buttons */
+            .button, .button-signup, .button-google, .button-fb, .button-apple { 
+                display: flex; 
+                gap: 1%; 
+                padding: 0px 3%; 
+                justify-content: center; 
+                align-items: center; 
+                border-radius: 16px; 
+                font-size: 14px; 
+                cursor: pointer; 
+                height: 40px;
+                width: 75%; 
+                margin: 2% 0 2% 15%; 
+                font-weight: 700; 
+            }
+
+            .button-signup, .button-signup1, .button-start-trading { background-color: #ff444f; color: #fff; border: 1px solid #ff444f; }
+            .button-signup:hover, .button-signup1:hover, .button-start-trading:hover { background-color: #d43e47; }
+            .button-google { background-color: #fff; border: 0.5px solid #414652; }
+            .button-google span{ color: #414652; }
+            .button-google:hover { background-color: #eee; }
+            .button-fb{ background-color: #1877f2; color: #fff; border: 0.5px solid #1877f2; }
+            .button-fb span{ color: #fff; }
+            .button-fb:hover{ background-color: #1E88E5; }
+            .button-apple { background-color: #000; border: 0.5px solid #414652; }
+            .button-apple span{ color: #fff; }
+            .button-apple:hover { background-color: #2e2e2e; }
+            .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active { transition: width 0.1s, height 0.1s; height: 38px; width: 75%; }
+            .button-google img, .button-fb img, .button-apple img{ width: 24px; height: 24px;}
+            /* Buttons closing*/
+            /* right side redwhite closing */
+            /* Header box and logo */
+            /* white boxes (why trade with deriv) */
+            
+            .title48 {
+                margin: 50px auto !important;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 55.15px;
+                text-align: center;
+                color: #414652;
+                font-family: 'Ubuntu';
+            }
+            .boxes-flex {
+                max-width: 1450px !important;
+                padding: 50px auto;
+                margin: 30px auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                gap: 30px 100px;
+            }
+            .box-flex{
+                width: 284px;
+                height: 212px;
+                border-radius: 16px;
+                padding: 26px;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+                margin-bottom: 50px;
+                
+            }
+            .box-flex2{
+                width: 284px;
+                height: 188px;
+                border-radius: 16px;
+                padding: 26px;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+                margin-bottom: 40px;
+                
+            }
+            .box-flex>p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                padding-top: 10px !important;
+                color: #414652;
+                font-family: 'IBM Plex Sans';
+                text-align: left;
+            }
+            .box-flex>img {
+                width: 56px;
+                height: 56px;
+                margin-top: 5px;
+            }
+            .box-flex2>p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                padding-top: 10px !important;
+                color: #414652;
+                font-family: 'IBM Plex Sans';
+                text-align: left;
+            }
+            .box-flex2>img {
+                width: 56px;
+                height: 56px;
+                margin-top: 5px;
+            }
+
+            /* white boxes (why trade with deriv) */
+
+            /* MT5 account type */
+            .typemt5 {
+                background-color: #F6F7F8 !important;
+                max-width: 2000px !important;
+                margin: 0px auto;
+                padding: 0 20px;
+            }
+            .typemt5>div>.title48 {
+                padding-top: 60px;
+            }
+            .boxes-flexmt5 {
+                padding: 50px auto;
+                margin: 30px auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                gap: 80px;
+            }
+            .box-flexmt5{
+                width: 290px;
+                height: 254px;
+                border-radius: 16px;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+                margin-bottom: 50px;
+                
+            }
+            .box-flexmt5>p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #414652;
+                font-family: 'IBM Plex Sans';
+                text-align: left;
+            }
+            .box-flexmt5>img {
+                width: 70px;
+                height: 70px;
+            }
+            .box-flexmt5>p>strong {
+                font-size: 20px;
+                font-weight: 700 ;
+                line-height: 30px ;
+                padding-top: 10px ;
+                color: #414652;
+                font-family: 'IBM Plex Sans';
+                text-align: left;
+            }
+            /* MT5 account type */
+
+            /* AWARDS section */
+            .award {
+                padding: 0 20px;
+            }
+            .award>div>.title48 {
+                padding-top: 30px;
+            }
+            .boxes-flex-award {
+                max-width: 1200px;
+                padding: 20px 0px;
+                margin: 30px auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                gap: 40px 60px;
+            }
+            .box-flex-award{
+                width: 198px;
+                height: 102px;
+                margin-bottom: 50px;
+                
+            }
+            .box-flex-award>img {
+                width: 198px;
+                height: 102px;
+            }
+            /* AWARDS section */
+
+            /* TRUST PILOT */
+            .trustpilot {
+                background-color: #F6F7F8 !important;
+                max-width: 2000px !important;
+                height: 300px;
+                margin: 0px auto;
+                padding:95px 20px;
+            }
+            .boxes-flex-trust {
+                margin: 0px auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+            }
+            .box-flex-trust{
+                width: 270px;
+                height: 110px;
+                padding: 0px;
+                align-content: center;
+                text-align: center;
+                
+            }
+            .box-flex-trust>p>strong {
+                font-size: 30px;
+                font-weight: 700 ;
+                line-height: 30px ;
+                color: #414652;
+                font-family: 'IBM Plex Sans';
+                margin: 0 auto;
+            }
+            /* TRUST PILOT */
+
+            /* DERIV EXPERIENCE (second sign up) */
+            .deriv-exp {
+                max-width: 2000px;
+                height: auto;
+                margin: 0 auto;
+                padding: 80px 20px 150px;
+                background-color: #FBFBFC;
+            }
+            .boxes-flex-exp {
+                max-width: 1450px;
+                height: 360px;
+                background-color: #ff444f;
+                border-radius: 16px;
+                margin: 0px auto;
+                display: flex;
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                align-content: center;
+                gap: 0 50px;
+            }
+            .box-flex-exp {
+                max-width: 486px;
+            }
+            .box-flex-exp > .title48 {
+                margin: 0px auto !important;
+                line-height: 60px;
+                color: #fff;
+                font-family: 'Ubuntu';
+            }
+            .box-flex-form {
+                display: flex;
+                flex-direction: column;
+                gap: 17px 0;
+                width: 414px;
+                height: 414px;
+                margin: 80px 0 0 0px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+                padding: 40px;
+            }
+            .size32 {
+                margin: 0;
+                padding: 0;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 40px;
+                color: #414652 !important;
+                font-family: 'Ubuntu';
+
+            }
+            .psize16 {
+                margin: 0;
+                padding: 0px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                font-family: 'IBM Plex Sans';
+            }
+            .email-button {
+                display: flex;
+                justify-content: space-between;
+                gap: 0 5px;
+            }
+            .button-signup2 {
+                display: flex; 
+                gap: 1%; 
+                padding: 0px 3%; 
+                justify-content: center; 
+                align-items: center; 
+                border-radius: 16px; 
+                font-size: 14px; 
+                cursor: pointer; 
+                height: 40px;
+                width: 81px; 
+                margin: 0; 
+                font-weight: 700;
+                background-color: #ff444f; 
+                color: #fff; 
+                border: 1px solid #ff444f;
+            }
+            .email-button > input[type=email] {
+                font-size: 14px;
+                padding-left: 3%;
+                font-weight: 400;
+                line-height: 20px;
+                color: #999999;
+                border: 1px solid #999999;
+                border-radius: 16px;
+                height: 40px;
+                width: 245px;
+                margin-left: 0 !important;
+            }
+            .box-flex-form> label> input[type=checkbox] {
+                margin-left: 0% !important;
+            }
+            .buttons2 {
+                display: flex;
+                justify-content: space-between;
+                gap: 0 5px;
+            }
+            .buttons2>a>.button-google2, .button-fb2, .button-apple2 {
+                display: flex; 
+                gap: 1%; 
+                padding: 0px 3%; 
+                justify-content: center; 
+                align-items: center; 
+                border-radius: 16px; 
+                font-size: 14px; 
+                cursor: pointer; 
+                height: 40px;
+                width: 106px; 
+                margin: 0; 
+                font-weight: 700;
+            }
+
+            .button-signup2:hover { background-color: #d43e47; }
+            .button-google2 { background-color: #fff; border: 0.5px solid #414652; }
+            .button-google2 span{ color: #414652; font-size: 12px; font-weight: 700; line-height: 18px;}
+            .button-google2:hover { background-color: #eee; }
+            .button-fb2{ background-color: #1877f2; color: #fff; border: 0.5px solid #1877f2; }
+            .button-fb2 span{ color: #fff; font-size: 12px; font-weight: 700; line-height: 18px;}
+            .button-fb2:hover{ background-color: #1E88E5; }
+            .button-apple2 { background-color: #000; border: 0.5px solid #414652; }
+            .button-apple2 span{ color: #fff; font-size: 12px; font-weight: 700; line-height: 18px;}
+            .button-apple2:hover { background-color: #2e2e2e; }
+            .button-signup2:active { transition: width 0.1s, height 0.1s; height: 38px; width: 25%; }
+            .button-google2:active, .button-fb2:active, .button-apple2:active { transition: width 0.1s, height 0.1s; height: 38px; width: 106px; }
+            .button-google2 img, .button-fb2 img, .button-apple2 img{ width: 24px; height: 24px;}
+            /* DERIV EXPERIENCE (second sign up) */
+            /* FOOTER */
+            .footer-log-sm {
+                max-width: 2000px !important;
+                height: auto;
+                margin: 30px auto 0;
+                padding: 20px;
+            }
+            .boxes-flex-log-sm {
+                max-width: 1450px;
+                height: auto;
+                margin: 0px auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+                gap: 20px 80px;
+            }
+            .box-flex-logo img {
+                width: 100px;
+                height: 32px;
+            }
+            .box-flex-sm img {
+                width: 40px;
+                height: 40px;
+            }
+            .disc-investor {
+                max-width: 1490px;
+                height: auto;
+                margin: 0px auto;
+                padding: 0 20px;
+                display: flex;
+                flex-direction: column;
+            }
+            .disc {
+                max-width: 1450px;
+            }
+            .investor {
+                max-width: 1450px;
+            }
+            .disc p {
+                padding-bottom: 20px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                font-family: 'IBM Plex Sans';
+            }
+            .investor img {
+                width: 220px;
+                height: 55px;
+                margin-bottom: 40px;
+            }
+            /* FOOTER */
+
+        @media (max-width: 1020px) {
+            /* DERIV EXPERIENCE (second sign up) */
+            .deriv-exp {
+                max-width: 2000px !important;
+                height: 1000px;
+            }
+            .boxes-flex-exp {
+                max-width: 800px;
+                height: 800px;
+                gap: 80px 0;
+            }
+            .box-flex-exp {
+                max-width: 486px;
+                margin-top: 100px;
+            }
+            .box-flex-form {
+                width: 800px;
+                height: 600px;
+                margin: 0 auto;
+            }
+            .email-button > input[type=email] {
+                font-size: 14px;
+                padding-left: 3%;
+                font-weight: 400;
+                line-height: 20px;
+                color: #999999;
+                border: 1px solid #999999;
+                border-radius: 16px;
+                height: 40px;
+                width: 100%;
+                margin-left: 0;
+            }
+            .email-button {
+                max-width: 800px;
+                display: flex;
+                flex-direction: column;
+            }
+            .button-signup2 {
+                width: 100%; 
+                margin-top: 17px;
+            }
+            .buttons2 {
+                max-width: 800px;
+                display: flex;
+                flex-direction: column;
+                gap: 17px 0;
+            }
+            .buttons2>a>.button-google2, .button-fb2, .button-apple2 {
+                width: 100%; 
+            }
+            /* DERIV EXPERIENCE (second sign up) */
+        }
+        @media (max-width: 840px) {
+                .navlogo {
+                    text-align: center !important;
+                    margin: 10px auto;
+                }
+                .navlogo img {
+                    margin: 0 auto;
+                }
+                .redwhite{
+                    background: linear-gradient(170deg, #ff444f 33%, #ffffff 0%);
+                    margin: auto;
+                }
+
+                .left, .right {
+                    width: 100%;
+                }
+                /* left side redwhite opening */
+                .left img {
+                    width: 95%;
+                    margin: 0%;
+                }
+                h1{
+                    margin: 5% 0 0 10%;
+                    padding-bottom: 0 !important;
+                }
+                #redh3{
+                    margin: 0 0 0 10%;
+                }
+                /* left side  redwhite closing */
+                /* right side redwhite opening */
+                h3 {
+                    width: 80%;
+                    margin: 5% 0 2% 10%;
+                }
+                .size16 {
+                    width: 80%;
+                    margin: 0 0 2% 10%;
+                }
+                input[type=email] {
+                    width: 80%;
+                    margin-left: 10%;
+                }
+                input[type=checkbox] {
+                    margin-left: 10%;
+
+                }
+                .size14 {
+                    width: 80%;
+                }
+                .please {
+                    margin-left: 13% !important;
+                }
+                .size12 {
+                    width: 80%;
+                    margin-left: 10%;
+                }
+                .width406{
+                    width: 80%;
+                    margin-left: 10% !important;
+                }
+
+                /* Buttons */
+                    .button, .button-signup, .button-google, .button-fb, .button-apple {
+                        width: 80%; 
+                        margin: 2% 0 2% 10%;
+                    }
+                    .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active { transition: width 0.1s, height 0.1s; height: 38px; width: 80%; }
+                /* Buttons closing*/
+                /* right side redwhite closing */
+                /* white boxes (why trade with deriv) */
+                .title48 {
+                    font-size: 40px;
+                }
+                /* white boxes (why trade with deriv) */
+        }
+        @media (max-width: 520px) {
+            .navlogo img {
+                width: 72.33px !important;
+                height: 24px !important;
+            }
+            h1{
+                font-size: 28px;
+                margin: 8% 0 0 8%;
+                padding-right: 30% !important;
+                line-height: 32.17px;
+                padding-bottom: 0 !important;
+            }
+            #redh3{
+                font-size: 18px;
+                line-height: 28px;
+                margin: 1% 0 0 8%;
+                padding-right: 25%;
+            }
+            /* right side redwhite opening */
+            h3 {
+                width: 85%;
+                font-size: 18px;
+                line-height: 28px;
+                margin: 5% 0 2% 8%;
+            }
+            .size16 {
+                width: 85%;
+                font-size: 14px;
+                line-height: 20px;
+                margin: 0 0 3% 8%;
+            }
+            input[type=email] {
+                font-size: 14px;
+                line-height: 20px;
+                height: 38px;
+                width: 85%;
+                margin-left: 8%;
+            }
+            input[type=checkbox] {
+                margin-left: 8%;
+
+            }
+            .size14 {
+                width: 85%;
+                font-size: 12px;
+                line-height: 18px;
+            }
+            .size12 {
+                width: 85%;
+                font-size: 10px;
+                line-height: 13px;
+                margin-left: 8%;
+            }
+            .width406{
+                width: 85%;
+                margin-left: 8% !important;
+            }
+
+            /* Buttons */
+            .button, .button-signup, .button-google, .button-fb, .button-apple {
+                height: 38px;
+                width: 85%; 
+                margin: 2% 0 2% 8%;
+            }
+            .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active { transition: width 0.1s, height 0.1s; height: 36px; width: 85%; }
+            /* Buttons closing*/
+            /* right side redwhite closing */
+            /* white boxes (why trade with deriv) */
+            .box-flex{
+                width: 328px;
+                height: 192px;
+                margin-bottom: 5px !important;
+            }
+            .box-flex2{
+                width: 328px;
+                height: 168px;
+                margin-bottom: 5px !important;
+            }
+            .title48 {
+                font-size: 28px !important;
+                font-weight: 700;
+                line-height: 32.17px;
+            }
+            /* white boxes (why trade with deriv) */
+            /* MT5 account type */
+            .box-flexmt5{
+                width: 328px;
+                height: 254px;
+                margin-bottom: 0px;
+            }
+            .greymargin {
+                margin-bottom: 60px;
+            }
+            /* MT5 account type */
+            /* AWARDS section */
+            .award {
+                padding: 0 10px !important;
+            }
+            .award>div>.title48 {
+                padding: 30px 20px 0;
+            }
+            .boxes-flex-award {
+                gap: 0px 8px;
+            }
+            .box-flex-award{
+                width: 140px;
+                height: 67.5px;
+                margin-bottom: 50px;
+                
+            }
+            .box-flex-award>img{
+                width: 140px;
+                height: 67.5px;
+                
+            }
+            /* AWARDS section */
+            /* TRUST PILOT */
+            .trustpilot {
+                height: 300px;
+                padding: 40px 20px;
+            }
+            .box-flex-trust>p>strong {
+                font-size: 22px;
+            }
+            /* TRUST PILOT */
+            /* DERIV EXPERIENCE (second sign up) */
+            .deriv-exp {
+                max-width: 2000px !important;
+                height: 1000px;
+            }
+            .boxes-flex-exp {
+                max-width: 800px;
+                height: 800px;
+                gap: 50px 0;
+            }
+            .box-flex-exp {
+                max-width: 170px;
+                margin-top: 100px;
+            }
+            .box-flex-exp > .title48 {
+                line-height: 40px;
+            }
+            .box-flex-form {
+                width: 800px;
+                height: 600px;
+                margin: 0 auto;
+            }
+            .size32 {
+                font-size: 24px;
+                line-height: 30px;
+            }
+            .psize16 {
+                font-size: 14px;
+            }
+            /* DERIV EXPERIENCE (second sign up) */
+            /* FOOTER */
+            .boxes-flex-log-sm {
+                gap: 20px 180px;
+            }
+            .box-flex-sm, .box-flex-logo {
+                margin: 0 auto;
+            }
+            .box-flex-sm img {
+                width: 35px;
+                height: 35px;
+            }
+            .box-flex-logo img {
+                width: 80px;
+                height: 26px;
+            }
+            .disc-investor {
+                padding: 0 10px;
+            }
+            .investor {
+                margin: 0 auto;
+            }
+            .disc {
+                margin: 0 auto;
+            }
+            .investor img {
+                width: 170px;
+                height: 35px;
+            }
+            /* FOOTER */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper-main">
+        <div class="wrapper">
+            <header>
+                <div class="navlogo">
+                    <a href="https://deriv.com/" target="_blank"><img src="https://static.deriv.com/logos/red-xl.png" alt="Deriv Logo" style="width: 96.44px; height: 32px;"></a>
+                </div>
+            </header>
+            <main>
+            <section class="redwhite">
+                <div class="left">
+                    <h1>Deriv Meta Trader 5</h1>
+                    <h3 id="redh3">Opera con múltiples activos con spreads ultra bajos</h3>
+                    <img src="https://lh3.googleusercontent.com/qWhrnRZTbCRGpNKj_FgjnKJS0qmKUOTwcqVZm3fl8lqOwFnO85Rx-aCyW5rBpO9x0htT9OHblVEZS_HVjEgneys6NTAtxHJyjhA=w1064" alt="">
+                </div>
+                <div class="right">
+                    <h3>Regístrate</h3>
+                    <p class="size16">Introduce tu dirección de correo electrónico para empezar</p>
+                    <input id="email_input_n1" type="email" placeholder="Correo electrónico" style=""/>
+                    <p class="size14 please" id="pEmail_n1" style="margin:2px 0 0 18%; color: #ff444f !important; display: none;">Por favor, introduce un correo electrónico válido.</p>
+                    <input type="checkbox" id="ckbx_n1">
+                    <label class="size14" for="ckbx_n1">
+                        Acepto los <a href="https://eu.deriv.com/terms-and-conditions/#clients" target="_blank" style="color: #ff444f !important;">términos y condiciones</a>.
+                    </label>
+                    <p id="pAgree_n1" class="size14 please" style="margin:2px 0 0 18%; color: #ff444f !important; display: none;">Por favor, marca la casilla para registrarte.</p>
+                    <button id="myBtn_n1" type="button" class="button-signup">Crear cuenta demo</button>
+                    <p class="size12">Al pulsar "Crear cuenta demo", confirmas que tienes 18 años o más. Entiendes que podemos usar tu dirección de correo electrónico para enviarte información sobre productos y servicios de Deriv, así como noticias del mercado. Siempre puedes darte de baja de estos correos en la configuración de tu cuenta. Para más información, por favor, revisa la <a href="https://deriv.com/tnc/security-and-privacy.pdf" style="color: #ff444f !important;">Seguridad y privacidad</a> de Deriv.</p>
+
+                    <p class="size14 width406" style="text-align: center; margin: 4% 0;"><img src="https://lh3.googleusercontent.com/3dEdaLF3HUbDwSpbpDdBFhU6E_vXLeISQKjk3WkGRYWGgUVNcaAYu8vKuES5a60vWjpY2HZjDhHM8NhuW8h_km6EF016HmtJN76x=s0" class="border-line" align="left" style="margin-top: 8px;"> O regístrate con <img src="https://lh3.googleusercontent.com/3dEdaLF3HUbDwSpbpDdBFhU6E_vXLeISQKjk3WkGRYWGgUVNcaAYu8vKuES5a60vWjpY2HZjDhHM8NhuW8h_km6EF016HmtJN76x=s0" class="border-line" align="right" style="margin-top: 8px;"></p>
+                    
+                    <a data-platform="google"><button class="button-google"><img src="https://static.deriv.com/email/images/icons/social-google.png"><span>Google</span></button></a>
+                    <a data-platform="facebook"><button class="button-fb"><img src="https://static.deriv.com/email/images/icons/social-facebook-blue.png"><span>Facebook</span></button></a>
+                    <a data-platform="apple"><button class="button-apple"><img src="https://static.deriv.com/email/images/icons/social-apple-white.png"><span>Apple</span></button></a>
+                    <p class="size16 width406" style="text-align: center; margin-top: 4%;">¿Ya tienes una cuenta? <a href="https://deriv.com/" style="color: #ff444f !important;">Iniciar sesión</a></p>
+                </div>
+            </section>
         </div>
-    </div>
-    <div id="red-color" style="height: 40vw;
-    width: 90%;
-    background: linear-gradient(100deg, #ff444f 35%, #ffffff 20%);
-    padding: 0% 0 3% 0;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0px 100px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: stretch;">
-            <div id="tablet-header" style="float: left; padding: 0% 0 0 0; ">
-                <div style="width: 780px; object-fit: scale-down;">
-                    <img src="https://lh3.googleusercontent.com/IKf3D1jXKNZKPfkLhsOuhxPP4QrDD9MpgEO7N3XTjFiFCoThdS7BCoxac9ET5q-D3UZsrdIzJEJcZhhkQfSkXQU2RTNZw_gChE8=w1064" alt="" >
+        <section class="whymt5">
+            <div >
+                <p class="title48">Por qué operar con Deriv MT5</p>
+            </div>
+            <div class="boxes-flex">
+                <div class="box-flex">
+                    <img src="https://lh3.googleusercontent.com/s-YuXXVWPqwk8LcHsI1gH5vZJnbXPTy2rrI_Aco-z7KHEdeYRaVqS2ZjDVGQllH4gxeAOkpSXBmv4DcBnrGh6Xk-CZePmoxyrR8=s0" alt="Trade markets">
+                    <p>Opera en forex, acciones e índices, criptomonedas, ETFs, materias primas e índices derivados</p>
+                </div>
+                <div class="box-flex">
+                    <img src="https://lh3.googleusercontent.com/jYDQERXOPZFxW-LI8kU878J1rrQ7bu-tMudoro3TUa8vvwXV_lQE-y6aZWMJx0d6QROh-xpO1SnZ1bXwkatm2pao-LvM0yHrsWCe=s0" alt="Licensed broker">
+                    <p>Bróker con licencia y regulado</p>
+                </div>
+                <div class="box-flex">
+                    <img src="https://lh3.googleusercontent.com/605EorwojrZAWbHUGWxp4s5B77QhaoyZc1qGk_R-7T5dKj77dwllPQoflzdVpY2GmeM1rHmYvuJLm1S0w_L_sYel9lTTOHXiVc5c=s0" alt="little as 5$">
+                    <p>Opera con cantidades tan pequeñas como $5</p>
+                </div>
+                <div class="box-flex">
+                    <img src="https://lh3.googleusercontent.com/z_XdBWWsIcwtOssYEcl2HY7nP-TDnMqt7cb06DXELVObCKkgJ0LKYqFezKUiuWcyz1DZD_yguCa7Yi58of657j2EdiyQh7_XbbV8=s0" alt="30+ payment methods">
+                    <p>Más de 30 métodos de pago para elegir</p>
+                </div>
+                <div class="box-flex2">
+                    <img src="https://lh3.googleusercontent.com/AO2PbShL32ZDGr-wtjHcPCceBqaIkeC79BKELiqPs5ntBoJhVhSFtrfzp9ZUkJh3IYrAEp56YXAyw8EgyDCzCofH3u3dGT4Hxyk=s0" alt="Tools">
+                    <p>Herramientas analíticas y gráficos gratuitos para ayudarte a operar</p>
+                </div>
+                <div class="box-flex2">
+                    <img src="https://lh3.googleusercontent.com/XnP0z8JhbxcWrJUhzWga75HyaxdZgXSZz636bfp9w8soUOvx3hjA49q6L5AAKJoe4lHnAJrvkdyG8qxyoi20Gfd3q2JhNHYiKCQ=s0" alt="24/7">
+                    <p>Operaciones 24/7</p>
+                </div>
+                <div class="box-flex2">
+                    <img src="https://lh3.googleusercontent.com/FeTlc8eEIELscj_ak-cLQDeko5THk9XNHUIzNFoQA6ZJNpVi1Gs3TlOmwKbZj7_BofCFC2n_ZklGdABXrZrYKQ5bhxRvaU6YuGNZ=s0" alt="low spreads">
+                    <p>Spreads ultra bajos (0.2 pips)</p>
+                </div>
+                <div class="box-flex2">
+                    <img src="https://lh3.googleusercontent.com/peAPw4CVildAYLxdY0K1JbNCgIoyem8EMhbzrf3fKOIwTFHDPXNk0wamWdQVG9wbbW3a8fLon7JcznvdkH4s6U6xHWH8giayXXk=s0" alt="high leverage">
+                    <p>Alta palanca (1:1000)</p>
                 </div>
             </div>
-        <div id="white-box" style="width:50%; margin: 4% 0px; float: right;">
-            <div id="white-box-header" style="width: 490px;  background-color: #fff; border: 0px; border-radius: 10px; padding: 1%;  margin-bottom: 25px; margin-left: 15%; box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 8px 16px 0 rgba(0, 0, 0, 0.08);">
-                <h2 style="margin: 2rem 1.2rem 0;">Sign up</h2>
-                <p style="margin: 0.5rem 1.2rem;">At Deriv, you have the flexibility to trade a wide array of assets. From 50+ Forex currency pairs to Stocks & Indices,  Commodities,  Cryptocurrencies, and exclusive Synthetics, opportunities are limitless.</p>
-                <input id="email_input_n1" type="text" placeholder="Email" style="width: 90%; padding: 0px 0px 0px 1rem;"/><br/>
-                <p id="pEmail_n1" style="margin: 0.5rem 1.2rem;">Please enter a valid email</p>
-                <input type="checkbox" id="ckbx_n1" style="margin: 1rem 0.2rem 0px 1.5rem;"/>
-                <label  for="ckbx_n1">
-                    I agree to the <a href="https://eu.deriv.com/terms-and-conditions/#clients" target="_blank" style="color: #ff444f !important;">terms and conditions</a>.
-                </label><br/>
-                <p id="pAgree_n1">Please tick the check box for signup</p>
-                <button id="myBtn_n1" class="button-signup" type="button">Create demo account</button>
-                <p class="disclamer" style="color: #999; padding: 0.5rem 1.2rem; font-size: 0.8rem; line-height: 1.2;">
-                    By pressing "Create demo account", you confirm that you are 18 or older. You understand that we may use your email address to send you information about Deriv products and services as well as market news. You can always unsubscribe from these emails in your account settings. For more information, please take a look at Deriv's <a href="https://deriv.com/tnc/security-and-privacy.pdf" style="color: #ff444f !important;">Security and privacy</a>.
-                </p>
-                <div style="display: flex; justify-content: space-around;">
-                    <div style="display: flex; justify-content: space-around; align-items: center;">
-                        <div style="width: 100px; border-bottom: 1px solid #999;"></div>
+        </section>
+        <section  class="typemt5">
+            <div >
+                <p class="title48">Elige tu tipo de cuenta para operar en Deriv MT5</p>
+            </div>
+            <div class="boxes-flexmt5">
+                <div class="box-flexmt5">
+                    <img src="https://lh3.googleusercontent.com/p0DVJspT4ljCOqkOdhgcXPhfpgWZQjAVgRBTzuTUDjyEb6ksvmxiwuiGJBB4GHhfBV16X3_oG41SKZcoJMAkcO9aSyK1gkvK-iw=s0" alt="mt5 derived">
+                    <p><strong>Derivados</strong></p>
+                    <p>Opera CFDs en nuestros sintéticos, cestas y FX derivados con precios de activos derivados de mercados simulados y reales.</p>
+                </div>
+                <div class="box-flexmt5">
+                    <img src="https://lh3.googleusercontent.com/ISRkz4x_-rf9Gu8RyRqNWKCNQAu5nXoI-YGTHs8jQ0u2JT3tpr37oxKfDgsg07uXS6VghvBY1vNPvfDv5Iz0-fQcaAYvV7k4jg=s0" alt="mt5 financial">
+                    <p><strong>Financiero</strong></p>
+                    <p>Opera CFDs en forex, acciones, índices, criptomonedas y materias primas con alta palanca.</p>
+                </div>
+                <div class="box-flexmt5 greymargin">
+                    <img src="https://lh3.googleusercontent.com/6_EJHLUdLuJSK5HOAU-cyh4pXS7-amwwo9TngbaIZ-yq_uLjsVlWMT2BrHBleo7vIHTBP1k3J4uwb88UcEkjjFlnVQ57ObLBOWc=s0" alt="mt5 swap free">
+                    <p><strong>Sin swap</strong></p>
+                    <p>Opera activos derivados y financieros seleccionados sin cargos nocturnos.</p>
+                </div>
+            </div>
+        </section>
+        <section class="award">
+            <div>
+                <p class="title48">Opera con Deriv, tu bróker galardonado</p>
+            </div>
+            <div class="boxes-flex-award">
+                <div class="box-flex-award">
+                    <img src="https://lh3.googleusercontent.com/-5AFTRWHEcVPjaJ1aqfGBS5CrJZEwzGGMrFFRDy2kXOgkZ17Pyf94kXLk8RnVo0yd32_b95x-jG6zaY_uTDFN0Zt128Vbb-icgKd=s0" alt="mt5 derived">
+                </div>
+                <div class="box-flex-award">
+                    <img src="https://lh3.googleusercontent.com/2F5pEg0vPG9O7_nN-XauQnXXagXGaSp1Yvw2Hn8GyTbRoymkPMgs4rueZZzgt_we0euw9iRwedtJ8hDtkLjJH9TqZPg4tnmhbr5g=s0" alt="mt5 derived">
+                </div>
+                <div class="box-flex-award">
+                    <img src="https://lh3.googleusercontent.com/JTe_IOCcADfE486n8d3uqLiangCG2LDGhTos7V9As0km5Ev8takyyR2CEJuvrD9A0wZY4rnuzQJBsM-oBT3kv50lYXHaAg0VDoo=s0" alt="mt5 derived">
+                </div>
+                <div class="box-flex-award">
+                    <img src="https://lh3.googleusercontent.com/brzUkHgjASbOlQnyIqTzRArr1-WyHvZpHOIctYQIy08N4S1JqHM4xfXOfVGdC3JgQY7rYAvrqb1sGag32IMWJBrmVPoSvcGShzo=s0" alt="mt5 derived">
+                </div>
+                <div class="box-flex-award">
+                    <img src="https://lh3.googleusercontent.com/KhsT_B0JtTtU_jclmAnUOCsfn9cAYxWINge2thwQvz2O4YHxPq8vOLuCdJZt0Ycv8YQVkfjBlt_JxC6S4QTRMYfQVXRjdzkG2vk=s0" alt="mt5 derived">
+                </div>
+                <div class="box-flex-award">
+                    <img src="https://lh3.googleusercontent.com/555i5FQHdBgBhp9qgyU2x-BUpjIXvDVahwJ6WLVTqkYLqa1TIKoMy2nvo63AkjyhMJRMK8lEJSrlqPplxhDpyZgJqrfthZrYEx8=s0" alt="mt5 derived">
+                </div>
+            </div>
+        </section>
+        <section  class="trustpilot">
+            <div class="boxes-flex-trust">
+                <div class="box-flex-trust">
+                    <p><strong>Calificado como excelente en</strong></p>
+                </div>
+                <div class="box-flex-trust">
+                    <!-- TrustBox script -->
+                    <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+                    <!-- End TrustBox script -->
+                    <!-- TrustBox widget - Mini -->
+                    <div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="5ed4c8a9f74f310001f51bf7" data-style-height="150px" data-style-width="auto" data-theme="light" data-tags="SelectedReview">
+                    <a href="https://www.trustpilot.com/review/deriv.com" target="_blank" rel="noopener">Trustpilot</a>
                     </div>
-                    <span style="padding: 0.7rem 10px; color: #999;">Or sign up with</span>
-                    <div style="display: flex; justify-content: space-around; align-items: center;">
-                        <div style="width: 100px; border-bottom: 1px solid #999;"></div>
+                    <!-- End TrustBox widget -->
+                </div>
+            </div>
+        </section>
+        <section  class="deriv-exp">
+            <div class="boxes-flex-exp">
+                <div class="box-flex-exp">
+                    <p class="title48">Experimenta Deriv</p>
+                </div>
+                <div class="box-flex-form">
+                    <p class="size32">Únete a más de 2.5 millones de traders en todo el mundo</p>
+                    <p class="psize16">Prueba nuestra cuenta demo</p>
+                    <div class="email-button">
+                        <input id="email_input_n3" type="email" placeholder="Email address">
+                        <button id="myBtn_n3" type="button" class="button-signup2">Sign up</button>
+                    </div>
+                    <label>
+                        <input id="ckbx_n3" type="checkbox"> Acepto los <a href="https://eu.deriv.com/terms-and-conditions/#clients" target="_blank" style="color: #ff444f !important;">términos y condiciones</a>.
+                    </label>
+                    <p class="psize16">O regístrate con</p>
+                    <div class="buttons2">
+                        <a data-platform="google"><button class="button-google2"><img src="https://static.deriv.com/email/images/icons/social-google.png"><span class="hide">Google</span></button></a>
+                        <a data-platform="facebook"><button class="button-fb2"><img src="https://static.deriv.com/email/images/icons/social-facebook-blue.png"><span class="hide">Facebook</span></button></a>
+                        <a data-platform="apple"><button class="button-apple2"><img src="https://static.deriv.com/email/images/icons/social-apple-white.png"><span class="hide">Apple</span></button></a>
                     </div>
                 </div>
-                <div class="social-media-buttons">
-                    <a class="social-media-login" data-platform="google">
-                        <button class="button-google">
-                            <img
-                        src="https://static.deriv.com/email/images/icons/social-google.png"
-                        />                                    <span>Google</span>
-                        </button>
+            </div>
+        </section>
+        <section  class="footer-log-sm">
+            <div class="boxes-flex-log-sm">
+                <div class="box-flex-logo">
+                    <img src="https://static.deriv.com/logos/deriv-gray-2023.png" alt="">
+                </div>
+                <div class="box-flex-sm">
+                    <a href="https://www.facebook.com/derivdotcom" target="_blank">
+                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/facebook-md.png" alt="" class="footer-sm">
                     </a>
-                    <a class="social-media-login" data-platform="facebook">
-                        <button class="button-fb">
-                            <img
-                        src="https://static.deriv.com/email/images/icons/social-facebook-blue.png"
-                        />                                    <span>Facebook</span>
-                        </button>
+                    <a href="https://www.instagram.com/deriv_official/" target="_blank">
+                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/instagram-md.png" alt="" class="footer-sm">
                     </a>
-                    <a class="social-media-login" data-platform="apple">
-                        <button class="button-apple">
-                            <img
-                        src="https://static.deriv.com/email/images/icons/social-apple-white.png"
-                        />
-                            <span>Apple</span>
-                        </button>
+                    <a href="https://twitter.com/derivdotcom" target="_blank">
+                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/x-twitter-md.png" alt="" class="footer-sm">
+                    </a>
+                    <a href="https://www.youtube.com/c/Derivdotcom" target="_blank">
+                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/youtube-md.png" alt="" class="footer-sm">
+                    </a>
+                    <a href="https://www.linkedin.com/company/derivdotcom/" target="_blank">
+                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/linkedin-md.png" alt="" class="footer-sm">
+                    </a>
+                    <a href="https://t.me/Derivchannelofficial" target="_blank">
+                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/telegram-md.png" alt="" class="footer-sm">
                     </a>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<div id="headercall" class="show-mobile !mportant" style="display: none;">
-<div style="max-height: 40px; width: 100vw; margin: 0; padding: 0;">
-    <div style="width: 100%; display: flex; justify-content:center; margin:2% 0%; padding: 0;">
-        <img src="https://static.deriv.com/logos/red-xl.png" alt="Deriv Logo" style="max-height: 32px; object-fit: scale-down; left: 0;"/>
-    </div>
-</div>
-    <div id="red-color" style="height: 720px; width: 100vw; background-color: #ff444f; padding: 1% 0 3% 0; ">
-        <div id="tablet-header" style="float: left; margin-left: -5% !important; padding: 3% 0 0 0;">
-            <div style="width: 680px;">
-                <img src="https://lh3.googleusercontent.com/IKf3D1jXKNZKPfkLhsOuhxPP4QrDD9MpgEO7N3XTjFiFCoThdS7BCoxac9ET5q-D3UZsrdIzJEJcZhhkQfSkXQU2RTNZw_gChE8=w1064" alt="" >
+        </section>
+        <section class="disc-investor">
+            <div class="disc">
+                <p>Los productos ofrecidos en nuestra página web son productos derivados complejos que conllevan un riesgo significativo de pérdida potencial. Los CFD son instrumentos complejos con un alto riesgo de perder dinero rápidamente debido al apalancamiento. Debe considerar si entiende cómo funcionan estos productos y si puede permitirse asumir el alto riesgo de perder su dinero.</p>
             </div>
-        </div>
-    <div id="white-box" style="width:60%; margin: 4% 0px; float: right;">
-        <div id="white-box-header" style="width: 490px;  background-color: #fff; border: 0px; border-radius: 10px; padding: 1%;  margin-bottom: 25px; margin-left: 15%; box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 8px 16px 0 rgba(0, 0, 0, 0.08);">
-            <h2 style="margin: 2rem 1.2rem 0;">Learn to identify and analyse </br> Chart Patterns</h2>
-            <p style="margin: 0.5rem 1.2rem;">Create a Deriv demo account to get your free ebook!</p>
-            <input id="email_input_n1" type="text" placeholder="Email" style="width: 90%; padding: 0px 0px 0px 1rem;"/><br/>
-            <p id="pEmail_n1" style="margin: 0.5rem 1.2rem;">Please enter a valid email</p>
-            <input type="checkbox" id="ckbx_n1" style="margin: 1rem 0.2rem 0px 1.5rem;"/>
-            <label  for="ckbx_n1">
-                I agree to the <a href="https://eu.deriv.com/terms-and-conditions/#clients" target="_blank" style="color: #ff444f !important;">terms and conditions</a>.
-            </label><br/>
-            <p id="pAgree_n1">Please tick the check box for signup</p>
-            <button id="myBtn_n1" class="button-signup" type="button">Create demo account</button>
-            <p class="disclamer" style="color: #999; padding: 0.5rem 1.2rem; font-size: 0.8rem; line-height: 1.2;">
-                By pressing "Create demo account", you confirm that you are 18 or older. You understand that we may use your email address to send you information about Deriv products and services as well as market news. You can always unsubscribe from these emails in your account settings. For more information, please take a look at Deriv's <a href="https://deriv.com/tnc/security-and-privacy.pdf" style="color: #ff444f !important;">Security and privacy</a>.
-            </p>
-            <div style="display: flex; justify-content: space-around;">
-                <div style="display: flex; justify-content: space-around; align-items: center;">
-                    <div style="width: 20px; border-bottom: 1px solid #999;"></div>
-                </div>
-                <span style="padding: 0.7rem 10px; color: #999;">Or sign up with</span>
-                <div style="display: flex; justify-content: space-around; align-items: center;">
-                    <div style="width: 20px; border-bottom: 1px solid #999;"></div>
-                </div>
+            <div class="investor">
+                <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/invest-in-people-platinum.png" alt="">
             </div>
-            <div class="social-media-buttons">
-                <a class="social-media-login" data-platform="google">
-                    <button class="button-google" style="padding: 5px 2px !important; width:25% !important;">
-                        <img
-                    src="https://static.deriv.com/email/images/icons/social-google.png"
-                    /></button>
-                </a>
-                <a class="social-media-login" data-platform="facebook">
-                    <button class="button-fb" style="padding: 5px 2px !important; width:25% !important;">
-                        <img
-                    src="https://static.deriv.com/email/images/icons/social-facebook-blue.png"
-                    /></button>
-                </a>
-                <a class="social-media-login" data-platform="apple">
-                    <button class="button-apple" style="padding: 5px 2px !important; width:25% !important;">
-                        <img
-                    src="https://static.deriv.com/email/images/icons/social-apple-white.png"
-                    /></button>
-                </a>
-            </div>
-        </div>
+        </section>
+            </main>
     </div>
-</div>
-</div>
-<script>
-    const submit_btn_n1 = document.getElementById("myBtn_n1");
-    const ckbx_n1=document.getElementById("ckbx_n1");
-    const email_field_n1 =document.getElementById("email_input_n1");
-    ckbx_n1.addEventListener("click", fckbx_n1);
-    submit_btn_n1.addEventListener("click", f_submit_btn_n1);
-    email_field_n1.addEventListener("keyup", f_email_input_errmsg_n1);
 
-    function f_email_input_errmsg_n1() {
-        const email = email_field_n1.value;
-        if(is_emailValid(email))
-            document.getElementById("pEmail_n1").style.display = "none";
-        else
-            document.getElementById("pEmail_n1").style.display = "block";
-    }
 
-    function fckbx_n1() {
-        if(ckbx_n1.checked==true){
-            document.getElementById("pAgree_n1").style.display = "none";
-        }
-        else{
-            document.getElementById("pAgree_n1").style.display = "block";
-        }
-    }
-
-    function f_submit_btn_n1() {
-        const email = email_field_n1.value;
-        if(is_emailValid(email)&&(ckbx_n1.checked==true)) {
-            const verify_email_req = getVerifyEmailRequest(email);
-            window.ws.send(JSON.stringify(verify_email_req));
-        }
-        else {
-            if(ckbx_n1.checked==false) {
-                document.getElementById("pAgree_n1").style.display = "block";
+    
+    <script>
+        const submit_btn_n1 = document.getElementById("myBtn_n1");
+        const ckbx_n1=document.getElementById("ckbx_n1");
+        const email_field_n1 =document.getElementById("email_input_n1");
+        ckbx_n1.addEventListener("click", fckbx_n1);
+        submit_btn_n1.addEventListener("click", f_submit_btn_n1);
+        email_field_n1.addEventListener("keyup", f_email_input_errmsg_n1);
+    
+        function f_email_input_errmsg_n1() {
+            const email = email_field_n1.value;
+            if(is_emailValid(email))
+                document.getElementById("pEmail_n1").style.display = "none";
+            else
                 document.getElementById("pEmail_n1").style.display = "block";
-                if(is_emailValid(email)) {
-                    document.getElementById("pEmail_n1").style.visibility = "hidden";
+        }
+    
+        function fckbx_n1() {
+            if(ckbx_n1.checked==true){
+                document.getElementById("pAgree_n1").style.display = "none";
+            }
+            else{
+                document.getElementById("pAgree_n1").style.display = "block";
+            }
+        }
+    
+        function f_submit_btn_n1() {
+            const email = email_field_n1.value;
+            if(is_emailValid(email)&&(ckbx_n1.checked==true)) {
+                const verify_email_req = getVerifyEmailRequest(email);
+                window.ws.send(JSON.stringify(verify_email_req));
+            }
+            else {
+                if(ckbx_n1.checked==false) {
+                    document.getElementById("pAgree_n1").style.display = "block";
+                    document.getElementById("pEmail_n1").style.display = "block";
+                    if(is_emailValid(email)) {
+                        document.getElementById("pEmail_n1").style.visibility = "hidden";
+                    }
+                }
+                else if(email=='') {
+                    document.getElementById("pEmail_n1").innerHTML="Insert your email address"
+                    document.getElementById("pEmail_n1").style.visibility = "visible";
+                }
+                else  {
+                    document.getElementById("pEmail_n1").innerHTML="Please enter a valid email"
+                    document.getElementById("pEmail_n1").style.visibility = "visible";
                 }
             }
-            else if(email=='') {
-                document.getElementById("pEmail_n1").innerHTML="Insert your email address"
-                document.getElementById("pEmail_n1").style.visibility = "visible";
-            }
-            else  {
-                document.getElementById("pEmail_n1").innerHTML="Please enter a valid email"
-                document.getElementById("pEmail_n1").style.visibility = "visible";
+        }
+    
+        function is_emailValid(email) { 
+            if (/^\w+([!#$%&'*+-/=?^_`{|}~\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+                return (true)
+            return (false)
+        }
+    
+        /// social login
+        const getDataLink = (data) => {
+            let data_link = "";
+            Object.keys(data).forEach((elem) => {
+                data_link += `&${elem}=${data[elem]}`;
+            });
+            return data_link;
+        };
+    
+        const loginUrl = (platform) => {
+            const cookies = getCookiesFields();
+            const cookies_objects = getCookiesObject(cookies);
+            const cookies_value = getDataObjFromCookies(cookies_objects, cookies);
+            const cookies_link = getDataLink(cookies_value);
+            const affiliate_tracking = Cookies.getJSON("affiliate_tracking");
+            const affiliate_token_link = affiliate_tracking ? `&affiliate_token=${affiliate_tracking}` : "";
+            const lang = "hi";
+            return `https://oauth.deriv.com/oauth2/authorize?app_id=16929&l=${lang}&brand=deriv&${affiliate_token_link}${cookies_link}&platform=&social_signup=${platform}`;
+        };
+    
+        window.onload = () => {
+            document.querySelectorAll(".social-media-login").forEach((e) => {
+                e.addEventListener("click", () => {
+                const platform = e.getAttribute("data-platform");
+                    window.location.href = loginUrl(platform);
+                });
+            });
+        };
+    </script>
+
+<script>
+    const submit_btn_n3 = document.getElementById("myBtn_n3");
+    const ckbx_n3=document.getElementById("ckbx_n3");
+    const email_field_n3 =document.getElementById("email_input_n3");
+    ckbx_n3.addEventListener("click", fckbx_n3);
+    submit_btn_n3.addEventListener("click", f_submit_btn_n3);
+    email_field_n3.addEventListener("keyup", f_email_input_errmsg_n3);
+
+    function f_email_input_errmsg_n3() {
+        const email = email_field_n3.value;
+        if(is_emailValid(email))
+            document.getElementById("pEmail_n3").style.display = "none";
+        else
+            document.getElementById("pEmail_n3").style.display = "block";
+    }
+
+    function fckbx_n3() {
+        if(ckbx_n3.checked==true){
+            document.getElementById("pAgree_n3").style.display = "none";
+        }
+        else{
+            document.getElementById("pAgree_n3").style.display = "block";
+        }
+    }
+  
+    function f_submit_btn_n3()  {
+        const email = email_field_n3.value;
+        if(is_emailValid(email)&&(ckbx_n3.checked==true)) {
+            const verify_email_req = getVerifyEmailRequest(email);
+            window.ws.send(JSON.stringify(verify_email_req));
+        } else {
+            if(ckbx_n3.checked==false) {
+                document.getElementById("pAgree_n3").style.display = "block";
+                document.getElementById("pEmail_n3").style.display = "block";
+                if(is_emailValid(email)) {
+                    document.getElementById("pEmail_n3").style.display = "none";
+                } 
+            } else if(email=='') {
+                document.getElementById("pEmail_n3").innerHTML="Insira o seu correo eletrónico."
+                document.getElementById("pEmail_n3").style.display = "block";
+            } else {
+                document.getElementById("pEmail_n3").innerHTML="Insira um correo eletrónico válido."
+                document.getElementById("pEmail_n3").style.display = "block";
             }
         }
     }
@@ -191,31 +1242,15 @@
     }
 
     /// social login
-    const getDataLink = (data) => {
-        let data_link = "";
-        Object.keys(data).forEach((elem) => {
-            data_link += `&${elem}=${data[elem]}`;
-        });
-        return data_link;
-    };
-
-    const loginUrl = (platform) => {
-        const cookies = getCookiesFields();
-        const cookies_objects = getCookiesObject(cookies);
-        const cookies_value = getDataObjFromCookies(cookies_objects, cookies);
-        const cookies_link = getDataLink(cookies_value);
-        const affiliate_tracking = Cookies.getJSON("affiliate_tracking");
-        const affiliate_token_link = affiliate_tracking ? `&affiliate_token=${affiliate_tracking}` : "";
-        const lang = "hi";
-        return `https://oauth.deriv.com/oauth2/authorize?app_id=16929&l=${lang}&brand=deriv&${affiliate_token_link}${cookies_link}&platform=&social_signup=${platform}`;
-    };
-
     window.onload = () => {
         document.querySelectorAll(".social-media-login").forEach((e) => {
             e.addEventListener("click", () => {
-            const platform = e.getAttribute("data-platform");
+                const platform = e.getAttribute("data-platform");
                 window.location.href = loginUrl(platform);
             });
         });
     };
+    /// End social login
 </script>
+</body>
+</html>
