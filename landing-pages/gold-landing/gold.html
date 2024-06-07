@@ -195,7 +195,7 @@
             /* Buttons closing*/
             /* right side greywhite closing */
             /* Header box and logo */
-            /* white boxes (why trade with deriv) */
+            /* Benefits of trading gold with Deriv */
             
             .title48 {
                 margin: 50px auto !important;
@@ -244,11 +244,11 @@
                 text-align: left;
             }
             .box-flex>img {
-                width: 56px;
-                height: 56px;
+                width: 40px;
+                height: 40px;
                 margin-top: 5px;
             }
-            /* white boxes (why trade with deriv) */
+            /* Benefits of trading gold with Deriv */
 
             /* 3 easy steps */
             .three-easy-steps {
@@ -283,7 +283,6 @@
                 font-size: 18px;
                 font-weight: 700;
                 line-height: 28px;
-                padding-top: 5px !important;
                 color: #414652;
                 font-family: 'IBM Plex Sans';
             }
@@ -291,13 +290,14 @@
                 font-size: 18px;
                 font-weight: 400;
                 line-height: 28px;
+                margin: 0;
                 color: #414652;
                 font-family: 'IBM Plex Sans';
             }
             .box-steps>img {
-                width: 56px;
-                height: 56px;
-                margin-top: 5px;
+                width: auto;
+                height: 50px;
+                margin: 10px auto 20px; 
             }
 
             /* 3 easy steps */
@@ -326,11 +326,20 @@
                 width: 370px;
                 height: 250px;
                 border-radius: 16px;
-                padding: 20px;
+                padding: 23px;
                 background-color: #F6F7F8;
                 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
                 margin-bottom: 50px;
                 
+            }
+            .box-trading-needs>p>strong {
+                font-size: 20px;
+                font-weight: 700 ;
+                line-height: 30px ;
+                padding-top: 10px ;
+                color: #414652;
+                font-family: 'IBM Plex Sans';
+                text-align: left;
             }
             .box-trading-needs>p {
                 font-size: 14px;
@@ -343,15 +352,6 @@
             .box-trading-needs>img {
                 width: 48px;
                 height: 48px;
-            }
-            .box-trading-needs>p>strong {
-                font-size: 20px;
-                font-weight: 700 ;
-                line-height: 30px ;
-                padding-top: 10px ;
-                color: #414652;
-                font-family: 'IBM Plex Sans';
-                text-align: left;
             }
 
             /* Unparalleled support for all your trading needs */
@@ -546,9 +546,10 @@
 
             .button-footer { background-color: #ff444f; color: #fff; border: 1px solid #ff444f; }
             .button-footer:hover { background-color: #d43e47; }
-            .button-footer:active { transition: width 0.1s, height 0.1s; height: 38px; width: 75%; }
-            /* Buttons closing*/
+            .button-footer:active { transition: width 0.1s, height 0.1s; height: 60px; width: 208px; }
+
             /* Start trading button */
+
             /* FOOTER */
             .footer-log-sm {
                 max-width: 2000px !important;
@@ -604,56 +605,28 @@
             /* FOOTER */
 
         @media (max-width: 1020px) {
-            /* DERIV EXPERIENCE (second sign up) */
-            .deriv-exp {
-                max-width: 2000px !important;
-                height: 1000px;
+
+            /* Threee easy steps */
+            .box-steps {
+                margin-bottom: 10px;
+                
             }
-            .boxes-flex-exp {
-                max-width: 800px;
-                height: 800px;
-                gap: 80px 0;
+            .step {
+                margin-bottom: 70px;
             }
-            .box-flex-exp {
-                max-width: 486px;
-                margin-top: 100px;
+            /* Three easy steps */
+            /* Unparalleled support for all your trading needs */
+
+            .box-trading-needs{
+                margin-bottom: 10px;
+                
             }
-            .box-flex-form {
-                width: 800px;
-                height: 600px;
-                margin: 0 auto;
+            .redmargin {
+                margin-bottom: 50px;
             }
-            .email-button > input[type=email] {
-                font-size: 14px;
-                padding-left: 3%;
-                font-weight: 400;
-                line-height: 20px;
-                color: #999999;
-                border: 1px solid #999999;
-                border-radius: 16px;
-                height: 40px;
-                width: 100%;
-                margin-left: 0;
-            }
-            .email-button {
-                max-width: 800px;
-                display: flex;
-                flex-direction: column;
-            }
-            .button-signup2 {
-                width: 100%; 
-                margin-top: 17px;
-            }
-            .buttons2 {
-                max-width: 800px;
-                display: flex;
-                flex-direction: column;
-                gap: 17px 0;
-            }
-            .buttons2>a>.button-google2, .button-fb2, .button-apple2 {
-                width: 100%; 
-            }
-            /* DERIV EXPERIENCE (second sign up) */
+
+            /* Unparalleled support for all your trading needs */
+
         }
         @media (max-width: 840px) {
                 .navlogo {
@@ -724,11 +697,21 @@
                     .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active { transition: width 0.1s, height 0.1s; height: 38px; width: 80%; }
                 /* Buttons closing*/
                 /* right side greywhite closing */
-                /* white boxes (why trade with deriv) */
+                /* Benefits of trading gold with Deriv */
                 .title48 {
                     font-size: 40px;
                 }
-                /* white boxes (why trade with deriv) */
+                /* Benefits of trading gold with Deriv */
+                /* Unparalleled support for all your trading needs */
+
+                .boxes-trading-needs {
+                    gap: 40px;
+                }
+                .redmargin {
+                    margin-bottom: 30px;
+                }
+
+                /* Unparalleled support for all your trading needs */
         }
         @media (max-width: 520px) {
             .navlogo img {
@@ -736,28 +719,14 @@
                 height: 24px !important;
             }
             .greywhite{
-                    background: linear-gradient(170deg, #F6F7F8 30%, #ffffff 0%);
+                    background: linear-gradient(170deg, #F6F7F8 35%, #ffffff 0%);
                     margin: auto;
                 }
-
-            h1{
-                font-size: 28px;
-                margin: 8% 0 0 8%;
-                padding-right: 30% !important;
-                line-height: 32.17px;
-                padding-bottom: 0 !important;
-            }
-            #redh3{
-                font-size: 18px;
-                line-height: 28px;
-                margin: 1% 0 0 8%;
-                padding-right: 25%;
-            }
             /* right side greywhite opening */
-            h3 {
+            h1 {
                 width: 85%;
                 font-size: 18px;
-                line-height: 28px;
+                line-height: 26px;
                 margin: 5% 0 2% 8%;
             }
             .size16 {
@@ -802,42 +771,81 @@
             .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active { transition: width 0.1s, height 0.1s; height: 36px; width: 85%; }
             /* Buttons closing*/
             /* right side greywhite closing */
-            /* white boxes (why trade with deriv) */
+            /* Benefits of trading gold with Deriv */
             .box-flex{
                 width: 328px;
-                height: 192px;
-                margin-bottom: 5px !important;
-            }
-            .box-flex2{
-                width: 328px;
-                height: 168px;
+                height: 250px;
                 margin-bottom: 5px !important;
             }
             .title48 {
-                font-size: 28px !important;
+                font-size: 24px !important;
                 font-weight: 700;
-                line-height: 32.17px;
+                line-height: 33.6px;
+                padding: 1% 3% !important;
             }
-            /* white boxes (why trade with deriv) */
-            /* MT5 account type */
-            .box-flexmt5{
-                width: 328px;
-                height: 254px;
+            /* Benefits of trading gold with Deriv */
+            
+            /* 3 easy steps */
+            .three-easy-steps {
+                padding: 10px;
+            }
+
+            /* 3 easy steps */
+
+            /* Unparalleled support for all your trading needs */
+
+            .boxes-trading-needs {
+                padding: 50px auto;
+                margin: 0px auto;
+                gap: 60px;
+            }
+            .box-trading-needs{
                 margin-bottom: 0px;
+                
             }
-            .greymargin {
-                margin-bottom: 60px;
+            .redmargin {
+                margin-bottom: 30px;
+            }
+
+            /* Unparalleled support for all your trading needs */
+            /* MT5, DerivX, Deriv cTrader */
+            .typemt5 {
+                background-color: #FF444F !important;
+                max-width: 2000px !important;
+                margin: 0px auto;
+                padding: 1px 20px;
+            }
+            .boxes-flexmt5 {
+                padding: 50px auto;
+                margin: 30px auto;
+                gap: 20px;
+            }
+            .box-flexmt5{
+                width: 310px;
+                height: 130px;
+                margin-bottom: 20px;
             }
             /* MT5 account type */
+            /* Payment methods */
+
+            .boxes-payment-methods {
+                gap: 20px;
+            }
+            .payment-methods14 {
+                font-size: 12px !important;
+                line-height: 18px !important;
+            }
+
+            /* Payment methods */
             /* AWARDS section */
             .award {
-                padding: 0 10px !important;
+                padding: 0 auto !important;
             }
             .award>div>.title48 {
                 padding: 30px 20px 0;
             }
             .boxes-flex-award {
-                gap: 0px 8px;
+                gap: 0px 60px;
             }
             .box-flex-award{
                 width: 140px;
@@ -848,48 +856,41 @@
             .box-flex-award>img{
                 width: 140px;
                 height: 67.5px;
-                
             }
             /* AWARDS section */
+            
             /* TRUST PILOT */
             .trustpilot {
-                height: 300px;
-                padding: 40px 20px;
+                height: 370px;
+            }
+            .trustpilot>div>.title48{
+                margin: 0px auto !important;
+                padding-bottom: 40px;
+                font-size: 24px;
+                line-height: 27.58px;
+            }
+            .box-flex-trust {
+                height: 60px;
             }
             .box-flex-trust>p>strong {
-                font-size: 22px;
+                font-weight: 400 ;
             }
             /* TRUST PILOT */
-            /* DERIV EXPERIENCE (second sign up) */
-            .deriv-exp {
-                max-width: 2000px !important;
-                height: 1000px;
+
+            /* Start trading buttton */
+
+            .start-trading {
+                margin-top: 50px;
             }
-            .boxes-flex-exp {
-                max-width: 800px;
-                height: 800px;
-                gap: 50px 0;
+
+            .button-footer{ 
+                height: 50px;
+                width: 200px; 
             }
-            .box-flex-exp {
-                max-width: 170px;
-                margin-top: 100px;
-            }
-            .box-flex-exp > .title48 {
-                line-height: 40px;
-            }
-            .box-flex-form {
-                width: 800px;
-                height: 600px;
-                margin: 0 auto;
-            }
-            .size32 {
-                font-size: 24px;
-                line-height: 30px;
-            }
-            .psize16 {
-                font-size: 14px;
-            }
-            /* DERIV EXPERIENCE (second sign up) */
+            .button-footer:active { transition: width 0.1s, height 0.1s; height: 49px; width: 200px; }
+
+            /* Start trading button */
+
             /* FOOTER */
             .boxes-flex-log-sm {
                 gap: 20px 180px;
@@ -964,37 +965,37 @@
             </div>
             <div class="boxes-flex">
                 <div class="box-flex">
-                    <img src="https://lh3.googleusercontent.com/s-YuXXVWPqwk8LcHsI1gH5vZJnbXPTy2rrI_Aco-z7KHEdeYRaVqS2ZjDVGQllH4gxeAOkpSXBmv4DcBnrGh6Xk-CZePmoxyrR8=s0" alt="Trade markets">
+                    <img src="https://lh3.googleusercontent.com/TdKW4YVCoh_h-LQl6fOD1q9_2Lh-lmRn0mhQOQ7Yp51ykQegGdbnOyyF2dOl-sbH9NXrA6aQybitqC4gY_MD0uIQi0Ejn5ugdg=s0" alt="Unmatched leverage">
                     <p><strong>Unmatched leverage</strong></p>
                     <p>Magnify your market presence with up to 500:1 leverage*. Deriv amplifies your trading capacity, offering a pathway to potentially higher rewards with controlled risk.</p>
                 </div>
                 <div class="box-flex">
-                    <img src="https://lh3.googleusercontent.com/s-YuXXVWPqwk8LcHsI1gH5vZJnbXPTy2rrI_Aco-z7KHEdeYRaVqS2ZjDVGQllH4gxeAOkpSXBmv4DcBnrGh6Xk-CZePmoxyrR8=s0" alt="Trade markets">
+                    <img src="https://lh3.googleusercontent.com/n9UfGXYzj7UyGp0mWORhi0_krtcKti9hltoj3X556dG120YCnvZ7iFFfHFX1mwfKbKMzRowz1O1fxCec_Odic-Cr6zLKOTkYOg=s0" alt="Zero commission">
                     <p><strong>Zero commission</strong></p>
                     <p>Embrace the purity of gold trading without the burden of commissions. With Deriv, what you earn stays yours, enhancing the profitability of each trade.</p>
                 </div>
                 <div class="box-flex">
-                    <img src="https://lh3.googleusercontent.com/s-YuXXVWPqwk8LcHsI1gH5vZJnbXPTy2rrI_Aco-z7KHEdeYRaVqS2ZjDVGQllH4gxeAOkpSXBmv4DcBnrGh6Xk-CZePmoxyrR8=s0" alt="Trade markets">
+                    <img src="https://lh3.googleusercontent.com/SRMXrrfa-0sKQMceo3PWdaKGPOGnvHzv5Lg3KYhZXda9YyKVJPYfoF-3UcrSsYfw8-9MRL3IoJ3r4xZ7zvaMvX5BFgrRVno_v0E=s0" alt="Low spreads">
                     <p><strong>Low spreads</strong></p>
                     <p>Enjoy low trading costs with Deriv’s competitive spreads, designed to help you take advantage of market conditions.</p>
                 </div>
                 <div class="box-flex">
-                    <img src="https://lh3.googleusercontent.com/s-YuXXVWPqwk8LcHsI1gH5vZJnbXPTy2rrI_Aco-z7KHEdeYRaVqS2ZjDVGQllH4gxeAOkpSXBmv4DcBnrGh6Xk-CZePmoxyrR8=s0" alt="Trade markets">
+                    <img src="https://lh3.googleusercontent.com/YR5LET52sE_kyl-5jjJn6YOZyYyUeHK8J8K-lau68j0whQ3OnQt4RFfSkaDGM2pkqtqptkboM_lCT7kUo3au_QkCPjpl15Rry_8=s0" alt="Easy deposits & withdrawals">
                     <p><strong>Easy deposits & withdrawals</strong></p>
                     <p>Trade whenever you want with easy deposits and withdrawals. Deriv offers instant bank transfers and platforms, such as Skrill, MasterCard, Visa, and Neteller, among others.</p>
                 </div>
                 <div class="box-flex">
-                    <img src="https://lh3.googleusercontent.com/s-YuXXVWPqwk8LcHsI1gH5vZJnbXPTy2rrI_Aco-z7KHEdeYRaVqS2ZjDVGQllH4gxeAOkpSXBmv4DcBnrGh6Xk-CZePmoxyrR8=s0" alt="Trade markets">
+                    <img src="https://lh3.googleusercontent.com/Dl1E43AHZP3tLlbbl-iz4yePs5zux0-gW9cISepKHdGTCrKrA4Bx8ura3lY7rqhPGqKoOKBvBTEJIaeN7uuwGIZMKKyU25mpPkE=s0" alt="Intuitive platforms">
                     <p><strong>Intuitive platforms</strong></p>
                     <p>Navigate the markets with Deriv’s advanced trading platform, designed for the modern trader. With a focus on intuitive design and robust functionality, our platform makes trading accessible, efficient, and engaging.</p>
                 </div>
                 <div class="box-flex">
-                    <img src="https://lh3.googleusercontent.com/s-YuXXVWPqwk8LcHsI1gH5vZJnbXPTy2rrI_Aco-z7KHEdeYRaVqS2ZjDVGQllH4gxeAOkpSXBmv4DcBnrGh6Xk-CZePmoxyrR8=s0" alt="Trade markets">
+                    <img src="https://lh3.googleusercontent.com/oXqLp8Xen8h4FVQBPTqhLa7VZ9c9EYTcpXnF8QOhvt_C6txiKBsIdHkxD8e_ftW1S1StWEljbgaAxiFmMo9pk2DsbwGVlhFUYbVn=s0" alt="Informed trading">
                     <p><strong>Informed trading</strong></p>
                     <p>Elevate your trading with Deriv’s extensive educational resources. From insightful webinars to in-depth articles and tutorials, we provide the tools you need to refine your strategy and expand your trading expertise.</p>
                 </div>
                 <div class="box-flex">
-                    <img src="https://lh3.googleusercontent.com/s-YuXXVWPqwk8LcHsI1gH5vZJnbXPTy2rrI_Aco-z7KHEdeYRaVqS2ZjDVGQllH4gxeAOkpSXBmv4DcBnrGh6Xk-CZePmoxyrR8=s0" alt="Trade markets">
+                    <img src="https://lh3.googleusercontent.com/ZmYlUFFn1h_-FykUaFkPXan9BSDupnAFtadlaQUv2Kx3RW95QJIyomoZP9kctCQQsawt4mvYjRglHZMqcrkUHzIXgMgx471ow5M=s0" alt="Demo account to practice">
                     <p><strong>Demo account to practice</strong></p>
                     <p>Practice gold trading on Deriv with a demo account. We give you $10,000 in virtual money to help you learn trading, and once you have honed your trading skills, you can start trading with real money.</p>
                 </div>
@@ -1006,17 +1007,17 @@
             </div>
             <div class="easy-steps">
                 <div class="box-steps">
-                    <img src="https://lh3.googleusercontent.com/s-YuXXVWPqwk8LcHsI1gH5vZJnbXPTy2rrI_Aco-z7KHEdeYRaVqS2ZjDVGQllH4gxeAOkpSXBmv4DcBnrGh6Xk-CZePmoxyrR8=s0" alt="Trade markets">
+                    <img src="https://lh3.googleusercontent.com/q66pyqVLJNSnjGPATDNoBo-pM6xq6J2OW3Haae7G1GLevALOtdMfOV51o7GDfL8zb3UOClcp2D-RBW0_hn8sZznPIdhCDYbRXGom=s0" alt="No1">
                     <p><strong>Practice</strong></p>
                     <p>Open a demo account and practice with an unlimited amount of virtual funds.</p>
                 </div>
                 <div class="box-steps">
-                    <img src="https://lh3.googleusercontent.com/s-YuXXVWPqwk8LcHsI1gH5vZJnbXPTy2rrI_Aco-z7KHEdeYRaVqS2ZjDVGQllH4gxeAOkpSXBmv4DcBnrGh6Xk-CZePmoxyrR8=s0" alt="Trade markets">
+                    <img src="https://lh3.googleusercontent.com/GPUfAjUiuRnmFPtXPat6wE4RWiWucqQAIRv-2f5_olukLS3U6iuBWq6ZYfd1NyGhr57sz342yC2bBXLAj2F79ednZrgmfCwhkA=s0" alt="No2">
                     <p><strong>Trade</strong></p>
                     <p>Open a real account, make a deposit, and start trading commodities and other markets.</p>
                 </div>
-                <div class="box-steps">
-                    <img src="https://lh3.googleusercontent.com/s-YuXXVWPqwk8LcHsI1gH5vZJnbXPTy2rrI_Aco-z7KHEdeYRaVqS2ZjDVGQllH4gxeAOkpSXBmv4DcBnrGh6Xk-CZePmoxyrR8=s0" alt="Trade markets">
+                <div class="box-steps step">
+                    <img src="https://lh3.googleusercontent.com/lo0xhXsAGfqdbbcm1HyVDJ-vdseZ6EF0-taKltZkhuEkN3qtWchZHKwRfAEaCwB284ATzunRqZT-OP88zcHPUsLLoSNofEhnlMc=s0" alt="No3">
                     <p><strong>Withdraw</strong></p>
                     <p>Conveniently withdraw your funds through any of our supported withdrawal methods.</p>
                 </div>
@@ -1028,17 +1029,17 @@
             </div>
             <div class="boxes-trading-needs">
                 <div class="box-trading-needs">
-                    <img src="https://lh3.googleusercontent.com/s-YuXXVWPqwk8LcHsI1gH5vZJnbXPTy2rrI_Aco-z7KHEdeYRaVqS2ZjDVGQllH4gxeAOkpSXBmv4DcBnrGh6Xk-CZePmoxyrR8=s0" alt="mt5 derived">
+                    <img src="https://lh3.googleusercontent.com/FwNI0t1Hy4Y7UZsqc4c7BcITRR7AdQEmuEiztWUTFIjJZ0FO5BpjThEyVucl3dMtoAlGNjFnPPrgTWPEBSxLPeMnnnB9ky6PgL28=s0" alt="mt5 derived">
                     <p><strong>24/7 assistance</strong></p>
                     <p>At Deriv, our customer support team is at your service 24/7. We’re here to provide the help you need whenever you need it.</p>
                 </div>
                 <div class="box-trading-needs">
-                    <img src="https://lh3.googleusercontent.com/s-YuXXVWPqwk8LcHsI1gH5vZJnbXPTy2rrI_Aco-z7KHEdeYRaVqS2ZjDVGQllH4gxeAOkpSXBmv4DcBnrGh6Xk-CZePmoxyrR8=s0" alt="mt5 financial">
+                    <img src="https://lh3.googleusercontent.com/N7btH27egWR-Khn8AvARk9-k9Jz8xtPK9hqKMqvd9VPwi53Wa8pdu_LoCgh0SjiJsZj4lyIdC_gFqx7qLj7uwMl75tseogK0rg=s0" alt="mt5 financial">
                     <p><strong>Multi-language support</strong></p>
                     <p>Deriv offers customer support in multiple languages, tailoring assistance to each trader’s needs for a more effective and personal experience.</p>
                 </div>
-                <div class="box-trading-needs greymargin">
-                    <img src="https://lh3.googleusercontent.com/s-YuXXVWPqwk8LcHsI1gH5vZJnbXPTy2rrI_Aco-z7KHEdeYRaVqS2ZjDVGQllH4gxeAOkpSXBmv4DcBnrGh6Xk-CZePmoxyrR8=s0" alt="mt5 swap free">
+                <div class="box-trading-needs redmargin">
+                    <img src="https://lh3.googleusercontent.com/e-fQ0yhPe8MysW_pA1PGAnuwJ835JET67e0_NrOhaOEbv8BZ__d9GhdyAlM9vGocYmecczC6r9XTbmkHQglA1lZLFU3hZD49QV0=s0" alt="mt5 swap free">
                     <p><strong>Practice trading</strong></p>
                     <p>Hone your trading skills on our state-of-the-art platforms with virtual money before you start real trading.</p>
                 </div>
@@ -1046,12 +1047,12 @@
         </section>
         <section  class="typemt5">
             <div >
-                <p class="title48">Choose your account type to trade on Deriv MT5</p>
+                <p class="title48">Trade on Deriv MT5 or other platforms of your choice</p>
             </div>
             <div class="boxes-flexmt5">
                 <div class="box-flexmt5">
                     <div class="box-flexmt5-left">
-                        <img src="https://lh3.googleusercontent.com/p0DVJspT4ljCOqkOdhgcXPhfpgWZQjAVgRBTzuTUDjyEb6ksvmxiwuiGJBB4GHhfBV16X3_oG41SKZcoJMAkcO9aSyK1gkvK-iw=s0" alt="mt5 derived">
+                        <img src="https://lh3.googleusercontent.com/vVEhB7eVhXUUam3LQTSxyc12-_c8zgUPs-3cmskQl9JzQ3riHHy19QE0AYm_RS18TW2hQTYBqi7cCTIU45-U8a4YV3cx-p63UQ=s0" alt="mt5 derived">
                     </div>
                     <div class="box-flexmt5-right">
                         <p><strong>Deriv MT5</strong></p>
@@ -1060,7 +1061,7 @@
                 </div>
                 <div class="box-flexmt5">
                     <div class="box-flexmt5-left">
-                        <img src="https://lh3.googleusercontent.com/p0DVJspT4ljCOqkOdhgcXPhfpgWZQjAVgRBTzuTUDjyEb6ksvmxiwuiGJBB4GHhfBV16X3_oG41SKZcoJMAkcO9aSyK1gkvK-iw=s0" alt="mt5 derived">
+                        <img src="https://lh3.googleusercontent.com/Obn8Q_MiY9F-apr3UlKMdTm0BE02FcZpyLpj_ungQaW2XY7oyTd-DlsK3aGXCTKjGjxDnnD1yYytYUoxlqI0mMcyCHwAJ9N_xG8=s0" alt="mt5 derived">
                     </div>
                     <div class="box-flexmt5-right">
                         <p><strong>Deriv X</strong></p>
@@ -1069,7 +1070,7 @@
                 </div>
                 <div class="box-flexmt5">
                     <div class="box-flexmt5-left">
-                        <img src="https://lh3.googleusercontent.com/p0DVJspT4ljCOqkOdhgcXPhfpgWZQjAVgRBTzuTUDjyEb6ksvmxiwuiGJBB4GHhfBV16X3_oG41SKZcoJMAkcO9aSyK1gkvK-iw=s0" alt="mt5 derived">
+                        <img src="https://lh3.googleusercontent.com/EL6ESP6WWcH08D8uHtgu8lqdC5PzrQpAi2UBgydgRDCXj_fItckaitdtWN-jZdmYAYSZrF1mHPFR2153Flpn9eiLzp-_jQqfzA0=s0" alt="mt5 derived">
                     </div>
                     <div class="box-flexmt5-right">
                         <p><strong>Deriv cTrader</strong></p>
@@ -1099,20 +1100,20 @@
                     <img src="https://static.deriv.com/email/images/icons/instant.png" alt="Trade markets">
                 </div>
             </div>
-            <div class="payment-methods14">
-                <p>Deriv supports multiple payment methods. Availability may vary based on your country of residence.</p>
+            <div >
+                <p class="payment-methods14">Deriv supports multiple payment methods. Availability may vary based on your country of residence.</p>
             </div>
         </section>
         <section class="award">
             <div>
-                <p class="title48">Trade with Deriv, your award-winning broker</p>
+                <p class="title48">Trade with Deriv, an award-winning broker</p>
             </div>
             <div class="boxes-flex-award">
                 <div class="box-flex-award">
                     <img src="https://lh3.googleusercontent.com/V7gxQDutnNkQqeTi2x1P_CcS2e9xmD4e15jCkuLh3aHjJfw5QtZvIrU5oayHKzwSXPn2soRkMEm-x6hlCC1qna5V9iVFPjjQK5g=s0" alt="mt5 derived">
                 </div>
                 <div class="box-flex-award">
-                    <img src="https://lh3.googleusercontent.com/VaydG88brML3OcuKRKYPgRYPE_GmPwmwTg610yO3p26o0LOeNuC2B53oGLwuCyXWc52gKIjXQYBgHaq2JQPbfHLxMzoMokR4dA=s0" alt="mt5 derived">
+                    <img src="https://lh3.googleusercontent.com/_yI6tWwkpN_GoCciMN7gYW9cGdduSXyyehKQNpR-uYf3-P7Y0f8ifd97usPrVJRWXFW9rxoTr_3Yz5dyXdkIrDl-R3B4HnRfVg=s0" alt="mt5 derived">
                 </div>
                 <div class="box-flex-award">
                     <img src="https://lh3.googleusercontent.com/PPIG6zJFAkxBp9LES3sJmXP_WTPMEQ5bZho7g4vX60VjKqypKjtNp8xm9gWIR6JW9cUF3BPPsj7LyxyilSRh5ThS_or6t9xdlDkH=s0" alt="mt5 derived">
@@ -1142,7 +1143,6 @@
         <section class="start-trading">
             <div>
                 <button onclick="goToDestination2()" id="myBtn_n2" class="button-footer" type="button">Start trading now</button>
-            </div>
             </div>
         </section>
         <section  class="footer-log-sm">
@@ -1182,7 +1182,6 @@
         </section>
             </main>
     </div>
-
 
     
     <script>
