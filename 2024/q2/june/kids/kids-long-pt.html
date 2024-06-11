@@ -236,19 +236,21 @@
             .mb-font-size{
                 font-size: 14px !important;
             }
-            .mb-font-size-table-text{
-                font-size: 13px !important;
-            }
-            .mb-font-size-note{
+            .mb-font-size1{
                 font-size: 12px !important;
             }
-            .mb-font-size-header {
+            h1 {
             font-family: 'IBM Plex Sans', Arial, sans-serif;
-            font-size: 24px !important;
+            font-size: 26px !important;
             line-height: 40px;
             font-weight: bold;
             margin: 0; 
         }
+        .table-border {
+                        border: 2px solid #EBECEF;
+                        border-radius: 8px; 
+                        overflow: hidden;
+                    }
         }
         @media (prefers-color-scheme: dark ) {
             /* Shows Dark Mode-Only Content, Like Images */
@@ -262,15 +264,15 @@
             /* Custom Dark Mode Background Color */
             .darkmodeblack { background-color:#0e0e0e !important; }
             .darkmodelowblack { background-color: #202020 !important;}
+            .darkmodelowblack1 { background-color: #303030 !important;}
             .dark-border-radius { background-color: #202020 !important; border-radius: 16px !important;}
-            .darkblack-border-radius { background-color:#0e0e0e !important; border-radius: 16px !important;}
 
             /* Custom Dark Mode Font Colors */
             h1, h2, p, span, a, b { color: #ffffff !important; }
             .darkmodegray { color: #6e6e6e !important; }
             .darkcolor-subtext{ color: #c2c2c2 !important; }
-            .darkcolor-white, strong{ color: #ffffff !important; }
-            .darkborder{ border-color: #6e6e6e !important; }
+            .darkcolor-subtext1, strong{ color: #ffffff !important; }
+            .darkborderline{ border-color: #202020 !important; }
 
             /* Custom Dark Mode Text Link Color */
             .link { color: #91ADD4 !important; }
@@ -286,13 +288,12 @@
         [data-ogsc] .darkmodeblack { background-color: #0e0e0e !important;}
         [data-ogsc] .darkmodelowblack { background-color: #202020 !important; }
         [data-ogsc] .dark-border-radius { background-color: #202020 !important; border-radius: 16px !important;}
-        [data-ogsc] .darkblack-border-radius { background-color: #0e0e0e !important; border-radius: 16px !important;}
 
         /* Custom Dark Mode Font Colors */
         [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] span, [data-ogsc] a, [data-ogsc] b { color: #ffffff !important; }
         [data-ogsc] .darkmodegray { color: #6e6e6e !important; }
         [data-ogsc] .darkcolor-subtext{ color: #c2c2c2 !important; }
-        [data-ogsc] .darkcolor-white{ color: #ffffff !important; }
+        [data-ogsc] .darkcolor-subtext1{ color: #ffffff !important; }
         [data-ogsc] .darkborder{ border-color: #6e6e6e !important; }
 
         /* Custom Dark Mode Text Link Color */
@@ -307,57 +308,67 @@
 </head>
 <body style="background-color: rgb(238, 238, 238); margin: 0px !important; padding: 0px !important; cursor: auto;">
 <table border="0" cellpadding="0" cellspacing="0" width="100%"><!-- Email body -->
-	<tbody>                                                    
-            <!-- FOOTER -->
-            <tr>
-                <td align="center" bgcolor="#eeeeee" class="mobile-nopadding" style="padding: 0px;">
-                    <!--[if (gte mso 9)|(IE)]>
-                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600" bgcolor="#ffffff">
-                    <![endif]-->
-                    <table bgcolor="#fff" border="0" cellpadding="0" cellspacing="0" class="darkmodeblack" style="max-width: 600px;" width="100%" >
-                        <tbody>
-                            <tr>
-                                <td align="center" class="darkmodeblack" style="padding: 30px 30px 10px;"><a href="https:/eu.deriv.com"><img alt="Deriv.com" width="160" src="https://static.deriv.com/logos/deriv-gray-2023.png" style="display: block; opacity: 70%;"  /> </a></td>
-                            </tr>
-                            <tr>
-                                <td align="center" class="darkmodeblack" style="padding: 10px 0 0;">
-                                    <p style="word-spacing: 15px !important;"> 
-                                        <a href="https://www.facebook.com/DerivEU/" style="text-decoration: none;"><img alt="Deriv.com on Facebook" height="32" src="https://static.deriv.com/email/images/footer-sm-imgs-2024/facebook-md.png" title="Deriv.com on Facebook" width="32" /> </a>
-                                        <a href="https://www.instagram.com/deriv_eu" style="text-decoration: none;"> <img alt="Deriv.com on Instagram" height="32" src="https://static.deriv.com/email/images/footer-sm-imgs-2024/instagram-md.png" title="Deriv.com on Instagram" width="32" /> </a>
-                                        <a href="https://twitter.com/deriv_eu" target="_blank"> <img alt="Deriv.com on Twitter" height="32" src="https://static.deriv.com/email/images/footer-sm-imgs-2024/x-twitter-md.png" title="Deriv.com on Twitter" width="32" /> </a>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td bgcolor="#fff" align="left" style="padding:10px 45px 10px 30px;color: #646464;font-family: 'IBM Plex Sans', Arial, sans-serif;font-size: 12px;font-weight: 500;line-height: 16px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="mobile-side darkmodeblack">
-                                    <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #b1b4bc; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0;" class="darkmodegray">This email is a notification email to inform clients about important updates and has been issued by Deriv Investments (Europe) Limited,  a company incorporated in Malta, with registration number C 70156, and its registered address at W Business Centre, Level 3, Triq Dun Karm, Birkirkara, BKR 9033, Malta.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td bgcolor="#fff" align="left" style="padding:4px 30px 10px;color: #646464;font-family: 'IBM Plex Sans', Arial, sans-serif;font-size: 12px;font-weight: 500;line-height: 16px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="mobile-side darkmodeblack">
-                                    <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #b1b4bc; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0;" class="darkmodegray">Deriv Investments (Europe) Limited is licensed in Malta and regulated by the Malta Financial Services Authority, under the Investment Services Act, to provide investment services.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td bgcolor="#fff" align="left" style="padding:4px 30px 10px;color: #646464;font-family: 'IBM Plex Sans', Arial, sans-serif;font-size: 12px;font-weight: 500;line-height: 16px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="mobile-side darkmodeblack">
-                                    <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #b1b4bc; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0;" class="darkmodegray">We will never share our email lists and other data with a third party. To learn more about how we protect your personal and financial information, please read our <a href="https://eu.deriv.com/tnc/eu/security-and-privacy.pdf" target="_blank" style="color: #ff444f !important;">security and privacy policy</a>.</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td bgcolor="#fff" align="center" style="color: #646464;font-family: 'IBM Plex Sans', Arial, sans-serif;font-size: 12px;font-weight: 500;line-height: 16px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="darkmodeblack">
-                                    <p style="padding: 20px 10px 0px;font-family: 'IBM Plex Sans', Arial, sans-serif; color: #646464; font-size: 12px; font-weight: 400; line-height: 16px; margin: 5px 0px 5px 0px;"><a href="https://eu.deriv.com/help-centre" style="color: #ff444f !important">Help centre</a>&nbsp;&nbsp;&nbsp;<span class="darkmodegray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://eu.deriv.com/terms-and-conditions/" style="color: #ff444f !important">Terms and conditions</a>&nbsp;&nbsp;&nbsp;<span class="darkmodegray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://eu.deriv.com/regulatory/" style="color: #ff444f !important">Key Information Documents</a></p>
-                                    <p style="padding: 0 10px;font-family: 'IBM Plex Sans', Arial, sans-serif; color: #999999; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0px 0px 30px 0px;" class="darkmodegray">No longer want to receive these emails? <a href="https://app.deriv.com/account/personal-details" style="mso-hide:all; color: #ff444f !important;" class="darkcolor-subtext">Unsubscribe</a></p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!--[if (gte mso 9)|(IE)]>
-                        </td></tr></table>
-                    <![endif]-->
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    </body>
-    </html>
-    
+	<tbody>
+        <!-- FOOTER -->
+        <tr>
+            <td align="center" bgcolor="#eeeeee" class="mobile-nopadding" style="padding: 0 0 10px;">
+                <!--[if (gte mso 9)|(IE)]>
+                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600" bgcolor="#ffffff">
+                <![endif]-->
+                <table bgcolor="#fff" border="0" cellpadding="0" cellspacing="0" class="darkmodeblack" style="max-width: 600px;" width="100%">
+                    <tbody>
+                        <tr>
+                            <td align="center" class="darkmodeblack" style="padding: 30px 30px 0;"><a href="https://eu.deriv.com"><img alt="Deriv.com" width="160" src="https://static.deriv.com/logos/deriv-gray-2023.png" style="display: block; opacity: 70%;"  /> </a></td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="darkmodeblack" style="padding: 20px 0;">
+                            <p style="word-spacing: 15px !important;"><a href="https://www.facebook.com/DerivEU/" style="text-decoration: none;"><img alt="Deriv.com on Facebook" height="32" src="https://static.deriv.com/email/images/footer-sm-imgs-2024/facebook-md.png" title="Deriv.com on Facebook" width="32" /> </a><a href="https://www.instagram.com/deriv_eu" style="text-decoration: none;"> <img alt="Deriv.com on Instagram" height="32" src="https://static.deriv.com/email/images/footer-sm-imgs-2024/instagram-md.png" title="Deriv.com on Instagram" width="32" /> </a><a href="https://twitter.com/deriv_eu" target="_blank"> <img alt="Deriv.com on Twitter" height="32" src="https://static.deriv.com/email/images/footer-sm-imgs-2024/x-twitter-md.png" title="Deriv.com on Twitter" width="32" /> </a></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#fff" align="left" style="padding:4px 45px 10px 30px;color: #646464;font-family: 'IBM Plex Sans', Arial, sans-serif;font-size: 12px;font-weight: 500;line-height: 16px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="mobile-side darkmodeblack">
+                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #b1b4bc; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0;" class="darkmodegray">Este e-mail é um e-mail de marketing destinado a clientes não profissionais e profissionais, emitido pela Deriv Investments (Europe) Limited, empresa constituída em Malta com o número de registo C 70156 e morada registada em W Business Centre, Level 3, Triq Dun Karm, Birkirkara, BKR 9033, Malta.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#fff" align="left" style="padding:4px 30px 10px;color: #646464;font-family: 'IBM Plex Sans', Arial, sans-serif;font-size: 12px;font-weight: 500;line-height: 16px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="mobile-side darkmodeblack">
+                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #b1b4bc; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0;" class="darkmodegray">A Deriv Investments (Europe) Limited é licenciada em Malta e regulamentada pela Malta Financial Services Authority ao abrigo da Investment Services Act, para prestar serviços de investimento. Está autorizada a negociar por conta própria e é tanto o fabricante como o distribuidor dos seus produtos.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#fff" align="left" style="padding:4px 30px 10px;color: #646464;font-family: 'IBM Plex Sans', Arial, sans-serif;font-size: 12px;font-weight: 500;line-height: 16px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="mobile-side darkmodeblack">
+                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #b1b4bc; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0;" class="darkmodegray">Os produtos oferecidos pela Deriv Investments (Europe) Limited, nomeadamente CFDs, são classificados como "produtos complexos" e podem não ser adequados para clientes não profissionais.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#fff" align="left" style="padding:4px 30px 10px;color: #646464;font-family: 'IBM Plex Sans', Arial, sans-serif;font-size: 12px;font-weight: 500;line-height: 16px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="mobile-side darkmodeblack">
+                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #b1b4bc; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0;" class="darkmodegray">Os CFDs são instrumentos complexos que apresentam um elevado risco de perda rápida de dinheiro devido à alavancagem. 67.28%% das contas de investidores não profissionais perdem dinheiro ao negociar CFDs com este fornecedor. Deve ponderar se compreende o funcionamento dos CFDs e se tem capacidade financeira para assumir o elevado risco de perder o seu dinheiro.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#fff" align="left" style="padding:4px 30px 10px;color: #646464;font-family: 'IBM Plex Sans', Arial, sans-serif;font-size: 12px;font-weight: 500;line-height: 16px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="mobile-side darkmodeblack">
+                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #b1b4bc; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0;" class="darkmodegray">Certifique-se de que lê cuidadosamente os nossos <a href="https://eu.deriv.com/pt/terms-and-conditions/#clients" target="_blank" style="color: #ff444f !important;">Termos e Condições</a>, <a href="https://eu.deriv.com/tnc/eu/risk-disclosure.pdf" target="_blank" style="color: #ff444f !important;">Divulgação de Risco</a>, e <a href="https://eu.deriv.com/pt/responsible/" target="_blank" style="color: #ff444f !important;">Negociação Segura e Responsável</a> para compreender plenamente os riscos envolvidos antes de utilizar os nossos serviços. Por favor, tenha em mente que as informações fornecidas não representam conselhos de investimento. O valor dos investimentos pode diminuir ou aumentar.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#fff" align="left" style="padding:4px 30px 10px;color: #646464;font-family: 'IBM Plex Sans', Arial, sans-serif;font-size: 12px;font-weight: 500;line-height: 16px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="mobile-side darkmodeblack">
+                                <p style="font-family: 'IBM Plex Sans', Arial, sans-serif; color: #b1b4bc; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0;" class="darkmodegray">Nunca iremos partilhar as nossas listas de e-mails e outros dados com terceiros. Para saber mais sobre como protegemos os seus dados pessoais e financeiros, por favor consulte a nossa <a href="https://eu.deriv.com/tnc/eu/security-and-privacy.pdf" target="_blank" style="color: #ff444f !important;">Política de Segurança e Privacidade</a>.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#fff" align="center" style="color: #646464;font-family: 'IBM Plex Sans', Arial, sans-serif;font-size: 12px;font-weight: 500;line-height: 16px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="darkmodeblack">
+                                <p style="padding: 20px 10px 0px;font-family: 'IBM Plex Sans', Arial, sans-serif; color: #646464; font-size: 12px; font-weight: 400; line-height: 16px; margin: 5px 0px 5px 0px;"><a href="https://eu.deriv.com/help-centre" style="color: #ff444f !important">Centro de ajuda</a>&nbsp;&nbsp;&nbsp;<span class="darkmodegray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://eu.deriv.com/terms-and-conditions/" style="color: #ff444f !important">Termos e condições</a>&nbsp;&nbsp;&nbsp;<span class="darkmodegray">|</span>&nbsp;&nbsp;&nbsp;<a href="https://eu.deriv.com/regulatory/" style="color: #ff444f !important">Documentos de informação fundamental</a></p>
+                                <p style="padding: 0 10px;font-family: 'IBM Plex Sans', Arial, sans-serif; color: #999999; font-size: 12px; font-weight: 400; line-height: 16px; margin: 0px 0px 30px 0px;" class="darkmodegray">Não pretende continuar a receber estes e-mails? <a href="https://app.deriv.com/account/personal-details" style="mso-hide:all; color: #ff444f !important;" class="darkcolor-subtext">Cancelar subscrição</a></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--[if (gte mso 9)|(IE)]>
+                    </td></tr></table>
+                <![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
