@@ -444,28 +444,10 @@
                 text-align: left;
             }
 
-            /* Signupred buttton */
-
-            .button-signupred{ 
-                display: flex; 
-                gap: 1%; 
-                padding: 0px 1%; 
-                justify-content: center; 
-                align-items: center; 
-                border-radius: 21px; 
-                font-size: 20px; 
-                cursor: pointer; 
-                height: 61px;
-                width: 128px; 
-                margin: 4% auto; 
-                font-weight: 700; 
+            .box-synthetics-deriv-left > div > img {
+                width: 48px;
+                height: 48px;
             }
-
-            .button-signupred { background-color: #ff444f; color: #fff; border: 1px solid #ff444f; }
-            .button-signupred:hover { background-color: #d43e47; }
-            .button-signupred:active { transition: width 0.1s, height 0.1s; height: 60px; width: 128px; }
-
-            /* Signupred button */
 
             /* Synthetic indices available at Deriv */
 
@@ -476,24 +458,20 @@
                 margin: 0 auto;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
+                justify-content:center;
                 align-items: center;
-                background: linear-gradient(90deg, #fff 50%, #ff444f 0%);
-                border-radius: 16px;
-                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
             }
 
-            .left, .right {
+            .synthetic-left, .synthetic-right {
                 width: 50%;
                 padding: 0px;
             }
-            .right img {
+            .synthetic-right img {
                 width: 100%;
                 height: auto;
                 margin: 10% 0%;
             }
-            .left > h3 {
-                width: 75%;
+            .synthetic-left > h3 {
                 font-size: 24px;
                 font-weight: 700;
                 line-height: 36px;
@@ -507,27 +485,23 @@
                 margin: 0px auto 24px;
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
+                justify-content:center;
                 align-items: center;
                 gap: 0px;
             }
             .box-trade-synthetics-left{
-                width: 130px;
+                width: 80px;
                 height: 96px;
-                border: 1px solid #E6E9E9;
-                border-radius: 8px 0 0 8px;
-                padding: 0 14px;
+                padding: 0 5px;
                 align-content: center;
-                text-align: center;
+                text-align: left;
                 background-color: #fff;
                 
             }
             .box-trade-synthetics-right{
-                width: 350px;
+                width: 440px;
                 height: 96px;
-                border: 1px solid #E6E9E9;
-                border-radius: 0 8px 8px 0; 
-                padding: 0 24px;
+                padding: 0 24px 0 0;
                 align-content: center;
                 background-color: #fff;
                 
@@ -541,27 +515,60 @@
                 font-family: 'IBM Plex Sans';
                 text-align: left;
             }
-            .left img {
+            .box-trade-synthetics-left img {
                 width: 48px;
                 height: 48px;
-                margin: 0;
+                margin: 5px 0 0 0;
             }
             /* Trade synthetic indices on */
 
+            /* Payment methods */
 
-             /* Platforms */
-             .platforms {
-                background-color: #FF444F !important;
+            .payment-methods {
+                max-width: 2000px !important;
+                background-color: #F6F7F8;
+                margin: 0px auto;
+                padding: 0 20px;
+            }
+            .payment-methods>div>.title48 {
+                padding-top: 60px;
+            }
+            .boxes-payment-methods {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:center;
+                align-items: center;
+                gap: 100px;
+            }
+            .box-payment-methods {
+                width: 128px;
+                padding: 20px;
+                margin-bottom: 40px;
+                
+            }
+            .payment-methods14 {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                padding-bottom: 60px;
+                text-align: center;
+                color: #414652;
+                font-family: 'IBM Plex Sans';
+            }
+
+            /* Payment methods */
+
+            /* Start trading synthetics on Deriv in 3 simple steps */
+            .trading-3steps {
                 max-width: 2000px !important;
                 margin: 0px auto;
                 padding: 0 20px;
             }
-            .platforms>div>.title48 {
-                padding: 60px 0 20px;
-                color: #fff;
+            .trading-3steps>div>.title48 {
+                max-width: 800px;
+                padding: 30px 0;
             }
-            .boxes-platforms {
-                max-width: 1450px;
+            .boxes-flex-3steps {
                 padding: 50px auto;
                 margin: 30px auto;
                 display: flex;
@@ -569,40 +576,28 @@
                 justify-content: center;
                 align-items: center;
                 align-content: center;
-                gap: 20px 90px;
+                gap: 80px;
             }
-            .box-platforms{
-                width: 310px;
-                height: 194px;
+            .box-flex-3steps{
+                width: 316px;
+                height: 164px;
                 border-radius: 16px;
-                padding: 20px;
+                padding: 24px;
                 background-color: #fff;
                 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
-                margin-bottom: 50px;
+                margin-bottom:20px;
                 
             }
-            .box-platforms-left {
-                float: left;
-                padding: 8px 0 0 8px;
-                width: 31%;
-            }
-            .box-platforms-left > img {
-                width: 48px;
-                height: 48px;
-            }
-            .box-platforms-right {
-                float: right;
-                width: 69%;
-            }
-            .box-platforms-right>p {
+            .box-flex-3steps>p {
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 24px;
                 color: #414652;
                 font-family: 'IBM Plex Sans';
                 text-align: left;
+                margin: 0 0 10px 0;
             }
-            .box-platforms-right>p>strong {
+            .box-flex-3steps >p >strong {
                 font-size: 20px;
                 font-weight: 700 ;
                 line-height: 30px ;
@@ -610,7 +605,7 @@
                 font-family: 'IBM Plex Sans';
                 text-align: left;
             }
-            /* Platforms */
+            /* Start trading synthetics on Deriv in 3 simple steps */
 
             /* TRUST PILOT */
             .trustpilot {
@@ -1103,11 +1098,11 @@
             </div>
         </section>
         <section class="trade-synthetics">
-            <div class="left">
+            <div class="synthetic-left">
                 <h3>Trade synthetic indices on</h3>
                 <div class="box-trade-synthetics">
                     <div class="box-trade-synthetics-left"> 
-                        <img src="https://lh3.googleusercontent.com/QPta-CqOPN8ULIBPMH56vNmmrbaJuqD57cdhG5pOqqrc5U9-5HT5V88m9YJJLrjLf8cFb7HPRtIY4f5Kci59cKQ4IV9mDAxPj5_p=s0" alt="mt5 derived">
+                        <img src="https://lh3.googleusercontent.com/ZNUHgBb8Lgdfk8mrE0dVHACL6nqaao1kC-6fhuucry6DwV7UNrcBoMXQzW-ZaRC-eZezSnpijvtlysyPOIuRewgCOxr77PT8M_s=s0" alt="mt5">
                     </div>
                     <div class="box-trade-synthetics-right">
                         <p><strong>Smart Trader</strong></p>
@@ -1116,7 +1111,7 @@
                 </div>
                 <div class="box-trade-synthetics">
                     <div class="box-trade-synthetics-left"> 
-                        <img src="https://lh3.googleusercontent.com/QPta-CqOPN8ULIBPMH56vNmmrbaJuqD57cdhG5pOqqrc5U9-5HT5V88m9YJJLrjLf8cFb7HPRtIY4f5Kci59cKQ4IV9mDAxPj5_p=s0" alt="mt5 derived">
+                        <img src="https://lh3.googleusercontent.com/0To5To-jlNTEqfAdPO1TKr3YY--57_fUJagH1HZKsWzzGD9gm77l-HwGOwO-3WXi6BVOtbHV-Rikcr39xRNcfr3rJgM79xa-VQ=s0" alt="Deriv trader">
                     </div>
                     <div class="box-trade-synthetics-right">
                         <p><strong>Smart Trader</strong></p>
@@ -1125,7 +1120,7 @@
                 </div>
                 <div class="box-trade-synthetics">
                     <div class="box-trade-synthetics-left"> 
-                        <img src="https://lh3.googleusercontent.com/QPta-CqOPN8ULIBPMH56vNmmrbaJuqD57cdhG5pOqqrc5U9-5HT5V88m9YJJLrjLf8cFb7HPRtIY4f5Kci59cKQ4IV9mDAxPj5_p=s0" alt="mt5 derived">
+                        <img src="https://lh3.googleusercontent.com/pmLEn0jEH7efTry0EXDefvpafiYOccK1PfdUjBegac7Ps1KJ8uKoNmiQMo8_728_quNX6O1p8avKLSK9d3k8fHH8iZVIiX1wmpU=s0" alt="Deriv X">
                     </div>
                     <div class="box-trade-synthetics-right">
                         <p><strong>Smart Trader</strong></p>
@@ -1134,7 +1129,7 @@
                 </div>
                 <div class="box-trade-synthetics">
                     <div class="box-trade-synthetics-left"> 
-                        <img src="https://lh3.googleusercontent.com/QPta-CqOPN8ULIBPMH56vNmmrbaJuqD57cdhG5pOqqrc5U9-5HT5V88m9YJJLrjLf8cFb7HPRtIY4f5Kci59cKQ4IV9mDAxPj5_p=s0" alt="mt5 derived">
+                        <img src="https://lh3.googleusercontent.com/UuOxajQ9WXghibUevE1rWpW4OMnKUdBHBi_2II_9zPt7O9gx1jw_F5yMdbFYIhiL_6liXu_fH9FoeWkSqGMw9Jtydv_wxc5m1_nc=s0" alt="Deriv Bot">
                     </div>
                     <div class="box-trade-synthetics-right">
                         <p><strong>Smart Trader</strong></p>
@@ -1143,7 +1138,7 @@
                 </div>
                 <div class="box-trade-synthetics">
                     <div class="box-trade-synthetics-left"> 
-                        <img src="https://lh3.googleusercontent.com/QPta-CqOPN8ULIBPMH56vNmmrbaJuqD57cdhG5pOqqrc5U9-5HT5V88m9YJJLrjLf8cFb7HPRtIY4f5Kci59cKQ4IV9mDAxPj5_p=s0" alt="mt5 derived">
+                        <img src="https://lh3.googleusercontent.com/QPta-CqOPN8ULIBPMH56vNmmrbaJuqD57cdhG5pOqqrc5U9-5HT5V88m9YJJLrjLf8cFb7HPRtIY4f5Kci59cKQ4IV9mDAxPj5_p=s0" alt="Smart Trader">
                     </div>
                     <div class="box-trade-synthetics-right">
                         <p><strong>Smart Trader</strong></p>
@@ -1151,10 +1146,57 @@
                     </div>
                 </div>
             </div>
-            <div class="right">
-                <img src="https://lh3.googleusercontent.com/EakG6PhyXY4LX8Swa0dF5K3HpEewEIaMEkuUUkwcgooQTnCAhSIiKD4xvTfe2h8j7cD3kk-oHSx0ctMxrL28PE4cOZrXUS4f3kUR=w1064" alt="">
+            <div class="synthetic-right">
+                <img src="https://lh3.googleusercontent.com/cPcW59bL3adkVM7CjmrGsFUBCtcrehYhj5BkEOCRHPiRqa6W9KTpiGpozs3DfhLq9zO5M3KoOR8VsPMOrnOgiVqXaNy-ldAiww=w1056" alt="">
             </div>
             
+        </section>
+        <section class="payment-methods">
+            <div >
+                <p class="title48">Payment methods</p>
+            </div>
+            <div class="boxes-payment-methods">
+                <div class="box-payment-methods">
+                    <img src="https://static.deriv.com/email/images/icons/visa.png" alt="Trade markets">
+                </div>
+                <div class="box-payment-methods">
+                    <img src="https://static.deriv.com/email/images/icons/master.png" alt="Trade markets">
+                </div>
+                <div class="box-payment-methods">
+                    <img src="https://static.deriv.com/email/images/icons/skrill2.png" alt="Trade markets">
+                </div>
+                <div class="box-payment-methods">
+                    <img src="https://static.deriv.com/email/images/icons/neteller2.png" alt="Trade markets">
+                </div>
+                <div class="box-payment-methods">
+                    <img src="https://static.deriv.com/email/images/icons/instant.png" alt="Trade markets">
+                </div>
+            </div>
+            <div >
+                <p class="payment-methods14">Deriv supports multiple payment methods. Availability may vary based on your country of residence.</p>
+            </div>
+        </section>
+        <section  class="trading-3steps">
+            <div >
+                <p class="title48">Start trading synthetics on Deriv in 3 simple steps</p>
+            </div>
+            <div class="boxes-flex-3steps">
+                <div class="box-flex-3steps">
+                    <p><strong>Practise</strong></p>
+                    <p>Open a demo account and practise with an unlimited amount of virtual funds.</p>
+                </div>
+                <div class="box-flex-3steps">
+                    <p><strong>Trade</strong></p>
+                    <p>Open a real account, make a deposit, and start trading synthetics and other markets.</p>
+                </div>
+                <div class="box-flex-3steps">
+                    <p><strong>Withdraw</strong></p>
+                    <p>Conveniently withdraw your funds through any of our supported withdrawal methods.</p>
+                </div>
+            </div>
+            <div>
+                <button onclick="goToDestination2()" id="myBtn_n2" class="button-signupred" type="button">Sign up</button>
+            </div>
         </section>
         <section  class="trustpilot">
             <div class="boxes-flex-trust">
