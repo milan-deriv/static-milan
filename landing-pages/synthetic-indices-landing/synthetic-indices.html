@@ -461,16 +461,6 @@
                 justify-content:center;
                 align-items: center;
             }
-
-            .synthetic-left, .synthetic-right {
-                width: 50%;
-                padding: 0px;
-            }
-            .synthetic-right img {
-                width: 100%;
-                height: auto;
-                margin: 10% 0%;
-            }
             .synthetic-left > h3 {
                 font-size: 24px;
                 font-weight: 700;
@@ -547,7 +537,7 @@
                 
             }
             .payment-methods14 {
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: 400;
                 line-height: 22px;
                 padding-bottom: 60px;
@@ -695,6 +685,12 @@
             }
             /* FOOTER */
 
+        @media (max-width: 1100px) {
+            .synthetic-left {
+                padding-left: 20px;
+            }
+        }
+
         @media (max-width: 840px) {
                 .navlogo {
                     text-align: center !important;
@@ -704,7 +700,7 @@
                     margin: 0 auto;
                 }
                 .redwhite{
-                    background: linear-gradient(170deg, #ff444f 33%, #ffffff 0%);
+                    background: linear-gradient(170deg, #ff444f 41.5%, #ffffff 0%);
                     margin: auto;
                 }
 
@@ -713,15 +709,12 @@
                 }
                 /* left side redwhite opening */
                 .left img {
-                    width: 95%;
-                    margin: 0%;
+                    width: 84%;
+                    margin: 2% 0;
                 }
                 h1{
-                    margin: 5% 0 0 10%;
+                    margin: 5% 7%;
                     padding-bottom: 0 !important;
-                }
-                #redh3{
-                    margin: 0 0 0 10%;
                 }
                 /* left side  redwhite closing */
                 /* right side redwhite opening */
@@ -770,23 +763,98 @@
                 }
                 /* Simulated markets */
         }
+
+        @media (max-width: 800px) {
+            /* Synthetic indices available at Deriv */
+            .box-synthetics-deriv {
+                flex-direction: column;
+            }
+            .box-synthetics-deriv-left{
+                width: 100%;
+                height: auto;
+                border-radius: 8px 8px 0 0;
+                padding: 24px;
+                
+            }
+            .box-synthetics-deriv-right{
+                width: 100%;
+                height: auto;
+                border-radius: 0 0 8px 8px; 
+                padding: 24px;
+                
+            }
+            .box-synthetics-deriv-right>p {
+                text-align: center;
+            }
+
+            /* Synthetic indices available at Deriv */
+
+            /* Trade synthetic indices on */
+            .trade-synthetics {
+                flex-direction: column;
+            }
+
+            .synthetic-left, .synthetic-right {
+                width: 100%;
+                padding: 0px;
+            }
+            .synthetic-right img {
+                width: 95%;
+                margin: 5%;
+            }
+            .synthetic-left > h3 {
+                text-align: center;
+            }
+            .box-trade-synthetics {
+                margin: 0px auto 0 5%;
+                gap: 10px;
+            }
+            .box-trade-synthetics-left{
+                width: 15%;
+                height: auto;
+                padding: 0px;
+                text-align: right;
+            }
+            .box-trade-synthetics-right{
+                width: 60%;
+                height: auto;
+                padding: 20px 0px;
+            }
+            /* Trade synthetic indices on */
+
+
+            /* Payment methods */
+
+            .payment-methods>div>.title48 {
+                margin: 0 auto 50px !important;
+            }
+            .boxes-payment-methods {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:center;
+                align-items: center;
+                gap: 30px 100px;
+            }
+
+            /* Payment methods */
+        }
+
+
         @media (max-width: 520px) {
             .navlogo img {
                 width: 72.33px !important;
                 height: 24px !important;
             }
+            .redwhite{
+                    background: linear-gradient(170deg, #ff444f 35.5%, #ffffff 0%);
+                    margin: auto;
+                }
             h1{
                 font-size: 28px;
-                margin: 8% 0 0 8%;
-                padding-right: 30% !important;
+                margin: 5% 0 5% 8%;
+                padding-right: 9% !important;
                 line-height: 32.17px;
                 padding-bottom: 0 !important;
-            }
-            #redh3{
-                font-size: 18px;
-                line-height: 28px;
-                margin: 1% 0 0 8%;
-                padding-right: 25%;
             }
             /* right side redwhite opening */
             h3 {
@@ -837,27 +905,40 @@
             .button-signup:active, .button-google:active, .button-fb:active, .button-apple:active { transition: width 0.1s, height 0.1s; height: 36px; width: 85%; }
             /* Buttons closing*/
             /* right side redwhite closing */
+
             /* Simulated markets */
-            .box-flex{
-                width: 328px;
-                height: 192px;
-                margin-bottom: 5px !important;
-            }
-            .box-flex2{
-                width: 328px;
-                height: 168px;
-                margin-bottom: 5px !important;
-            }
             .title48 {
                 font-size: 28px !important;
                 font-weight: 700;
                 line-height: 32.17px;
+                max-width: 300px;
+            }
+            .boxes-flex {
+                gap: 0;
+                margin: 30px auto 10px;
+            }
+            .box-flex{
+                height: 140px;
+                margin-bottom: 5px !important;
+                padding: 10px;
+            }
+            .box-flex > p {
+                margin: 5px auto;
             }
             /* Simulated markets */
+
             /* Reasons why traders choose to trade Synthetic indices */
+            .why-synthetics>div>.title48 {
+                max-width: 400px;
+                margin: 30px auto !important;
+                padding: 30px 0px;
+            }
+            .boxes-why-synthetics {
+                margin: 30px auto 0;
+            }
             .box-why-synthetics{
                 width: 328px;
-                height: 254px;
+                height: 180px;
                 margin-bottom: 0px;
             }
             .greymargin {
@@ -871,19 +952,109 @@
             }
 
             .button-signupred{ 
-                height: 50px;
-                width: 200px; 
+                height: 48px;
+                width: 96px; 
+                font-size: 16px;
+                margin: 10% auto 5%;
             }
-            .button-signupred:active { transition: width 0.1s, height 0.1s; height: 49px; width: 200px; }
+            .button-signupred:active { transition: width 0.1s, height 0.1s; height: 49px; width: 96px; }
 
             /* Start trading button */
 
             /* Reasons why traders choose to trade Synthetic indices */
 
+            /* Benefits */
+            
+            .benefits > div > .title48 {
+                max-width: 450px;
+                margin: 0px auto 20px !important;
+                padding-top: 40px;
+                font-size: 20px;
+                line-height: 32.98px;
+            }
+            .boxes-benefits {
+                gap: 20.5px;
+            }
+            .box-benefits {
+                margin-bottom: 30px;
+            }
+
+            /* Benefits */
+
+            /* Trade synthetic indices on */
+
+            .synthetic-left > h3 {
+                font-size: 20px;
+                line-height: 23px;
+            }
+            .box-trade-synthetics {
+                margin: 0px auto;
+                gap: 10px;
+            }
+            .box-trade-synthetics-right {
+                width: 65%;
+            }
+            .box-trade-synthetics-right > p {
+                font-size: 14px;
+                line-height: 22px;
+            }
+            .box-trade-synthetics-right > p > strong {
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 700;
+            }
+            /* Trade synthetic indices on */
+            
+            /* Payment methods */
+
+            .payment-methods14 {
+                font-size: 14px;
+            }
+
+             /* Payment methods */
+
+            /* Start trading synthetics on Deriv in 3 simple steps */
+            .trading-3steps {
+                max-width: 2000px !important;
+                margin: 0px auto;
+                padding: 0 20px 20px;
+            }
+            .trading-3steps>div>.title48 {
+                max-width: 800px;
+                padding: 0;
+            }
+            .boxes-flex-3steps {
+                gap: 30px;
+            }
+            .box-flex-3steps{
+                width: 328px;
+                height: 120px;
+                padding: 16px;
+                
+            }
+            .box-flex-3steps>p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                color: #414652;
+                font-family: 'IBM Plex Sans';
+                text-align: left;
+                margin: 0 0 10px 0;
+            }
+            .box-flex-3steps >p >strong {
+                font-size: 18px;
+                font-weight: 700 ;
+                line-height: 26px ;
+                color: #414652;
+                font-family: 'IBM Plex Sans';
+                text-align: left;
+            }
+            /* Start trading synthetics on Deriv in 3 simple steps */
+
             /* TRUST PILOT */
             .trustpilot {
                 height: 300px;
-                padding: 40px 20px;
+                padding: 20px 20px 40px;
             }
             .box-flex-trust>p>strong {
                 font-size: 22px;
@@ -925,332 +1096,332 @@
 </head>
 <body>
     <div class="wrapper-main">
-        <div class="wrapper">
-            <header>
-                <div class="navlogo" id="headercall">
-                    <a href="https://deriv.com/" target="_blank"><img src="https://static.deriv.com/logos/red-xl.png" alt="Deriv Logo" style="width: 96.44px; height: 32px;"></a>
-                </div>
-            </header>
-            <main>
-            <section class="redwhite">
-                <div class="left">
-                    <h1>Introducing Synthetic indices, a new era of trading freedom</h1>
-                    <img src="https://lh3.googleusercontent.com/EakG6PhyXY4LX8Swa0dF5K3HpEewEIaMEkuUUkwcgooQTnCAhSIiKD4xvTfe2h8j7cD3kk-oHSx0ctMxrL28PE4cOZrXUS4f3kUR=w1064" alt="">
-                </div>
-                <div class="right">
-                    <h3>Sign up</h3>
-                    <p class="size16">Enter your email address to begin</p>
-                    <input id="email_input_n1" type="email" placeholder="Email" style=""/>
-                    <p class="size14 please" id="pEmail_n1" style="margin:2px 0 0 18%; color: #ff444f !important; display: none;">Please enter a valid email</p>
-                    <input type="checkbox" id="ckbx_n1">
-                    <label class="size14" for="ckbx_n1">
-                        I agree to the <a href="https://eu.deriv.com/terms-and-conditions/#clients" target="_blank" style="color: #ff444f !important;">terms and conditions</a>.
-                    </label>
-                    <p id="pAgree_n1" class="size14 please" style="margin:2px 0 0 18%; color: #ff444f !important; display: none;">Please tick the check box for signup</p>
-                    <button id="myBtn_n1" type="button" class="button-signup">Create demo account</button>
-                    <p class="size12">By pressing "Sign up", you confirm that you are 18 or older. You understand that we may use your email address to send you information about Deriv products and services as well as market news. You can always unsubscribe from these emails in your account settings. For more information, please take a look at Deriv's <a href="https://deriv.com/tnc/security-and-privacy.pdf" style="color: #ff444f !important;">Security and privacy</a>.</p>
+            <div class="wrapper">
+                <header>
+                    <div class="navlogo" id="headercall">
+                        <a href="https://deriv.com/" target="_blank"><img src="https://static.deriv.com/logos/red-xl.png" alt="Deriv Logo" style="width: 96.44px; height: 32px;"></a>
+                    </div>
+                </header>
+        <main>
+                <section class="redwhite">
+                    <div class="left">
+                        <h1>Introducing Synthetic indices, a new era of trading freedom</h1>
+                        <img src="https://lh3.googleusercontent.com/EakG6PhyXY4LX8Swa0dF5K3HpEewEIaMEkuUUkwcgooQTnCAhSIiKD4xvTfe2h8j7cD3kk-oHSx0ctMxrL28PE4cOZrXUS4f3kUR=w1064" alt="">
+                    </div>
+                    <div class="right">
+                        <h3>Sign up</h3>
+                        <p class="size16">Enter your email address to begin</p>
+                        <input id="email_input_n1" type="email" placeholder="Email" style=""/>
+                        <p class="size14 please" id="pEmail_n1" style="margin:2px 0 0 18%; color: #ff444f !important; display: none;">Please enter a valid email</p>
+                        <input type="checkbox" id="ckbx_n1">
+                        <label class="size14" for="ckbx_n1">
+                            I agree to the <a href="https://eu.deriv.com/terms-and-conditions/#clients" target="_blank" style="color: #ff444f !important;">terms and conditions</a>.
+                        </label>
+                        <p id="pAgree_n1" class="size14 please" style="margin:2px 0 0 18%; color: #ff444f !important; display: none;">Please tick the check box for signup</p>
+                        <button id="myBtn_n1" type="button" class="button-signup">Create demo account</button>
+                        <p class="size12">By pressing "Sign up", you confirm that you are 18 or older. You understand that we may use your email address to send you information about Deriv products and services as well as market news. You can always unsubscribe from these emails in your account settings. For more information, please take a look at Deriv's <a href="https://deriv.com/tnc/security-and-privacy.pdf" style="color: #ff444f !important;">Security and privacy</a>.</p>
 
-                    <p class="size14 width406" style="text-align: center; margin: 4% 0;"><img src="https://lh3.googleusercontent.com/3dEdaLF3HUbDwSpbpDdBFhU6E_vXLeISQKjk3WkGRYWGgUVNcaAYu8vKuES5a60vWjpY2HZjDhHM8NhuW8h_km6EF016HmtJN76x=s0" class="border-line" align="left" style="margin-top: 8px;"> Or sign up with <img src="https://lh3.googleusercontent.com/3dEdaLF3HUbDwSpbpDdBFhU6E_vXLeISQKjk3WkGRYWGgUVNcaAYu8vKuES5a60vWjpY2HZjDhHM8NhuW8h_km6EF016HmtJN76x=s0" class="border-line" align="right" style="margin-top: 8px;"></p>
-                    
-                    <a data-platform="google"><button class="button-google"><img src="https://static.deriv.com/email/images/icons/social-google.png"><span>Google</span></button></a>
-                    <a data-platform="facebook"><button class="button-fb"><img src="https://static.deriv.com/email/images/icons/social-facebook-blue.png"><span>Facebook</span></button></a>
-                    <a data-platform="apple"><button class="button-apple"><img src="https://static.deriv.com/email/images/icons/social-apple-white.png"><span>Apple</span></button></a>
-                    <p class="size16 width406" style="text-align: center; margin-top: 4%;">Already have an account? <a href="https://deriv.com/" style="color: #ff444f !important;">Log in</a></p>
+                        <p class="size14 width406" style="text-align: center; margin: 4% 0;"><img src="https://lh3.googleusercontent.com/3dEdaLF3HUbDwSpbpDdBFhU6E_vXLeISQKjk3WkGRYWGgUVNcaAYu8vKuES5a60vWjpY2HZjDhHM8NhuW8h_km6EF016HmtJN76x=s0" class="border-line" align="left" style="margin-top: 8px;"> Or sign up with <img src="https://lh3.googleusercontent.com/3dEdaLF3HUbDwSpbpDdBFhU6E_vXLeISQKjk3WkGRYWGgUVNcaAYu8vKuES5a60vWjpY2HZjDhHM8NhuW8h_km6EF016HmtJN76x=s0" class="border-line" align="right" style="margin-top: 8px;"></p>
+                        
+                        <a data-platform="google"><button class="button-google"><img src="https://static.deriv.com/email/images/icons/social-google.png"><span>Google</span></button></a>
+                        <a data-platform="facebook"><button class="button-fb"><img src="https://static.deriv.com/email/images/icons/social-facebook-blue.png"><span>Facebook</span></button></a>
+                        <a data-platform="apple"><button class="button-apple"><img src="https://static.deriv.com/email/images/icons/social-apple-white.png"><span>Apple</span></button></a>
+                        <p class="size16 width406" style="text-align: center; margin-top: 4%;">Already have an account? <a href="https://deriv.com/" style="color: #ff444f !important;">Log in</a></p>
+                    </div>
+                </section>
+            </div>
+            <section class="simulated-markets">
+                <div >
+                    <p class="title48">Simulated markets, Real trading.</p>
+                </div>
+                <div class="boxes-flex">
+                    <div class="box-flex">
+                        <img src="https://lh3.googleusercontent.com/Y09yYShTh7-rC4-YaFyYgizgPyMjfaV4-EW5ZaYHYojUqdqMKGYUFOy3UV024jVLi7g-Yq1oHpp8ROwwbIq_Gn8-GQEahUBH-dw=s0" alt="24/7 trading icon">
+                        <p>24/7 trading</p>
+                    </div>
+                    <div class="box-flex">
+                        <img src="https://lh3.googleusercontent.com/eCRgA6MCNHcbebIWs97nyaSUkot36XngWaPvJZvMWsRu6vj0Q45FF61NDimVQT1WM7F0e0OTVR4Vq6iUK4LXMLm7TeGkhj7NhIs3=s0" alt="25+ instruments icon">
+                        <p>25+ instruments</p>
+                    </div>
+                    <div class="box-flex">
+                        <img src="https://lh3.googleusercontent.com/yoGPjGfaUD96M-5zBJfzwLFLW4Kop91GPQdVOxYnDFOFA2Attu_2Ed0RQPDYUYiGwAK-99CkFO5jBc6Bzj-Z-iJ3zHTVKzuHzOY=s0" alt="Up to 1:1000 leverage icon">
+                        <p>Up to 1:1000 leverage</p>
+                    </div>
+                    <div class="box-flex">
+                        <img src="https://lh3.googleusercontent.com/IdfDoN4auj0lfaVFiequZD78syCpvvvKzNQ1Pf-3SPkPl83GeSf700VXOCqm-fcHzLLyGjiSqi8EXMJjB1G42loQT3nYi1QvLs8=s0" alt="Unaffected by world events icon">
+                        <p>Unaffected by world events</p>
+                    </div>
+                </div>
+                <div >
+                    <p class="size16">Deriv’s proprietary Synthetic indices are unlike any other financial assets in the industry. </p>
+                    <p class="size16">Explore new trading opportunities by speculating on asset prices in a simulated market that is derived from real-world markets.</p>
                 </div>
             </section>
-        </div>
-        <section class="simulated-markets">
-            <div >
-                <p class="title48">Simulated markets, Real trading.</p>
-            </div>
-            <div class="boxes-flex">
-                <div class="box-flex">
-                    <img src="https://lh3.googleusercontent.com/s-YuXXVWPqwk8LcHsI1gH5vZJnbXPTy2rrI_Aco-z7KHEdeYRaVqS2ZjDVGQllH4gxeAOkpSXBmv4DcBnrGh6Xk-CZePmoxyrR8=s0" alt="Trade markets">
-                    <p>24/7 trading</p>
+            <section  class="why-synthetics">
+                <div >
+                    <p class="title48">Reasons why traders choose to trade Synthetic indices</p>
                 </div>
-                <div class="box-flex">
-                    <img src="https://lh3.googleusercontent.com/jYDQERXOPZFxW-LI8kU878J1rrQ7bu-tMudoro3TUa8vvwXV_lQE-y6aZWMJx0d6QROh-xpO1SnZ1bXwkatm2pao-LvM0yHrsWCe=s0" alt="Licensed broker">
-                    <p>25+ instruments</p>
-                </div>
-                <div class="box-flex">
-                    <img src="https://lh3.googleusercontent.com/605EorwojrZAWbHUGWxp4s5B77QhaoyZc1qGk_R-7T5dKj77dwllPQoflzdVpY2GmeM1rHmYvuJLm1S0w_L_sYel9lTTOHXiVc5c=s0" alt="little as 5$">
-                    <p>Up to 1:1000 leverage</p>
-                </div>
-                <div class="box-flex">
-                    <img src="https://lh3.googleusercontent.com/z_XdBWWsIcwtOssYEcl2HY7nP-TDnMqt7cb06DXELVObCKkgJ0LKYqFezKUiuWcyz1DZD_yguCa7Yi58of657j2EdiyQh7_XbbV8=s0" alt="30+ payment methods">
-                    <p>Unaffected by world events</p>
-                </div>
-            </div>
-            <div >
-                <p class="size16">Deriv’s proprietary Synthetic indices are unlike any other financial assets in the industry. </p>
-                <p class="size16">Explore new trading opportunities by speculating on asset prices in a simulated market that is derived from real-world markets.</p>
-            </div>
-        </section>
-        <section  class="why-synthetics">
-            <div >
-                <p class="title48">Reasons why traders choose to trade Synthetic indices</p>
-            </div>
-            <div class="boxes-why-synthetics">
-                <div class="box-why-synthetics">
-                    <img src="https://lh3.googleusercontent.com/p0DVJspT4ljCOqkOdhgcXPhfpgWZQjAVgRBTzuTUDjyEb6ksvmxiwuiGJBB4GHhfBV16X3_oG41SKZcoJMAkcO9aSyK1gkvK-iw=s0" alt="mt5 derived">
-                    <p>Trading available 24/7, including weekends and market holidays</p>
-                </div>
-                <div class="box-why-synthetics">
-                    <img src="https://lh3.googleusercontent.com/ISRkz4x_-rf9Gu8RyRqNWKCNQAu5nXoI-YGTHs8jQ0u2JT3tpr37oxKfDgsg07uXS6VghvBY1vNPvfDv5Iz0-fQcaAYvV7k4jg=s0" alt="mt5 financial">
-                    <p>Unaffected by global events, market fluctuations and liquidity risks</p>
-                </div>
-                <div class="box-why-synthetics greymargin">
-                    <img src="https://lh3.googleusercontent.com/6_EJHLUdLuJSK5HOAU-cyh4pXS7-amwwo9TngbaIZ-yq_uLjsVlWMT2BrHBleo7vIHTBP1k3J4uwb88UcEkjjFlnVQ57ObLBOWc=s0" alt="mt5 swap free">
-                    <p>Competitive trading conditions: tight spreads, high leverage, and deep liquidity</p>
-                </div>
-                <div class="box-why-synthetics greymargin">
-                    <img src="https://lh3.googleusercontent.com/6_EJHLUdLuJSK5HOAU-cyh4pXS7-amwwo9TngbaIZ-yq_uLjsVlWMT2BrHBleo7vIHTBP1k3J4uwb88UcEkjjFlnVQ57ObLBOWc=s0" alt="mt5 swap free">
-                    <p>Multiple volatility levels to match your risk appetite</p>
-                </div>
-                <div class="box-why-synthetics greymargin">
-                    <img src="https://lh3.googleusercontent.com/6_EJHLUdLuJSK5HOAU-cyh4pXS7-amwwo9TngbaIZ-yq_uLjsVlWMT2BrHBleo7vIHTBP1k3J4uwb88UcEkjjFlnVQ57ObLBOWc=s0" alt="mt5 swap free">
-                    <p>Trade multiple derivatives on different platforms, including Deriv MT5</p>
-                </div>
-            </div>
-            <div>
-                <button onclick="goToDestination2()" id="myBtn_n2" class="button-signupred" type="button">Sign up</button>
-            </div>
-        </section>
-        <section class="benefits">
-            <div >
-                <p class="title48">Benefits of trading Synthetic indices at Deriv</p>
-            </div>
-            <div class="boxes-benefits">
-                <div class="box-benefits">
-                    <img src="https://lh3.googleusercontent.com/s-YuXXVWPqwk8LcHsI1gH5vZJnbXPTy2rrI_Aco-z7KHEdeYRaVqS2ZjDVGQllH4gxeAOkpSXBmv4DcBnrGh6Xk-CZePmoxyrR8=s0" alt="Trade markets">
-                    <p>24/7 trading</p>
-                </div>
-                <div class="box-benefits">
-                    <img src="https://lh3.googleusercontent.com/jYDQERXOPZFxW-LI8kU878J1rrQ7bu-tMudoro3TUa8vvwXV_lQE-y6aZWMJx0d6QROh-xpO1SnZ1bXwkatm2pao-LvM0yHrsWCe=s0" alt="Licensed broker">
-                    <p>5 USD minimum deposit</p>
-                </div>
-                <div class="box-benefits">
-                    <img src="https://lh3.googleusercontent.com/605EorwojrZAWbHUGWxp4s5B77QhaoyZc1qGk_R-7T5dKj77dwllPQoflzdVpY2GmeM1rHmYvuJLm1S0w_L_sYel9lTTOHXiVc5c=s0" alt="little as 5$">
-                    <p>Zero fees on deposits & withdrawals</p>
-                </div>
-                <div class="box-benefits">
-                    <img src="https://lh3.googleusercontent.com/z_XdBWWsIcwtOssYEcl2HY7nP-TDnMqt7cb06DXELVObCKkgJ0LKYqFezKUiuWcyz1DZD_yguCa7Yi58of657j2EdiyQh7_XbbV8=s0" alt="30+ payment methods">
-                    <p>Licensed and regulated</p>
-                </div>
-            </div>
-        </section>
-        <section  class="synthetics-deriv">
-            <div >
-                <p class="title48">Synthetic indices available at Deriv</p>
-            </div>
-            <div class="boxes-synthetics-deriv">
-                <div class="box-synthetics-deriv">
-                    <div class="box-synthetics-deriv-left"> 
-                        <p>DEX indices</p>
+                <div class="boxes-why-synthetics">
+                    <div class="box-why-synthetics">
+                        <img src="https://lh3.googleusercontent.com/LctnFQ-Jx14vEGoLzLKunO-F77NSKfFB-ScIwpEn1mdIGmwhWUDR8Dj8f78agUKMQ5iX7gCBC6wGTHkFoQcu1-ePunAyV8zEMNg=s0" alt="Trading 24/7 icon">
+                        <p>Trading available 24/7, including weekends and market holidays</p>
                     </div>
-                    <div class="box-synthetics-deriv-right">
-                        <p>Correspond to simulated markets where asset prices spike or drop due to news events.</p>
+                    <div class="box-why-synthetics">
+                        <img src="https://lh3.googleusercontent.com/IdfDoN4auj0lfaVFiequZD78syCpvvvKzNQ1Pf-3SPkPl83GeSf700VXOCqm-fcHzLLyGjiSqi8EXMJjB1G42loQT3nYi1QvLs8=s0" alt="Unaffected by world events icon">
+                        <p>Unaffected by global events, market fluctuations and liquidity risks</p>
+                    </div>
+                    <div class="box-why-synthetics">
+                        <img src="https://lh3.googleusercontent.com/yoGPjGfaUD96M-5zBJfzwLFLW4Kop91GPQdVOxYnDFOFA2Attu_2Ed0RQPDYUYiGwAK-99CkFO5jBc6Bzj-Z-iJ3zHTVKzuHzOY=s0" alt="Up to 1:1000 leverage icon">
+                        <p>Competitive trading conditions: tight spreads, high leverage, and deep liquidity</p>
+                    </div>
+                    <div class="box-why-synthetics">
+                        <img src="https://lh3.googleusercontent.com/5_YrVskLcHXvffU54R2l2ioBknRpyeAp8dutnTv7uvgD2Jg386m30W5ABymj2-9O5yKnAYG1lXY88h_8zUyyUeDZ1coVWfyng3E=s0" alt="Multiple volatility levels icon">
+                        <p>Multiple volatility levels to match your risk appetite</p>
+                    </div>
+                    <div class="box-why-synthetics">
+                        <img src="https://lh3.googleusercontent.com/eCRgA6MCNHcbebIWs97nyaSUkot36XngWaPvJZvMWsRu6vj0Q45FF61NDimVQT1WM7F0e0OTVR4Vq6iUK4LXMLm7TeGkhj7NhIs3=s0" alt="25+ instruments icon">
+                        <p>Trade multiple derivatives on different platforms, including Deriv MT5</p>
                     </div>
                 </div>
-                <div class="box-synthetics-deriv">
-                    <div class="box-synthetics-deriv-left"> 
-                        <p>Volatility indices</p>
-                    </div>
-                    <div class="box-synthetics-deriv-right">
-                        <p>Correspond to simulated markets with constant volatilities of 10%, 25%, 50%, 75%, 100%, 150%, and 250%.</p>
-                    </div>
+                <div>
+                    <button onclick="goToDestination2()" id="myBtn_n2" class="button-signupred" type="button">Sign up</button>
                 </div>
-                <div class="box-synthetics-deriv">
-                    <div class="box-synthetics-deriv-left"> 
-                        <p>Crash/Boom</p>
-                    </div>
-                    <div class="box-synthetics-deriv-right">
-                        <p>With these indices, there is an average of one drop (crash) or one spike (boom) in prices that occur in a series of 300, 500, or 1,000 ticks.</p>
-                    </div>
+            </section>
+            <section class="benefits">
+                <div >
+                    <p class="title48">Benefits of trading Synthetic indices at Deriv</p>
                 </div>
-                <div class="box-synthetics-deriv">
-                    <div class="box-synthetics-deriv-left"> 
-                        <p>Jump indices</p>
+                <div class="boxes-benefits">
+                    <div class="box-benefits">
+                        <img src="https://lh3.googleusercontent.com/Y09yYShTh7-rC4-YaFyYgizgPyMjfaV4-EW5ZaYHYojUqdqMKGYUFOy3UV024jVLi7g-Yq1oHpp8ROwwbIq_Gn8-GQEahUBH-dw=s0" alt="24/7 trading icon">
+                        <p>24/7 trading</p>
                     </div>
-                    <div class="box-synthetics-deriv-right">
-                        <p>Correspond to simulated markets with constant volatilities of 10%, 25%, 50%, 75%, and 100%. There is an equal probability of an up or down jump every 20 minutes, on average.</p>
+                    <div class="box-benefits">
+                        <img src="https://lh3.googleusercontent.com/8VGm1tSmfTzedgpyrKznpcxD8AccnPK0r5x9c7064EMIq-K4y69VS-an7numiibn5K9BtKQ4ayOh9dnlrl-k7f39UY5RONLKbA=s0" alt="5 USD minimum deposit icon">
+                        <p>5 USD minimum deposit</p>
                     </div>
-                </div>
-                <div class="box-synthetics-deriv">
-                    <div class="box-synthetics-deriv-left"> 
-                        <p>Step indices</p>
+                    <div class="box-benefits">
+                        <img src="https://lh3.googleusercontent.com/SUkoVQ0vVuUKtZFTYEExfZz6TDGKWV37-FRvs5tf1G4mvx4PNqIJnzcMFH0KsYY_dgdHpX2EQZXcWxCHs0QqjyR0PHmNiLiJ8Gk=s0" alt="zero fees icon">
+                        <p>Zero fees on deposits & withdrawals</p>
                     </div>
-                    <div class="box-synthetics-deriv-right">
-                        <p>With these indices, there is an equal probability of up/down movement in a price series with a fixed step size of 0.1.</p>
+                    <div class="box-benefits">
+                        <img src="https://lh3.googleusercontent.com/et7Dcl7gJzaZv6scA8-czpdTwGXfjXc8nLvIDIaCYf48pBLOhD78TnvdGb-cFypL1TqsBDFxMVhMzfzniMWuUknL-Dgf9F3umNcq=s0" alt="Licensed and regulated icon">
+                        <p>Licensed and regulated</p>
                     </div>
                 </div>
-                <div class="box-synthetics-deriv">
-                    <div class="box-synthetics-deriv-left"> 
-                        <p>Range break indices</p>
-                    </div>
-                    <div class="box-synthetics-deriv-right">
-                        <p>These indices fluctuate between two price points (borders), occasionally breaking through the borders to create a new range on average once every 100 or 200 times that they hit the borders.</p>
-                    </div>
+            </section>
+            <section  class="synthetics-deriv">
+                <div >
+                    <p class="title48">Synthetic indices available at Deriv</p>
                 </div>
-            </div>
-            <div>
-                <button onclick="goToDestination2()" id="myBtn_n2" class="button-signupred" type="button">Sign up</button>
-            </div>
-        </section>
-        <section class="trade-synthetics">
-            <div class="synthetic-left">
-                <h3>Trade synthetic indices on</h3>
-                <div class="box-trade-synthetics">
-                    <div class="box-trade-synthetics-left"> 
-                        <img src="https://lh3.googleusercontent.com/ZNUHgBb8Lgdfk8mrE0dVHACL6nqaao1kC-6fhuucry6DwV7UNrcBoMXQzW-ZaRC-eZezSnpijvtlysyPOIuRewgCOxr77PT8M_s=s0" alt="mt5">
+                <div class="boxes-synthetics-deriv">
+                    <div class="box-synthetics-deriv">
+                        <div class="box-synthetics-deriv-left"> 
+                            <p>DEX indices</p>
+                        </div>
+                        <div class="box-synthetics-deriv-right">
+                            <p>Correspond to simulated markets where asset prices spike or drop due to news events.</p>
+                        </div>
                     </div>
-                    <div class="box-trade-synthetics-right">
-                        <p><strong>Smart Trader</strong></p>
-                    <p>The beginner’s choice for options trading</p>
+                    <div class="box-synthetics-deriv">
+                        <div class="box-synthetics-deriv-left"> 
+                            <p>Volatility indices</p>
+                        </div>
+                        <div class="box-synthetics-deriv-right">
+                            <p>Correspond to simulated markets with constant volatilities of 10%, 25%, 50%, 75%, 100%, 150%, and 250%.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="box-trade-synthetics">
-                    <div class="box-trade-synthetics-left"> 
-                        <img src="https://lh3.googleusercontent.com/0To5To-jlNTEqfAdPO1TKr3YY--57_fUJagH1HZKsWzzGD9gm77l-HwGOwO-3WXi6BVOtbHV-Rikcr39xRNcfr3rJgM79xa-VQ=s0" alt="Deriv trader">
+                    <div class="box-synthetics-deriv">
+                        <div class="box-synthetics-deriv-left"> 
+                            <p>Crash/Boom</p>
+                        </div>
+                        <div class="box-synthetics-deriv-right">
+                            <p>With these indices, there is an average of one drop (crash) or one spike (boom) in prices that occur in a series of 300, 500, or 1,000 ticks.</p>
+                        </div>
                     </div>
-                    <div class="box-trade-synthetics-right">
-                        <p><strong>Smart Trader</strong></p>
-                    <p>The beginner’s choice for options trading</p>
+                    <div class="box-synthetics-deriv">
+                        <div class="box-synthetics-deriv-left"> 
+                            <p>Jump indices</p>
+                        </div>
+                        <div class="box-synthetics-deriv-right">
+                            <p>Correspond to simulated markets with constant volatilities of 10%, 25%, 50%, 75%, and 100%. There is an equal probability of an up or down jump every 20 minutes, on average.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="box-trade-synthetics">
-                    <div class="box-trade-synthetics-left"> 
-                        <img src="https://lh3.googleusercontent.com/pmLEn0jEH7efTry0EXDefvpafiYOccK1PfdUjBegac7Ps1KJ8uKoNmiQMo8_728_quNX6O1p8avKLSK9d3k8fHH8iZVIiX1wmpU=s0" alt="Deriv X">
+                    <div class="box-synthetics-deriv">
+                        <div class="box-synthetics-deriv-left"> 
+                            <p>Step indices</p>
+                        </div>
+                        <div class="box-synthetics-deriv-right">
+                            <p>With these indices, there is an equal probability of up/down movement in a price series with a fixed step size of 0.1.</p>
+                        </div>
                     </div>
-                    <div class="box-trade-synthetics-right">
-                        <p><strong>Smart Trader</strong></p>
-                    <p>The beginner’s choice for options trading</p>
-                    </div>
-                </div>
-                <div class="box-trade-synthetics">
-                    <div class="box-trade-synthetics-left"> 
-                        <img src="https://lh3.googleusercontent.com/UuOxajQ9WXghibUevE1rWpW4OMnKUdBHBi_2II_9zPt7O9gx1jw_F5yMdbFYIhiL_6liXu_fH9FoeWkSqGMw9Jtydv_wxc5m1_nc=s0" alt="Deriv Bot">
-                    </div>
-                    <div class="box-trade-synthetics-right">
-                        <p><strong>Smart Trader</strong></p>
-                    <p>The beginner’s choice for options trading</p>
-                    </div>
-                </div>
-                <div class="box-trade-synthetics">
-                    <div class="box-trade-synthetics-left"> 
-                        <img src="https://lh3.googleusercontent.com/QPta-CqOPN8ULIBPMH56vNmmrbaJuqD57cdhG5pOqqrc5U9-5HT5V88m9YJJLrjLf8cFb7HPRtIY4f5Kci59cKQ4IV9mDAxPj5_p=s0" alt="Smart Trader">
-                    </div>
-                    <div class="box-trade-synthetics-right">
-                        <p><strong>Smart Trader</strong></p>
-                    <p>The beginner’s choice for options trading</p>
+                    <div class="box-synthetics-deriv">
+                        <div class="box-synthetics-deriv-left"> 
+                            <p>Range break indices</p>
+                        </div>
+                        <div class="box-synthetics-deriv-right">
+                            <p>These indices fluctuate between two price points (borders), occasionally breaking through the borders to create a new range on average once every 100 or 200 times that they hit the borders.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="synthetic-right">
-                <img src="https://lh3.googleusercontent.com/cPcW59bL3adkVM7CjmrGsFUBCtcrehYhj5BkEOCRHPiRqa6W9KTpiGpozs3DfhLq9zO5M3KoOR8VsPMOrnOgiVqXaNy-ldAiww=w1056" alt="">
-            </div>
-            
-        </section>
-        <section class="payment-methods">
-            <div >
-                <p class="title48">Payment methods</p>
-            </div>
-            <div class="boxes-payment-methods">
-                <div class="box-payment-methods">
-                    <img src="https://static.deriv.com/email/images/icons/visa.png" alt="Trade markets">
+                <div>
+                    <button onclick="goToDestination2()" id="myBtn_n2" class="button-signupred" type="button">Sign up</button>
                 </div>
-                <div class="box-payment-methods">
-                    <img src="https://static.deriv.com/email/images/icons/master.png" alt="Trade markets">
-                </div>
-                <div class="box-payment-methods">
-                    <img src="https://static.deriv.com/email/images/icons/skrill2.png" alt="Trade markets">
-                </div>
-                <div class="box-payment-methods">
-                    <img src="https://static.deriv.com/email/images/icons/neteller2.png" alt="Trade markets">
-                </div>
-                <div class="box-payment-methods">
-                    <img src="https://static.deriv.com/email/images/icons/instant.png" alt="Trade markets">
-                </div>
-            </div>
-            <div >
-                <p class="payment-methods14">Deriv supports multiple payment methods. Availability may vary based on your country of residence.</p>
-            </div>
-        </section>
-        <section  class="trading-3steps">
-            <div >
-                <p class="title48">Start trading synthetics on Deriv in 3 simple steps</p>
-            </div>
-            <div class="boxes-flex-3steps">
-                <div class="box-flex-3steps">
-                    <p><strong>Practise</strong></p>
-                    <p>Open a demo account and practise with an unlimited amount of virtual funds.</p>
-                </div>
-                <div class="box-flex-3steps">
-                    <p><strong>Trade</strong></p>
-                    <p>Open a real account, make a deposit, and start trading synthetics and other markets.</p>
-                </div>
-                <div class="box-flex-3steps">
-                    <p><strong>Withdraw</strong></p>
-                    <p>Conveniently withdraw your funds through any of our supported withdrawal methods.</p>
-                </div>
-            </div>
-            <div>
-                <button onclick="goToDestination2()" id="myBtn_n2" class="button-signupred" type="button">Sign up</button>
-            </div>
-        </section>
-        <section  class="trustpilot">
-            <div class="boxes-flex-trust">
-                <div class="box-flex-trust">
-                    <p><strong>Rated excellent on</strong></p>
-                </div>
-                <div class="box-flex-trust">
-                    <!-- TrustBox script -->
-                    <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-                    <!-- End TrustBox script -->
-                    <!-- TrustBox widget - Mini -->
-                    <div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="5ed4c8a9f74f310001f51bf7" data-style-height="150px" data-style-width="auto" data-theme="light" data-tags="SelectedReview">
-                    <a href="https://www.trustpilot.com/review/deriv.com" target="_blank" rel="noopener">Trustpilot</a>
+            </section>
+            <section class="trade-synthetics">
+                <div class="synthetic-left">
+                    <h3>Trade synthetic indices on</h3>
+                    <div class="box-trade-synthetics">
+                        <div class="box-trade-synthetics-left"> 
+                            <img src="https://lh3.googleusercontent.com/ZNUHgBb8Lgdfk8mrE0dVHACL6nqaao1kC-6fhuucry6DwV7UNrcBoMXQzW-ZaRC-eZezSnpijvtlysyPOIuRewgCOxr77PT8M_s=s0" alt="mt5">
+                        </div>
+                        <div class="box-trade-synthetics-right">
+                            <p><strong>Deriv MT5</strong></p>
+                            <p>The all-in-one CFD trading platform</p>
+                        </div>
                     </div>
-                    <!-- End TrustBox widget -->
+                    <div class="box-trade-synthetics">
+                        <div class="box-trade-synthetics-left"> 
+                            <img src="https://lh3.googleusercontent.com/0To5To-jlNTEqfAdPO1TKr3YY--57_fUJagH1HZKsWzzGD9gm77l-HwGOwO-3WXi6BVOtbHV-Rikcr39xRNcfr3rJgM79xa-VQ=s0" alt="Deriv trader">
+                        </div>
+                        <div class="box-trade-synthetics-right">
+                            <p><strong>Deriv Trader</strong></p>
+                            <p>Trading made simple on a powerful platform</p>
+                        </div>
+                    </div>
+                    <div class="box-trade-synthetics">
+                        <div class="box-trade-synthetics-left"> 
+                            <img src="https://lh3.googleusercontent.com/pmLEn0jEH7efTry0EXDefvpafiYOccK1PfdUjBegac7Ps1KJ8uKoNmiQMo8_728_quNX6O1p8avKLSK9d3k8fHH8iZVIiX1wmpU=s0" alt="Deriv X">
+                        </div>
+                        <div class="box-trade-synthetics-right">
+                            <p><strong>Deriv X</strong></p>
+                            <p>Customisable trading with drag-and-drop widgets</p>
+                        </div>
+                    </div>
+                    <div class="box-trade-synthetics">
+                        <div class="box-trade-synthetics-left"> 
+                            <img src="https://lh3.googleusercontent.com/UuOxajQ9WXghibUevE1rWpW4OMnKUdBHBi_2II_9zPt7O9gx1jw_F5yMdbFYIhiL_6liXu_fH9FoeWkSqGMw9Jtydv_wxc5m1_nc=s0" alt="Deriv Bot">
+                        </div>
+                        <div class="box-trade-synthetics-right">
+                            <p><strong>Deriv Bot</strong></p>
+                            <p>Automated trading without coding</p>
+                        </div>
+                    </div>
+                    <div class="box-trade-synthetics">
+                        <div class="box-trade-synthetics-left"> 
+                            <img src="https://lh3.googleusercontent.com/QPta-CqOPN8ULIBPMH56vNmmrbaJuqD57cdhG5pOqqrc5U9-5HT5V88m9YJJLrjLf8cFb7HPRtIY4f5Kci59cKQ4IV9mDAxPj5_p=s0" alt="Smart Trader">
+                        </div>
+                        <div class="box-trade-synthetics-right">
+                            <p><strong>Smart Trader</strong></p>
+                            <p>The beginner’s choice for options trading</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section  class="footer-log-sm">
-            <div class="boxes-flex-log-sm">
-                <div class="box-flex-logo">
-                    <img src="https://static.deriv.com/logos/deriv-gray-2023.png?v=2" alt="">
+                <div class="synthetic-right">
+                    <img src="https://lh3.googleusercontent.com/cPcW59bL3adkVM7CjmrGsFUBCtcrehYhj5BkEOCRHPiRqa6W9KTpiGpozs3DfhLq9zO5M3KoOR8VsPMOrnOgiVqXaNy-ldAiww=w1056" alt="">
                 </div>
-                <div class="box-flex-sm">
-                    <a href="https://www.facebook.com/derivdotcom" target="_blank">
-                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/facebook-md.png" alt="" class="footer-sm">
-                    </a>
-                    <a href="https://www.instagram.com/deriv_official/" target="_blank">
-                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/instagram-md.png" alt="" class="footer-sm">
-                    </a>
-                    <a href="https://twitter.com/derivdotcom" target="_blank">
-                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/x-twitter-md.png" alt="" class="footer-sm">
-                    </a>
-                    <a href="https://www.youtube.com/c/Derivdotcom" target="_blank">
-                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/youtube-md.png" alt="" class="footer-sm">
-                    </a>
-                    <a href="https://www.linkedin.com/company/derivdotcom/" target="_blank">
-                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/linkedin-md.png" alt="" class="footer-sm">
-                    </a>
-                    <a href="https://t.me/Derivchannelofficial" target="_blank">
-                        <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/telegram-md.png" alt="" class="footer-sm">
-                    </a>
+                
+            </section>
+            <section class="payment-methods">
+                <div >
+                    <p class="title48">Payment methods</p>
                 </div>
-            </div>
-        </section>
-        <section class="disc-investor">
-            <div class="disc">
-                <p>The products offered on our platforms are complex derivative products that carry a significant risk of potential loss. CFDs are complex instruments with a high risk of losing money rapidly due to leverage. You should consider whether you understand how these products work and whether you can afford to take the high risk of losing your money.</p>
-            </div>
-            <div class="investor">
-                <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/invest-in-people-platinum.png" alt="">
-            </div>
-        </section>
-            </main>
+                <div class="boxes-payment-methods">
+                    <div class="box-payment-methods">
+                        <img src="https://static.deriv.com/email/images/icons/visa.png" alt="Trade markets">
+                    </div>
+                    <div class="box-payment-methods">
+                        <img src="https://static.deriv.com/email/images/icons/master.png" alt="Trade markets">
+                    </div>
+                    <div class="box-payment-methods">
+                        <img src="https://static.deriv.com/email/images/icons/skrill2.png" alt="Trade markets">
+                    </div>
+                    <div class="box-payment-methods">
+                        <img src="https://static.deriv.com/email/images/icons/neteller2.png" alt="Trade markets">
+                    </div>
+                    <div class="box-payment-methods">
+                        <img src="https://static.deriv.com/email/images/icons/instant.png" alt="Trade markets">
+                    </div>
+                </div>
+                <div >
+                    <p class="payment-methods14">Deriv supports multiple payment methods. Availability may vary based on your country of residence.</p>
+                </div>
+            </section>
+            <section  class="trading-3steps">
+                <div >
+                    <p class="title48">Start trading synthetics on Deriv in 3 simple steps</p>
+                </div>
+                <div class="boxes-flex-3steps">
+                    <div class="box-flex-3steps">
+                        <p><strong>Practise</strong></p>
+                        <p>Open a demo account and practise with an unlimited amount of virtual funds.</p>
+                    </div>
+                    <div class="box-flex-3steps">
+                        <p><strong>Trade</strong></p>
+                        <p>Open a real account, make a deposit, and start trading synthetics and other markets.</p>
+                    </div>
+                    <div class="box-flex-3steps">
+                        <p><strong>Withdraw</strong></p>
+                        <p>Conveniently withdraw your funds through any of our supported withdrawal methods.</p>
+                    </div>
+                </div>
+                <div>
+                    <button onclick="goToDestination2()" id="myBtn_n2" class="button-signupred" type="button">Sign up</button>
+                </div>
+            </section>
+            <section  class="trustpilot">
+                <div class="boxes-flex-trust">
+                    <div class="box-flex-trust">
+                        <p><strong>Rated excellent on</strong></p>
+                    </div>
+                    <div class="box-flex-trust">
+                        <!-- TrustBox script -->
+                        <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+                        <!-- End TrustBox script -->
+                        <!-- TrustBox widget - Mini -->
+                        <div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="5ed4c8a9f74f310001f51bf7" data-style-height="150px" data-style-width="auto" data-theme="light" data-tags="SelectedReview">
+                        <a href="https://www.trustpilot.com/review/deriv.com" target="_blank" rel="noopener">Trustpilot</a>
+                        </div>
+                        <!-- End TrustBox widget -->
+                    </div>
+                </div>
+            </section>
+            <section  class="footer-log-sm">
+                <div class="boxes-flex-log-sm">
+                    <div class="box-flex-logo">
+                        <img src="https://static.deriv.com/logos/deriv-gray-2023.png?v=2" alt="">
+                    </div>
+                    <div class="box-flex-sm">
+                        <a href="https://www.facebook.com/derivdotcom" target="_blank">
+                            <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/facebook-md.png" alt="" class="footer-sm">
+                        </a>
+                        <a href="https://www.instagram.com/deriv_official/" target="_blank">
+                            <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/instagram-md.png" alt="" class="footer-sm">
+                        </a>
+                        <a href="https://twitter.com/derivdotcom" target="_blank">
+                            <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/x-twitter-md.png" alt="" class="footer-sm">
+                        </a>
+                        <a href="https://www.youtube.com/c/Derivdotcom" target="_blank">
+                            <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/youtube-md.png" alt="" class="footer-sm">
+                        </a>
+                        <a href="https://www.linkedin.com/company/derivdotcom/" target="_blank">
+                            <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/linkedin-md.png" alt="" class="footer-sm">
+                        </a>
+                        <a href="https://t.me/Derivchannelofficial" target="_blank">
+                            <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/telegram-md.png" alt="" class="footer-sm">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="disc-investor">
+                <div class="disc">
+                    <p>The products offered on our platforms are complex derivative products that carry a significant risk of potential loss. CFDs are complex instruments with a high risk of losing money rapidly due to leverage. You should consider whether you understand how these products work and whether you can afford to take the high risk of losing your money.</p>
+                </div>
+                <div class="investor">
+                    <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/invest-in-people-platinum.png" alt="">
+                </div>
+            </section>
+        </main>
     </div>
 
 
