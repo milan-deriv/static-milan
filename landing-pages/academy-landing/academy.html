@@ -95,7 +95,7 @@
             .left img {
                 width: 80%;
                 height: auto;
-                margin:0% 0% -0.5% 15%;
+                margin:0% 0% -1.3% 15%;
             }
             h1{
                 font-size: 45px;
@@ -203,7 +203,7 @@
             /* right side redwhite closing */
             /* Header box and logo */
 
-            /* Start trading synthetics on Deriv in 3 simple steps */
+            /* Trading courses */
             .trading-course {
                 max-width: 2000px !important;
                 margin: 0px auto;
@@ -263,7 +263,16 @@
                 text-align: left;
                 margin: 0 0 10px 0;
             }
-            .box-trading-course-up > p > img {
+            .box-trading-course-up > p > a {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #414652;
+                font-family: 'IBM Plex Sans';
+                text-align: left;
+                margin: 0 0 10px 0;
+            }
+            .box-trading-course-up > p > a > img {
                 width: 13px;
                 height: 25px;
                 vertical-align: bottom;
@@ -273,9 +282,16 @@
                 height: auto;
                 border-radius: 0 0 16px 16px;
             }
-            /* Start trading synthetics on Deriv in 3 simple steps */
+            /* Trading courses */
 
-            /* Simulated markets, Real trading. */
+            /* Learn with Deriv */
+
+            .learn-with-deriv {
+                max-width: 2000px !important;
+                margin: 0px auto;
+                padding: 20px;
+                background-color: #FBFBFC;
+            }
             
             .title48 {
                 margin: 50px auto !important;
@@ -327,7 +343,69 @@
                 text-align: center;
             }
 
-            /* Simulated markets, Real trading. */
+            /* Learn with Deriv */
+
+            /* FAQs */
+
+            .faqs {
+                max-width: 2000px !important;
+                margin: 0px auto;
+                padding: 20px;
+            }
+            
+            .title48fq  {
+                margin: 40px auto !important;
+                font-size: 34px;
+                font-weight: 700;
+                line-height: 39.07px;
+                text-align: left;
+                color: #414652;
+                font-family: 'Ubuntu';
+            }
+            .faqs-div {
+                max-width: 1450px !important;
+                padding: 0px auto;
+                margin: 30px auto 10px;
+            }
+            .faqs-div > p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #414652;
+                font-family: 'IBM Plex Sans';
+            }
+            .strong {
+                font-size: 20px !important;
+                font-weight: 700;
+                line-height: 30px;
+                color: #414652;
+                font-family: 'IBM Plex Sans';
+            }
+            .space {
+                padding-bottom: 10px;
+            }
+
+
+            .button-footer{ 
+                display: flex; 
+                gap: 1%; 
+                padding: 0px 1%; 
+                justify-content: center; 
+                align-items: center; 
+                border-radius: 24px; 
+                font-size: 20px; 
+                cursor: pointer; 
+                height: 61px;
+                width: 163px; 
+                margin: 4% auto; 
+                font-weight: 700; 
+            }
+
+            .button-footer { background-color: #ff444f; color: #fff; border: 1px solid #ff444f; }
+            .button-footer:hover { background-color: #d43e47; }
+            .button-footer:active { transition: width 0.1s, height 0.1s; height: 60px; width: 163px; }
+
+            /* FAQs */
 
             /* FOOTER */
             .footer-log-sm {
@@ -383,6 +461,82 @@
             }
             /* FOOTER */
 
+        @media (max-width: 1350px) {
+            
+            /* Trading courses */
+            .trading-course {
+                max-width: 2000px !important;
+                margin: 0px auto;
+                padding: 0 30px;
+            }
+            .boxes-trading-course {
+                padding: 50px 20px;
+                margin: 50px 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                align-content: center;
+                gap: 20px;
+            }
+            .box-trading-course{
+                max-width: 100%;
+                height: 400px;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                background-color: #fff;
+                border: 1px solid #9999992b ;
+                border-radius: 16px;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+                margin-bottom:20px;
+                
+            }
+            .box-trading-course-up, .box-trading-course-down {
+                width: 50%;
+            }
+            .box-trading-course-up {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 24px;
+                gap: 20px;
+            }
+            .box-trading-course-up > img {
+                width: 64px;
+                height: 64px;
+            }
+            .box-trading-course-up > .title48 {
+                margin: 0px !important;
+                font-size: 38px;
+                font-weight: 700;
+                line-height: 40px;
+                text-align: left;
+                color: #414652;
+                font-family: 'Ubuntu';
+            }
+            .box-trading-course-up > p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #414652;
+                font-family: 'IBM Plex Sans';
+                text-align: left;
+                margin: 0 0 10px 0;
+            }
+            .box-trading-course-up > p > img {
+                width: 13px;
+                height: 25px;
+                vertical-align: bottom;
+            }
+            .box-trading-course-down > img {
+                width: 100%;
+                height: 400px;
+                border-radius: 0 16px 16px 0 ;
+            }
+            /* Trading courses */
+        }
+
         @media (max-width: 840px) {
                 .navlogo {
                     text-align: center !important;
@@ -392,7 +546,7 @@
                     margin: 0 auto;
                 }
                 .redwhite{
-                    background: linear-gradient(170deg, #ff444f 41.5%, #ffffff 0%);
+                    background: linear-gradient(170deg, #ff444f 46%, #ffffff 0%);
                     margin: auto;
                 }
 
@@ -401,8 +555,8 @@
                 }
                 /* left side redwhite opening */
                 .left img {
-                    width: 84%;
-                    margin: 2% 0;
+                    width: 80%;
+                    margin: 0 0 0 15%;
                 }
                 h1{
                     margin: 5% 7%;
@@ -450,16 +604,98 @@
                 /* Buttons closing*/
                 /* right side redwhite closing */
 
-                /* Simulated markets */
-                .title48 {
-                    font-size: 40px;
+
+                /* Trading courses */
+                .trading-course {
+                    max-width: 2000px !important;
+                    margin: 0px auto;
+                    padding: 0 4%;
                 }
-                /* Simulated markets */
+                .boxes-trading-course {
+                    padding: 50px 0px;
+                    margin: 50px 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    align-content: center;
+                    gap: 100px;
+                }
+                .box-trading-course{
+                    max-width: 100%;
+                    height: 941px;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #fff;
+                    border: 1px solid #9999992b ;
+                    border-radius: 16px;
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+                    margin-bottom:20px;
+                    
+                }
+                .box-trading-course-down {
+                    height: 50%;
+                    width: 100%;
+                }
+                .box-trading-course-up {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    padding: 64px;
+                }
+                .box-trading-course-up > img {
+                    width: 64px;
+                    height: 64px;
+                }
+                .box-trading-course-up > .title48 {
+                    margin: 0px !important;
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 55.15px;
+                    text-align: left;
+                    color: #414652;
+                    font-family: 'Ubuntu';
+                }
+                .box-trading-course-up > p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: #414652;
+                    font-family: 'IBM Plex Sans';
+                    text-align: left;
+                    margin: 0 0 10px 0;
+                }
+                .box-trading-course-up > p > img {
+                    width: 13px;
+                    height: 25px;
+                    vertical-align: bottom;
+                }
+                .box-trading-course-down > img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 0 0 16px 16px;
+                }
+                /* Trading courses */
+
+
+                /* Learn with Deriv */
+
+                .boxes-flex {
+                    gap:50px;
+                }
+                .box-flex {
+                    width: 300px;
+                }
+
+                /* Learn with Deriv */
+                
         }
 
         @media (max-width: 520px) {
             .navlogo img {
-                width: 72.33px !important;
+                width: 149.33px !important;
                 height: 24px !important;
             }
             .redwhite{
@@ -523,60 +759,148 @@
             /* Buttons closing*/
             /* right side redwhite closing */
 
-            /* Simulated markets */
+            /* Learn with Deriv */
+
             .title48 {
-                font-size: 28px !important;
+                margin: 50px auto !important;
+                font-size: 28px;
                 font-weight: 700;
                 line-height: 32.17px;
-                max-width: 300px;
+                text-align: center;
+                color: #414652;
+                font-family: 'Ubuntu';
             }
-            .boxes-flex {
-                gap: 0;
-                margin: 30px auto 10px;
-            }
-            .box-flex{
-                height: 140px;
-                margin-bottom: 5px !important;
-                padding: 10px;
-            }
-            .box-flex > p {
-                margin: 5px auto;
-            }
-            /* Simulated markets */
 
-            /* Start trading synthetics on Deriv in 3 simple steps */
+            /*Learn with Deriv */
+
+            /* Trading courses */
             .trading-course {
                 max-width: 2000px !important;
                 margin: 0px auto;
-                padding: 0 20px 20px;
+                padding: 0 4%;
             }
             .boxes-trading-course {
-                gap: 30px;
+                padding: 0px 0px;
+                margin: 50px 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                align-content: center;
+                gap: 20px;
             }
             .box-trading-course{
-                width: 328px;
-                height: 120px;
-                padding: 16px;
+                max-width: 608px;
+                height: auto;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                background-color: #fff;
+                border: 1px solid #9999992b ;
+                border-radius: 16px;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+                margin-bottom:20px;
                 
             }
-            .box-trading-course>p {
-                font-size: 14px;
+            .box-trading-course-down {
+                max-height: 350px;
+            }
+            .box-trading-course-up {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 44px 24px 20px;
+                gap: 20px;
+            }
+            .box-trading-course-up > .title48 {
+                margin: 0px !important;
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 32.17px;
+                text-align: left;
+                color: #414652;
+                font-family: 'Ubuntu';
+            }
+            .box-trading-course-up > p {
+                font-size: 16px;
                 font-weight: 400;
-                line-height: 20px;
+                line-height: 24px;
                 color: #414652;
                 font-family: 'IBM Plex Sans';
                 text-align: left;
                 margin: 0 0 10px 0;
             }
-            .box-trading-course >p >strong {
-                font-size: 18px;
-                font-weight: 700 ;
-                line-height: 26px ;
+            .box-trading-course-down > img {
+                width: 100%;
+                max-height: 350px;
+                margin-bottom: -2%;
+                border-radius: 0 0 16px 16px;
+            }
+            /* Trading courses */
+
+            /* FAQs */
+
+            .faqs {
+                max-width: 2000px !important;
+                margin: 0px auto;
+                padding: 20px;
+            }
+            
+            .title48fq  {
+                margin: 40px auto 30px !important;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 22.98px;
+                text-align: left;
+                color: #414652;
+                font-family: 'Ubuntu';
+            }
+            .faqs-div {
+                max-width: 1450px !important;
+                padding: 0px auto;
+                margin: 30px auto 10px;
+            }
+            .faqs-div > p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                padding-bottom: 20px;
                 color: #414652;
                 font-family: 'IBM Plex Sans';
-                text-align: left;
             }
-            /* Start trading synthetics on Deriv in 3 simple steps */
+            .strong {
+                font-size: 18px !important;
+                font-weight: 700;
+                line-height: 20.68px;
+                padding-bottom: 20px;
+                color: #414652;
+                font-family: 'IBM Plex Sans';
+            }
+            .space {
+                padding-bottom: 10px;
+            }
+
+
+            .button-footer{ 
+                display: flex; 
+                gap: 1%; 
+                padding: 0px 1%; 
+                justify-content: center; 
+                align-items: center; 
+                border-radius: 24px; 
+                font-size: 16px; 
+                cursor: pointer; 
+                height: 48px;
+                width: 124px; 
+                margin: 10% auto 4%; 
+                font-weight: 700; 
+            }
+
+            .button-footer { background-color: #ff444f; color: #fff; border: 1px solid #ff444f; }
+            .button-footer:hover { background-color: #d43e47; }
+            .button-footer:active { transition: width 0.1s, height 0.1s; height: 47px; width: 124px; }
+
+            /* FAQs */
             
             /* FOOTER */
             .boxes-flex-log-sm {
@@ -651,79 +975,97 @@
                 <div class="boxes-trading-course">
                     <div class="box-trading-course">
                         <div class="box-trading-course-up">
-                            <img src="https://lh3.googleusercontent.com/ZNUHgBb8Lgdfk8mrE0dVHACL6nqaao1kC-6fhuucry6DwV7UNrcBoMXQzW-ZaRC-eZezSnpijvtlysyPOIuRewgCOxr77PT8M_s=s0" alt="24/7 trading icon">
+                            <img src="https://lh3.googleusercontent.com/ZNUHgBb8Lgdfk8mrE0dVHACL6nqaao1kC-6fhuucry6DwV7UNrcBoMXQzW-ZaRC-eZezSnpijvtlysyPOIuRewgCOxr77PT8M_s=s0" alt="mt5 platform icon">
                             <p class="title48">MT5 Courses</p>
                             <p>Gain insight into the Deriv MT5 Desktop, Mobile and Web platforms, diving into the main features, tools, tabs, and order types.</p>
-                            <p>Learn more <img src="https://lh3.googleusercontent.com/tlnBapD21y8lJxGRx4AJ9hU3TsLZ45Dcd8QLcUvfEkHbbRdW4J4kDg8V5QxWpimuSjnhcxCj5az2t0oHBPpUPxKUVyNN6ojDfTM=s0" alt=""></p>
+                            <p><a href="#headercall">Learn more <img src="https://lh3.googleusercontent.com/tlnBapD21y8lJxGRx4AJ9hU3TsLZ45Dcd8QLcUvfEkHbbRdW4J4kDg8V5QxWpimuSjnhcxCj5az2t0oHBPpUPxKUVyNN6ojDfTM=s0" alt=""></a> </p>
                         </div>
                         <div class="box-trading-course-down">
-                            <img src="https://lh3.googleusercontent.com/6bdT9gSMpi5pbpbhXNQLeUmUjGqmDVmoKN_KUhBjmAAGArbkmWM3qwjw9-g0hkTd3bVGYgeu_osoLnLK9xskAbxIwDjnDT376L8=w311" alt="24/7 trading icon">
+                            <img src="https://lh3.googleusercontent.com/6bdT9gSMpi5pbpbhXNQLeUmUjGqmDVmoKN_KUhBjmAAGArbkmWM3qwjw9-g0hkTd3bVGYgeu_osoLnLK9xskAbxIwDjnDT376L8=w311" alt="mt5 course image">
                         </div>
                     </div>
                     <div class="box-trading-course">
                         <div class="box-trading-course-up">
-                            <img src="https://lh3.googleusercontent.com/ZNUHgBb8Lgdfk8mrE0dVHACL6nqaao1kC-6fhuucry6DwV7UNrcBoMXQzW-ZaRC-eZezSnpijvtlysyPOIuRewgCOxr77PT8M_s=s0" alt="24/7 trading icon">
+                            <img src="https://lh3.googleusercontent.com/ObmdDFVruIRSMUp4u29eqi1-3NlSxcXKMfU0IwktEolSUozcdmtbaSvMP_fbk-kzrp7208I2yLqIV0uske4sQupuhVs4VXNO7VNQ=s0" alt="forex icon">
                             <p class="title48">Forex Courses</p>
                             <p>Learn key Forex terms, explore trading styles, manage risk, and master technical and fundamental analysis with courses for traders of all levels.</p>
-                            <p>Learn more <img src="https://lh3.googleusercontent.com/tlnBapD21y8lJxGRx4AJ9hU3TsLZ45Dcd8QLcUvfEkHbbRdW4J4kDg8V5QxWpimuSjnhcxCj5az2t0oHBPpUPxKUVyNN6ojDfTM=s0" alt=""></p>
+                            <p><a href="#headercall">Learn more <img src="https://lh3.googleusercontent.com/tlnBapD21y8lJxGRx4AJ9hU3TsLZ45Dcd8QLcUvfEkHbbRdW4J4kDg8V5QxWpimuSjnhcxCj5az2t0oHBPpUPxKUVyNN6ojDfTM=s0" alt=""></a> </p>
                         </div>
                         <div class="box-trading-course-down">
-                            <img src="https://lh3.googleusercontent.com/L9hd7bidVv3LbuYY-Op6pOZFxGuKdhv06nlF-8uiMajB9zJFMtGlbyHSRijgUqtbolQL_20Xl1Sufw0OQbjBrAa8o9RIIoJbLp0=w630" alt="24/7 trading icon">
+                            <img src="https://lh3.googleusercontent.com/L9hd7bidVv3LbuYY-Op6pOZFxGuKdhv06nlF-8uiMajB9zJFMtGlbyHSRijgUqtbolQL_20Xl1Sufw0OQbjBrAa8o9RIIoJbLp0=w630" alt="forex course image">
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="simulated-markets">
+            <section class="learn-with-deriv">
                 <div >
                     <p class="title48">Why learn with Deriv</p>
                 </div>
                 <div class="boxes-flex">
                     <div class="box-flex">
-                        <img src="https://lh3.googleusercontent.com/Y09yYShTh7-rC4-YaFyYgizgPyMjfaV4-EW5ZaYHYojUqdqMKGYUFOy3UV024jVLi7g-Yq1oHpp8ROwwbIq_Gn8-GQEahUBH-dw=s0" alt="24/7 trading icon">
+                        <img src="https://lh3.googleusercontent.com/xI11gaFd2YxQ7DL6bJUgpIQ4r_5YmKvT7cj93CYpMRN9VcARz3uAfEhi6O90Dw6th2mCP3VaQ0sGJ0J0okAzfxqtp4zs46RwQq4=s0" alt="25 years of market experience">
                         <p>25 years of market experience</p>
                     </div>
                     <div class="box-flex">
-                        <img src="https://lh3.googleusercontent.com/eCRgA6MCNHcbebIWs97nyaSUkot36XngWaPvJZvMWsRu6vj0Q45FF61NDimVQT1WM7F0e0OTVR4Vq6iUK4LXMLm7TeGkhj7NhIs3=s0" alt="25+ instruments icon">
+                        <img src="https://lh3.googleusercontent.com/_HUthjbWlVrhzJd1VS1hEc6LtUziz2v_xB8Her9LzEP7kqUNqlW8ZFEx5xrTfIO-j1rg9K2ZC2ehkW6nx2THeofJUQWcJ7YN2VY=s0" alt="Comprehensive trading education for all skill levels">
                         <p>Comprehensive trading education for all skill levels</p>
                     </div>
                     <div class="box-flex">
-                        <img src="https://lh3.googleusercontent.com/yoGPjGfaUD96M-5zBJfzwLFLW4Kop91GPQdVOxYnDFOFA2Attu_2Ed0RQPDYUYiGwAK-99CkFO5jBc6Bzj-Z-iJ3zHTVKzuHzOY=s0" alt="Up to 1:1000 leverage icon">
+                        <img src="https://lh3.googleusercontent.com/9WhnkittTZJoaf9ymn_R44v3gUXn0hqLIMKzn60ldA-Ve1UQTyYmMP4JdejESX72seqCWbnmG4Pofl0azOwo5hOYkWWUMTE1aQ=s0" alt="Learn practical trading skills">
                         <p>Learn practical trading skills</p>
                     </div>
                     <div class="box-flex">
-                        <img src="https://lh3.googleusercontent.com/IdfDoN4auj0lfaVFiequZD78syCpvvvKzNQ1Pf-3SPkPl83GeSf700VXOCqm-fcHzLLyGjiSqi8EXMJjB1G42loQT3nYi1QvLs8=s0" alt="Unaffected by world events icon">
+                        <img src="https://lh3.googleusercontent.com/Y09yYShTh7-rC4-YaFyYgizgPyMjfaV4-EW5ZaYHYojUqdqMKGYUFOy3UV024jVLi7g-Yq1oHpp8ROwwbIq_Gn8-GQEahUBH-dw=s0" alt="Free learning resource accessible 24/7">
                         <p>Free learning resource accessible 24/7</p>
                     </div>
                     <div class="box-flex">
-                        <img src="https://lh3.googleusercontent.com/IdfDoN4auj0lfaVFiequZD78syCpvvvKzNQ1Pf-3SPkPl83GeSf700VXOCqm-fcHzLLyGjiSqi8EXMJjB1G42loQT3nYi1QvLs8=s0" alt="Unaffected by world events icon">
+                        <img src="https://lh3.googleusercontent.com/T0VVYcu_bY8er4VuK5cylc3M1l-GdhSOpHEELmZGT7tBpHAvE4DfOi65CQyKE_8ypEfYEQHup6atUWwCQ5AfuTuqLmeuS1LHgj-G=s0" alt="Regular course content update">
                         <p>Regular course content update</p>
                     </div>
                     <div class="box-flex">
-                        <img src="https://lh3.googleusercontent.com/IdfDoN4auj0lfaVFiequZD78syCpvvvKzNQ1Pf-3SPkPl83GeSf700VXOCqm-fcHzLLyGjiSqi8EXMJjB1G42loQT3nYi1QvLs8=s0" alt="Unaffected by world events icon">
+                        <img src="https://lh3.googleusercontent.com/G_k27L0bkn5QRjIGVck30_rD5IbYEy7wgpgAFpRHsuow9W4jWbQouxhcEPc0pujYi6mE1LzW9xGSkGsrqTivhpc-uGo1HU5Bdw=s0" alt="Award-winning broker">
                         <p>Award-winning broker</p>
+                    </div>
+                </div>
+            </section>
+            <section class="faqs">
+                <div class="faqs-div">
+                    <div>
+                        <p class="title48fq">FAQs</p>
+                    </div>
+                    <div class="space">
+                        <p class="strong">Can I use my Deriv Academy login details to trade on deriv.com?</p>
+                        <p>Yes, when you sign up for Deriv Academy, you also create a Deriv trading account. Your login details will be the same on both platforms.</p>
+                    </div>
+                    <div >
+                        <p class="strong">Are Deriv Academy courses free?</p>
+                        <p>All courses are free and based on actual market scenarios using Deriv trading platforms.</p>
+                    </div>
+                    <div>
+                        <button onclick="goToDestination2()" id="myBtn_n2" class="button-footer" type="button">Sign up now</button>
                     </div>
                 </div>
             </section>
             <section  class="footer-log-sm">
                 <div class="boxes-flex-log-sm">
                     <div class="box-flex-logo">
-                        <img src="https://static.deriv.com/logos/deriv-gray-2023.png?v=2" alt="">
+                        <img src="https://lh3.googleusercontent.com/vA-_ID3tLqBl58v_7GcxiISHDlX-kbrInG3pxxkNLYXxvqTctOCrQBq4V5p-TOneF60FVwPOfeCEDEBUvhIdDgJDgKtvIG7Wt7k=s0" alt="deriv academy logo">
                     </div>
                     <div class="box-flex-sm">
                         <a href="https://www.facebook.com/derivdotcom" target="_blank">
-                            <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/facebook-md.png" alt="" class="footer-sm">
+                            <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/facebook-md.png" alt="" class="footer-sm-facebook">
                         </a>
                         <a href="https://www.instagram.com/deriv_official/" target="_blank">
-                            <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/instagram-md.png" alt="" class="footer-sm">
+                            <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/instagram-md.png" alt="" class="footer-sm-instagram">
                         </a>
                         <a href="https://twitter.com/derivdotcom" target="_blank">
-                            <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/x-twitter-md.png" alt="" class="footer-sm">
+                            <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/x-twitter-md.png" alt="" class="footer-sm-x">
                         </a>
                         <a href="https://www.youtube.com/c/Derivdotcom" target="_blank">
-                            <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/youtube-md.png" alt="" class="footer-sm">
+                            <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/youtube-md.png" alt="" class="footer-sm-youtube">
                         </a>
                         <a href="https://www.linkedin.com/company/derivdotcom/" target="_blank">
-                            <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/linkedin-md.png" alt="" class="footer-sm">
+                            <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/linkedin-md.png" alt="" class="footer-sm-linked-in">
                         </a>
                         <a href="https://t.me/Derivchannelofficial" target="_blank">
                             <img src="https://static.deriv.com/email/images/footer-sm-imgs-2024/telegram-md.png" alt="" class="footer-sm">
